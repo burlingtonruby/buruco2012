@@ -12,8 +12,4 @@ $(document).ready(function() {
       opacity: 0.08,
       monochrome: false
   });
-
-  $("form").submit(function() {
-    $("input[type=email]").val("");
-  });
 });
