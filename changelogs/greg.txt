@@ -1,3 +1,6 @@
 Feb-02-2012-14:06
 
-	building out html5/css3 from psd file
+	Building out html5/css3 from psd file
+	Added the hrefs to the top of the nav bar
+	Added CSS3 styles for links
+	Added red triangle to be used for the selected link

@@ -20,6 +20,32 @@ div.nav {
   height:70px;
 }
 
+div.nav a {
+	color:#000;
+	font-size:16pt;
+	font-weight:bold;
+	text-decoration:none;
+	padding-left:15px;
+	font-family:"proxima-nova";
+	padding-right:15px;
+	text-align:center;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+div.nav .links {
+	bottom: 5px;
+    left: 150px;
+    position: relative;
+}
+
+div.nav #link-selected {
+	height: 100px;
+    left: 414px;
+    position: absolute;
+    top: -8px;
+    width: 200px;
+}
+
 div.nav img {
   margin:18px 0 0 0;
 }
