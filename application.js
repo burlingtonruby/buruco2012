@@ -26,4 +26,30 @@ $(document).ready(function() {
 
 	ctx.fill();
 	ctx.stroke();
+	
+	/* Changes location of triangle based on what link is active */
+	$('.links').click(function(){
+		switch($(this).attr("id"))
+		{
+			case "speakers":
+				$("#link-selected").css("left","414px");
+				break;
+				
+			case "schedule":
+				$("#link-selected").css("left","560px");
+				break;
+				
+			case "sponsors":
+				$("#link-selected").css("left","712px");
+				break;
+				
+			case "tickets":
+				$("#link-selected").css("left","845px");
+				break;
+				
+			case "btv":
+				$("#link-selected").css("left","946px");
+				break;
+		}	
+	});
 });
