@@ -92,6 +92,86 @@ div.what {
   line-height:70px;
 }
 
+/* Speakers Sections */
+#speakers {
+	background-image: url("btv assets/speaker_bg.jpg");
+	background-repeat:repeat-x;
+}
+
+div.speaker-info {
+	padding-top:10px;
+	padding-bottom:20px;
+}
+
+div.speaker-info img {
+	float:left;
+	padding-right: 15px;
+}
+
+#speaker-list {
+	-moz-column-count:2;
+	-webkit-column-count:2;
+	column-count:2;
+	-moz-column-gap:40px; 
+	-webkit-column-gap:40px;
+	column-gap:40px;
+}
+
+.speaker-name {
+	color:#5E5E5E;
+	font-size:18pt;
+	text-shadow:0px -1px 1px rgba(0,0,0,0.7);
+}
+
+.speaker-title {
+	color:#FF0000;
+	font-size:14pt;
+	font-style:italic;
+}
+
+#speakers-top a {
+	bottom: 50px;
+    color: #000000;
+    float: right;
+    font-size: 16pt;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+}
+
+summary p {
+	color:#5E5E5E;
+	font-size:14pt;
+	height: 90px;
+	overflow:hidden;
+	width:250px;
+	text-overflow:ellipsis;
+	text-shadow:0px -0.5px 0.2px rgba(0,0,0,0.7);
+	white-space:wrap;
+	word-wrap:break-word;
+}
+
+/* General styling for each section */
+.container {
+	margin: 0 auto;
+    width: 1000px;
+}
+
+header {
+	color:#FF0000;
+}
+
+.section-header {
+	float:left;
+}
+
+.seperator {
+	background-color:#FF0000;
+	box-shadow: 10px 10px 5px rgba(0,0,0,0.7);
+	height:5px;
+	width:100%;
+}
+
 input[type="email"] {
   font-family:"museo-slab", serif;
   color:#fff;

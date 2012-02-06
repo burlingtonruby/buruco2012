@@ -8,3 +8,10 @@ Feb-02-2012-14:06
 Feb-02-2012-15:42
 
 	The red triangle now hovers over the selected link in the top nav bar
+	
+Feb-02-2012-17:27
+
+	Worked on the Speakers section
+	Added the header of the section
+	Worked on the 2 column list of speakers
+	Worked on the line that divides each section

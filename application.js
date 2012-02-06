@@ -31,23 +31,23 @@ $(document).ready(function() {
 	$('.links').click(function(){
 		switch($(this).attr("id"))
 		{
-			case "speakers":
+			case "speakers-link":
 				$("#link-selected").css("left","414px");
 				break;
 				
-			case "schedule":
+			case "schedule-link":
 				$("#link-selected").css("left","560px");
 				break;
 				
-			case "sponsors":
+			case "sponsors-link":
 				$("#link-selected").css("left","712px");
 				break;
 				
-			case "tickets":
+			case "tickets-link":
 				$("#link-selected").css("left","845px");
 				break;
 				
-			case "btv":
+			case "btv-link":
 				$("#link-selected").css("left","946px");
 				break;
 		}	
