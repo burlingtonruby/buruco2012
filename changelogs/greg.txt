@@ -32,3 +32,10 @@ Feb-08-2012-12:27
 	Changed the nav bar so it is fixed while the user is scrolling, clicking on the links
 	now makes the page slide down to the section clicked on, only issue is that the nav
 	bar offset needs to be fixed a bit
+	
+Feb-08-2012-13:30
+
+	I added some more styles to the schedule, I'm having some issues with the CSS3 multiple
+	column layout and seperating each column with a dotted line.  In FirFox it works okay,
+	but some of the columns aren't aligned the same; and in Chrome and Safari the columns
+	are really funky looking
