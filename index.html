@@ -6,26 +6,29 @@
 
     <script src="jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="jquery.noisy.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jquery.smooth-scroll.js" type="text/javascript" charset="utf-8"></script>
 
     <script src="application.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="http://use.typekit.com/wlp2wwl.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
   <body>
+	<div class="nav-container">
     <div class="nav-highlight"></div>
-    <div class="nav">
-      <div class="row">
-        <div class="twelve columns">
-		  <canvas id="link-selected"></canvas>
-          <img src="logo.png" width="206" height="30" alt="Burlington Ruby">
-		  <a id="speakers-link" class="links" href="#">SPEAKERS</a>
-		  <a id="schedule-link" class="links" href="#">SCHEDULE</a>
-		  <a id="sponsors-link" class="links" href="#">SPONSORS</a>
-		  <a id="tickets-link" class="links" href="#">TICKETS</a>
-		  <a id="btv-link" class="links" href="#">BTV</a>
-        </div>
-      </div>
-    </div>
+		<div class="nav">
+		  <div class="row">
+			<div class="twelve columns">
+			  <canvas id="link-selected"></canvas>
+			  <img src="logo.png" width="206" height="30" alt="Burlington Ruby">
+			  <a id="speakers-link" class="links" href="#speakers">SPEAKERS</a>
+			  <a id="schedule-link" class="links" href="#schedule">SCHEDULE</a>
+			  <a id="sponsors-link" class="links" href="#">SPONSORS</a>
+			  <a id="tickets-link" class="links" href="#">TICKETS</a>
+			  <a id="btv-link" class="links" href="#">BTV</a>
+			</div>
+		  </div>
+		</div>
+	</div>
     <div class="intro-wrapper">
       <div class="row">
         <div class="twelve columns">
@@ -44,16 +47,16 @@
         </div>
       </div>
     </div>
-	<div class="nav"></div>
+	<div class="nav"></div> <br /><br /><br /><br /><br />
 	<!-- Speakers Section  -->
-	<div id="speakers">
+	<div id="speakers" name="speakers">
 		<div class="container">
 			<header>
 				<img class="section-header" src="btv assets/speakers.png" alt="Speakers" Title="Speakers" /> 
 				<h1>SPEAKERS</h1>
 			</header>
 			<div id="speakers-top">
-				<a href="#"><img src="btv assets/top.png" alt="Top" Title="Top" /> Top</a>
+				<a href="#" class="top-btn"><img src="btv assets/top.png" alt="Top" Title="Top" /> Top</a>
 			</div>
 			<div id="speaker-list">
 				<div class="speaker-info">
@@ -188,7 +191,7 @@
 				<h1>SCHEDULE</h1>
 			</header>
 			<div id="schedule-top">
-				<a href="#"><img src="btv assets/top.png" alt="Top" Title="Top" /> Top</a>
+				<a href="#" class="top-btn"><img src="btv assets/top.png" alt="Top" Title="Top" /> Top</a>
 			</div>
 			<div id="schedule-columns">
 				<div id="schedule-date">
@@ -239,7 +242,7 @@
 			</div>
 		</div>
 	</div>
-	<br /><br /><br /><br /><br /><br /><br /><br />
+	<div id="footer"></div>
   </body>
   <script type="text/javascript">
 

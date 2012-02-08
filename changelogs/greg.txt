@@ -26,3 +26,9 @@ Feb-08-2012-11:04
 		I am using bottom-border to created dotted line, but it's only working in FireFox,
 		in chrome the dotted lines don't stretch all the way.
 		Still need to add the styles for the schedule
+		
+Feb-08-2012-12:27
+
+	Changed the nav bar so it is fixed while the user is scrolling, clicking on the links
+	now makes the page slide down to the section clicked on, only issue is that the nav
+	bar offset needs to be fixed a bit

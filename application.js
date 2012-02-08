@@ -52,4 +52,17 @@ $(document).ready(function() {
 				break;
 		}	
 	});
+	
+	/* Smooth scrolling 
+	* https://github.com/kswedberg/jquery-smooth-scroll
+	*/
+	$('.links, .top-btn').click(function() {
+	  $.smoothScroll({
+		//scrollElement: $('div.scrollme'),
+		scrollTarget: $(this).attr("href"),
+		offset: -80
+	});
+	return false;
+});
+
 });
