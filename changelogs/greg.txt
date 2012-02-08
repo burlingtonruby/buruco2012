@@ -15,3 +15,7 @@ Feb-02-2012-17:27
 	Added the header of the section
 	Worked on the 2 column list of speakers
 	Worked on the line that divides each section
+	
+Feb-08-2012-9:36
+
+		Working on getting the red triangle on the nav bar to slide when changing pages

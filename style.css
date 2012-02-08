@@ -44,6 +44,9 @@ div.nav #link-selected {
     position: absolute;
     top: -8px;
     width: 200px;
+	/* transition of red triangle when user selects different page */
+	-moz-transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
 }
 
 div.nav img {
@@ -127,6 +130,7 @@ div.speaker-info img {
 	color:#FF0000;
 	font-size:14pt;
 	font-style:italic;
+	font-weight:bold;
 }
 
 #speakers-top a {
@@ -137,6 +141,7 @@ div.speaker-info img {
     font-weight: bold;
     position: relative;
     text-decoration: none;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
 }
 
 summary p {
@@ -149,6 +154,13 @@ summary p {
 	text-shadow:0px -0.5px 0.2px rgba(0,0,0,0.7);
 	white-space:wrap;
 	word-wrap:break-word;
+}
+
+
+/* Schedule Section */
+
+#schedule {
+	background-image:url("btv assets/schedule_bg.jpg");
 }
 
 /* General styling for each section */
