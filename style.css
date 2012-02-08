@@ -161,6 +161,29 @@ summary p {
 
 #schedule {
 	background-image:url("btv assets/schedule_bg.jpg");
+	padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#schedule-columns {
+	padding-top:20px;
+	-moz-column-count:5;
+	-webkit-column-count:5;
+	column-count:5;
+	-moz-column-gap:100px;
+	-webkit-column-gap:100px;
+	column-gap:100px;
+}
+
+#schedule-top a {
+	bottom: 50px;
+    color: #000000;
+    float: right;
+    font-size: 16pt;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
 }
 
 /* General styling for each section */
@@ -173,14 +196,21 @@ header {
 	color:#FF0000;
 }
 
+.horizontal_dotted_line
+{
+	border-bottom: 1px dotted #000;
+	width:210px;
+} 
+
 .section-header {
 	float:left;
 }
 
 .seperator {
 	background-color:#FF0000;
-	box-shadow: 10px 10px 5px rgba(0,0,0,0.7);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
 	height:5px;
+	position:absolute;
 	width:100%;
 }
 

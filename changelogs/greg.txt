@@ -19,3 +19,10 @@ Feb-02-2012-17:27
 Feb-08-2012-9:36
 
 		Working on getting the red triangle on the nav bar to slide when changing pages
+		
+Feb-08-2012-11:04
+
+		Worked on the Schedule section, having issues with the dotted line seperator,
+		I am using bottom-border to created dotted line, but it's only working in FireFox,
+		in chrome the dotted lines don't stretch all the way.
+		Still need to add the styles for the schedule
