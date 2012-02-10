@@ -45,3 +45,10 @@ Feb-10-2012-9:49
 	Updated the folder 'btv assets' to btv-assets
 	Deleted btv assets
 	Updated id reference that was using javascript to jQuery
+	
+Feb-2-10-2012-11:16
+
+	Worked on styles for the Schedule section
+	Scraped the CSS3 multiple columns; wasn't working, and used tables instead
+	I made the fonts as close as I could to the comp, but they will probably have to
+	be adjusted once it is on the site that allows me to use the fonts from TypeKit fonts
