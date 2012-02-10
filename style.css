@@ -8,7 +8,7 @@ body {
 #footer {
 	display:block;
 	clear:both;
-	 height:2000px;
+	height:200px;
  }
 div.nav-highlight {
   height:4px;
@@ -304,6 +304,69 @@ tr.horizontal_dotted_line  td{
 	text-shadow: 0 0.5px 0.5px rgba(255, 255, 255, 0.7);
 }
 
+
+/* Styling for BTV section */
+#additional-links {
+	/* background:rgba(0,0,0,0.5); */
+	background-image: -webkit-gradient(radial, center center, 0, center center, 20, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0.5)));	
+	background-image: -moz-radial-gradient(center, circle closest-corner, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 20%);
+	border:1px solid rgba(0,0,0,0.7);
+	height:40px;
+    left: 325px;
+    position: absolute;
+	text-indent:15px;
+	top:4170px;
+	width:755px;
+    word-spacing: 50px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px; 
+}
+
+#additional-links a{
+	color:#FFF;
+	font-weight:500;
+	position:relative;
+	text-align:center;
+	text-decoration:none;
+	top:10px;
+}
+
+#btv {
+	background-image:url("btv-assets/btv_bg.jpg");
+	padding-bottom:500px;
+	padding-top:10px;
+	-moz-box-shadow:0px 2px 5px rgba(0,0,0,0.5);
+	-webkit-box-shadow:0px 2px 5px rgba(0,0,0,0.5);
+	box-shadow:0px 2px 5px rgba(0,0,0,0.5);
+}
+
+#btv-coming-soon {
+	color:#FFF;
+	font-size:25pt;
+	font-weight:bold;
+	left:400px;
+	top:200px;
+	position:relative;
+	text-shadow:0px 1px 1px rgba(207,207,207,0.7);
+}
+
+#btv-header {
+	color:#FFF;
+	padding-left:50px;
+	text-shadow:0px 1px 1px rgba(207,207,207,0.7);
+}
+
+#btv-top a {
+	bottom: 50px;
+    color: #000000;
+    float: right;
+    font-size: 16pt;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+	text-shadow: 0 0.5px 0.5px rgba(255, 255, 255, 0.7);
+}
 
 /* General styling for each section */
 .container {
