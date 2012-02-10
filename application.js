@@ -52,6 +52,9 @@ $(document).ready(function() {
 				break;
 		}	
 	});
+	$('.top-btn').click(function(){
+		$("#link-selected").css("left","100px");
+	});
 	
 	/* Smooth scrolling 
 	* https://github.com/kswedberg/jquery-smooth-scroll
