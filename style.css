@@ -307,9 +307,7 @@ tr.horizontal_dotted_line  td{
 
 /* Styling for BTV section */
 #additional-links {
-	/* background:rgba(0,0,0,0.5); */
-	background-image: -webkit-gradient(radial, center center, 0, center center, 20, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0.5)));	
-	background-image: -moz-radial-gradient(center, circle closest-corner, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 20%);
+	 background:rgba(0,0,0,0.5); 
 	border:1px solid rgba(0,0,0,0.7);
 	height:40px;
     left: 325px;
