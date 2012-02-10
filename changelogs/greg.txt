@@ -39,3 +39,9 @@ Feb-08-2012-13:30
 	column layout and seperating each column with a dotted line.  In FirFox it works okay,
 	but some of the columns aren't aligned the same; and in Chrome and Safari the columns
 	are really funky looking
+
+Feb-10-2012-9:49
+
+	Updated the folder 'btv assets' to btv-assets
+	Deleted btv assets
+	Updated id reference that was using javascript to jQuery
