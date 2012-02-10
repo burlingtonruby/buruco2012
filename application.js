@@ -14,18 +14,18 @@ $(document).ready(function() {
   });
   
 	/* Draws triangle (above selected href in .nav) for canvas element */
-	var c=document.getElementById("link-selected");
-	var ctx=c.getContext("2d");
-	ctx.fillStyle="#FF0000";
-	ctx.strokeStyle="#FF0000";
+	var linkSelected=$("#link-selected");
+	var triangle=linkSelected[0].getContext("2d");
+	triangle.fillStyle="#FF0000";
+	triangle.strokeStyle="#FF0000";
 
-	ctx.moveTo(10,10);
-	ctx.lineTo(40,10);
-	ctx.lineTo(25,30);
-	ctx.lineTo(10,10);
+	triangle.moveTo(10,10);
+	triangle.lineTo(40,10);
+	triangle.lineTo(25,30);
+	triangle.lineTo(10,10);
 
-	ctx.fill();
-	ctx.stroke();
+	triangle.fill();
+	triangle.stroke();
 	
 	/* Changes location of triangle based on what link is active */
 	$('.links').click(function(){

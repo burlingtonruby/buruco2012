@@ -113,7 +113,7 @@ div.what {
 
 /* Speakers Sections */
 #speakers {
-	background-image: url("btv assets/speaker_bg.jpg");
+	background-image: url("btv-assets/speaker_bg.jpg");
 	background-repeat:repeat-x;
 }
 
@@ -176,7 +176,7 @@ summary p {
 /* Schedule Section */
 
 #schedule {
-	background-image:url("btv assets/schedule_bg.jpg");
+	background-image:url("btv-assets/schedule_bg.jpg");
 	padding-bottom: 10px;
     padding-top: 10px;
 }
