@@ -52,3 +52,9 @@ Feb-2-10-2012-11:16
 	Scraped the CSS3 multiple columns; wasn't working, and used tables instead
 	I made the fonts as close as I could to the comp, but they will probably have to
 	be adjusted once it is on the site that allows me to use the fonts from TypeKit fonts
+	
+Feb-2-2012-11:45
+
+	I added the Sponsors section, and it is complete except for the fonts
+	Tristan gave me the fonts that will be used, but I forget which fonts
+	are applied to each section, so I'll have to check with him
