@@ -76,3 +76,14 @@ Feb-2-2012-13:11
 	
 	Removed a few extra break tags above the Speakers section.
 	Changed the position styles of the additional-links div
+	
+Feb-13-2012-16:18
+
+	Worked on media queries
+	Right now I am focusing on smaller laptop screen sizes / iPad
+	Everything is adjuste between the following dimensions (width): 750 - 1300px
+	The only thing that still needs to be adjusted up to this point it the red
+	triangle, because I changed the position and font-size of the nav bar links,
+	I think I might use javascript to detect the screen size, and based on that
+	change the position of the red triangle (adding on to my switch statement).
+	If anyone can think of a more efficient way of doing this, let me know :)
