@@ -87,3 +87,14 @@ Feb-13-2012-16:18
 	I think I might use javascript to detect the screen size, and based on that
 	change the position of the red triangle (adding on to my switch statement).
 	If anyone can think of a more efficient way of doing this, let me know :)
+	
+Feb-13-2012-17:09
+
+	Did some more work on the media queries
+	Additional screen sizes between 725px and 625px (width) are now supported
+	Some issues that are starting to come up since I am near the size of a mobile
+	device, is the head nav bar, I can't keep lowering the font-size and moving
+	the links to the left, because if they become too small it will become difficult
+	for the user to click on them, I was thinking of moving them down below the buruco
+	logo, but that would mean I would have to get rid of the sliding triangle, because 
+	then it would look really weird.  Let me know what you guys think

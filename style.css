@@ -650,3 +650,107 @@ Media Queries
 	#tickets-coming-soon{ left:250px; }
 	#tickets-top a{ right:310px; }
 }
+
+@media screen and (max-width:725px) {
+	#additional-links { left:55px; }
+	#btv-top a { right:340px; }
+	#speaker-list { width:700px; }
+	#speakers-top a{ right:340px; }
+	#schedule-top a{ right:340px; }
+	#sponsors-top a{ right:340px; }
+	#tickets-top a{ right:340px; }
+}
+
+@media screen and (max-width:700px) {
+	#additional-links { 
+		left:40px; 
+		top:5200px;
+	}
+	#btv-coming-soon { left:200px; }
+	#btv-top a { right:360px; }
+	#buruco-logo { width:150px; }
+	#speakers-top a{ right:360px; }
+	#schedule-top a{ right:360px; }
+	#sponsors-coming-soon { left:200px; }
+	#sponsors-top a{ right:360px; }
+	#tickets-coming-soon { left:200px; }
+	#tickets-top a{ right:360px; }
+	
+	
+	.speaker-info img {
+		height:150px;
+		width:150px;
+	}
+	.speaker-info summary p {
+		font-size: 12pt;
+		height: 100px;
+		width: 275px;
+	}
+	#speaker-list {
+		position:relative;
+		margin:0 auto;
+		-moz-column-count:1;
+		-webkit-column-count:1;
+		column-count:1;
+	}
+	.speaker-name {
+		font-size:18pt;
+	}
+	.speaker-title {
+		font-size:14pt;
+	}
+}
+
+@media screen and (max-width:675px) {
+	#additional-links { left:20px; }
+	#btv-top a { right:390px; }
+	#buruco-logo { width:125px; }
+	#schedule-table { width:600px; }
+	#speakers-top a{ right:390px; }
+	#schedule-top a{ right:390px; }
+	#sponsors-top a{ right:390px; }
+	#tickets-top a{ right:390px; }
+}
+
+@media screen and (max-width:650px) {
+	#additional-links { left:15px; }
+	#btv-top a { right:410px; }
+	
+	div.nav .links { 
+		padding-left:10px; 
+		padding-right:10px;
+	}
+	
+	#schedule-table { width:575px; }
+	#speakers-top a{ right:410px; }
+	#schedule-top a{ right:410px; }
+	#sponsors-top a{ right:410px; }
+	#tickets-top a{ right:410px; }
+}
+
+@media screen and (max-width:625px) {
+	#additional-links {
+		width:550px;
+		word-spacing:30px;
+	}
+	
+	#btv-coming-soon { left:150px; }
+	#btv-top a { right:430px; }
+	#speakers-top a{ right:430px; }
+	#schedule-top a{ right:430px; }
+	#sponsors-coming-soon { left:150px; }
+	#sponsors-top a{ right:430px; }
+	#tickets-coming-soon { left:150px; }
+	#tickets-top a{ right:430px; }
+}
+
+@media screen and (max-width:600px) {
+	#btv-top a { right:450px; }
+	div.nav .links { padding-right:5px; }
+	#schedule-table { width:550px; }
+	#speakers-top a{ right:450px; }
+	#schedule-top a{ right:450px; }
+	#speaker-list { right:50px; }
+	#sponsors-top a{ right:450px; }
+	#tickets-top a{ right:450px; }
+}
