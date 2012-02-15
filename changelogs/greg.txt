@@ -98,3 +98,14 @@ Feb-13-2012-17:09
 	for the user to click on them, I was thinking of moving them down below the buruco
 	logo, but that would mean I would have to get rid of the sliding triangle, because 
 	then it would look really weird.  Let me know what you guys think
+	
+Feb-15-2012-11:06
+
+	Worked more on the media queries
+	The supported screen size now goes down to 500px
+	Some changes I made in order to support this small of a screen size include:
+		- Removing the navigation links at the top
+		- Removed the red sliding triangle
+		- Removed the image at the top
+		- Removed the images for the Speakers
+		- At the bottom, in the BTV section, made links onto 2 lines instead of 1

@@ -754,3 +754,105 @@ Media Queries
 	#sponsors-top a{ right:450px; }
 	#tickets-top a{ right:450px; }
 }
+
+@media screen and (max-width:575px) {
+	#btv-top a { right:470px; }
+	
+	div.nav .links { 
+		padding-left:5px;
+		padding-right:2px; 
+	}
+	
+	#schedule-table { width:500px; }
+	#speakers-top a{ right:470px; }
+	#schedule-top a{ right:470px; }
+	#speaker-list { right:70px; }
+	#sponsors-top a{ right:470px; }
+	#tickets-top a{ right:470px; }
+
+}
+
+@media screen and (max-width:550px) {
+	#additional-links {
+		height: 100px;
+		left: 34px;
+		line-height: 45px;
+		text-align: center;
+		text-indent: 0;
+		top: 4525px;
+		width: 428px;
+		word-spacing: 37px;
+	}
+	
+	#additional-links a{ 
+		border-bottom:1px solid #FFF;
+		font-size:12pt; 
+	}
+	
+	#btv-coming-soon { left:120px; }
+	#btv header h1 { padding-left:0px; }
+	#btv-top a { display:none; }
+
+	#buruco-logo { 
+		height:30px;
+		left:150px;
+		position:relative;
+		width:206px;
+	}
+	
+	.date { font-size: 16pt; }
+	.day-of-week { font-size:12pt; }
+	div.intro-wrapper { display:none; }
+	header img { display:none; }
+	.learn-more { font-size:14pt; }
+	#nav2 .nav{ display:none; }
+	.twelve a{ display:none; }
+	#link-selected { display:none; }
+	#schedule header h1 { padding-left:0px; }
+	
+	.speaker-info img {
+		height:100px;
+		position:relative;
+		top:20px;
+		width:100px;
+	}
+	
+	#speakers header h1 { padding-left:0px; }
+	.speaker-info summary p { font-size:12pt; }
+	#speaker-list { right:100px; }
+	.speaker-name { font-size:16pt; }
+	.speaker-title { font-size:12pt; }
+	#speakers-top a{ display:none; }
+	#schedule-table { width:450px; }
+	#schedule-table td{ font-size:11pt; }
+	#schedule-top a{ display:none; }
+	#sponsors-coming-soon { left:120px; }
+	#sponsors header h1 { padding-left:0px; }
+	#sponsors-top a{ display:none; }
+	#tickets-coming-soon { left:120px; }
+	#tickets header h1 { padding-left:0px; }
+	#tickets-top a{ display:none; }
+}
+
+@media screen and (max-width:525px) {
+	#additional-links { left:20px; }
+	.learn-more { font-size:12pt; }
+	#schedule-table { width:425px; }
+	#speaker-list { right:120px; }
+}
+
+@media screen and (max-width:500px) {
+	#additional-links { 
+		left:10px; 
+		width:410px;
+		word-spacing:30px;
+	}
+	#btv-coming-soon { font-size:20pt; }
+	#buruco-logo { left:120px; }
+	.container { width:100%; }
+	header h1 { text-align:center; }
+	.speaker-info img { display:none; }
+	#speaker-list { right:0px; }
+	#sponsors-coming-soon { font-size:20pt; }
+	#tickets-coming-soon { font-size:20pt; }
+}
