@@ -109,3 +109,11 @@ Feb-15-2012-11:06
 		- Removed the image at the top
 		- Removed the images for the Speakers
 		- At the bottom, in the BTV section, made links onto 2 lines instead of 1
+		
+Feb-15-2012-13:10
+
+	Media queries now support down to a 475px screen 
+	Updated the BTV section:
+		- The links in this section are now off the screen (location, lodging, ect..)
+		- Added a 'more' button
+		- When the user clicks on the more button the links slide onto the left side of the screen

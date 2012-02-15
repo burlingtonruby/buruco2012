@@ -366,6 +366,8 @@ tr.horizontal_dotted_line  td{
 	text-shadow: 0 0.5px 0.5px rgba(255, 255, 255, 0.7);
 }
 
+#more-btn { display:none; }
+
 /* General styling for each section */
 .container {
 	margin: 0 auto;
@@ -855,4 +857,29 @@ Media Queries
 	#speaker-list { right:0px; }
 	#sponsors-coming-soon { font-size:20pt; }
 	#tickets-coming-soon { font-size:20pt; }
+}
+
+@media screen and (max-width:475px) {
+	#additional-links {
+		height:300px; 
+		left:-150px;
+		text-align:left;
+		top: 4465px;
+		width:125px; 
+		-moz-transition: all 0.3s linear;
+		-webkit-transition: all 0.3s linear;
+	}
+	#additional-links a { 
+		border:none;
+		left:5px;
+	}
+	#buruco-logo { left:110px; }
+	#more-btn {
+		color:#FFF;
+		display:block;
+		position:relative;
+		-moz-transition: all 0.3s linear;
+		-webkit-transition: all 0.3s linear;
+	}
+	#schedule-table { width:400px; }
 }

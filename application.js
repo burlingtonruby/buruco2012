@@ -56,6 +56,25 @@ $(document).ready(function() {
 		$("#link-selected").css("left","100px");
 	});
 	
+	
+	/*
+	* Creates a sliding effect when user clicks the 'More' button 
+	* needed because when the screen gets to a mobile device size
+	* the links in the BTV section take up too much room
+	*/
+	$("#more-btn").mouseover(function() {
+		$(this).css("cursor","pointer");
+	});
+	$("#more-btn").toggle(function() {
+		$(this).html("<==LESS");
+		$(this).css("left","120px");
+		$("#additional-links").css("left","10px");
+	}, function() {
+		$(this).html("MORE==>");
+		$(this).css("left","10px");
+		$("#additional-links").css("left","-150px");
+	});
+	
 	/* 
 	* Smooth scrolling 
 	* https://github.com/kswedberg/jquery-smooth-scroll
@@ -66,7 +85,7 @@ $(document).ready(function() {
 		scrollTarget: $(this).attr("href"),
 		offset: -80
 	});
-	return false;
+	return false;	
 });
 
 });
