@@ -112,7 +112,7 @@ Feb-15-2012-11:06
 		
 Feb-15-2012-13:10
 
-	Media queries now support down to a 475px screen 
+	Media queries now support down to a 450px screen 
 	Updated the BTV section:
 		- The links in this section are now off the screen (location, lodging, ect..)
 		- Added a 'more' button

@@ -883,3 +883,32 @@ Media Queries
 	}
 	#schedule-table { width:400px; }
 }
+
+@media screen and (max-width:450px) {
+	#btv-coming-soon {
+		font-size: 16pt;
+		left:80px;
+		top:250px;
+	}
+	#btv header h1 { left:125px; }
+	#buruco-logo { left:60px; }
+	#container { padding-left:10px;}
+	
+	header h1 { 
+		text-align:left; 
+		position:relative; 
+		left:70px;
+	}
+	
+	#schedule-table { width:265px; }
+	#sponsors-coming-soon {
+		font-size: 16pt;
+		left:80px;
+	}
+	#tickets-coming-soon {
+		font-size: 16pt;
+		left:80px;
+	}
+	#tickets header h1 { left:80px; }
+
+}
