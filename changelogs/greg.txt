@@ -117,3 +117,10 @@ Feb-15-2012-13:10
 		- The links in this section are now off the screen (location, lodging, ect..)
 		- Added a 'more' button
 		- When the user clicks on the more button the links slide onto the left side of the screen
+		
+Feb-17-2012-10:26
+
+	Updated styles for iPhone sized version of site
+	Adjusted the logo
+	Fixed the schedule table so it doesn't look so squished as before
+	In the BTV section: made a simple More/Less button for the extra links (lodging ect..)

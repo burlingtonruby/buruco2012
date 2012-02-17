@@ -66,12 +66,13 @@ $(document).ready(function() {
 		$(this).css("cursor","pointer");
 	});
 	$("#more-btn").toggle(function() {
-		$(this).html("<==LESS");
+		$("#btn-txt").html("LESS");
 		$(this).css("left","120px");
+		$(this).css("text-align","center");
 		$("#additional-links").css("left","10px");
 	}, function() {
-		$(this).html("MORE==>");
-		$(this).css("left","10px");
+		$("#btn-txt").html("MORE");
+		$(this).css("left","-20px");
 		$("#additional-links").css("left","-150px");
 	});
 	

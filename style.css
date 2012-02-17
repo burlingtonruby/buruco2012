@@ -873,13 +873,40 @@ Media Queries
 		border:none;
 		left:5px;
 	}
+	#btn-txt {
+		position:relative;
+		top:12px;
+	}
 	#buruco-logo { left:110px; }
 	#more-btn {
+		background-image: -webkit-gradient(radial, center center, 0, center center, 200, from(#454647), to(#372F33));	
+		background-image: -moz-radial-gradient(center, circle closest-corner, #454647 0%, #372F33 100%);
 		color:#FFF;
 		display:block;
+		font-size:14pt;
+		font-weight:bold;
+		height:50px;
 		position:relative;
+		right:20px;
+		text-align:center;
+		text-shadow:0px -1px 1px #CBCBCB;
+		width:100px;
+		
+		/* CSS3 transitions */
 		-moz-transition: all 0.3s linear;
 		-webkit-transition: all 0.3s linear;
+		/* Creates the button; generated from: http://css3generator.com/ */
+		-moz-border-radius-topright: 100px;
+		-moz-border-radius-bottomright: 100px;
+		-moz-border-radius: 0px 100px 100px 0px;
+		-webkit-border-radius-topright: 100px;
+		-webkit-border-radius-bottomright: 100px;
+		-webkit-border-radius: 0px 100px 100px 0px;
+		border-radius: px 100px 100px px; 
+		/* Box shadow */
+		-moz-box-shadow:5px 3px 10px rgba(0,0,0,0.7);
+		-webkit-box-shadow:5px 3px 10px rgba(0,0,0,0.7);
+		box-shadow:5px 3px 10px rgba(0,0,0,0.7);
 	}
 	#schedule-table { width:400px; }
 }
@@ -887,12 +914,14 @@ Media Queries
 @media screen and (max-width:450px) {
 	#btv-coming-soon {
 		font-size: 16pt;
-		left:80px;
+		left:70px;
 		top:250px;
 	}
 	#btv header h1 { left:125px; }
-	#buruco-logo { left:60px; }
+	#buruco-logo { left:40px; }
 	#container { padding-left:10px;}
+	.date { font-size:12pt; }
+	.day-of-week { font-size:10pt; }
 	
 	header h1 { 
 		text-align:left; 
@@ -900,14 +929,16 @@ Media Queries
 		left:70px;
 	}
 	
-	#schedule-table { width:265px; }
+	.learn-more { font-size:11pt; }
+	#schedule-table td { font-size:10pt; padding-right:7px; }
+	#schedule-table { width:265px; padding-left:0px; }
 	#sponsors-coming-soon {
 		font-size: 16pt;
-		left:80px;
+		left:70px;
 	}
 	#tickets-coming-soon {
 		font-size: 16pt;
-		left:80px;
+		left:70px;
 	}
 	#tickets header h1 { left:80px; }
 
