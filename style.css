@@ -953,7 +953,7 @@ Media Queries
 @media screen and (max-device-width:320px) {
 	#additional-links {
 		height:75px; 
-		left:30px;
+		left:50px;
 		text-align:left;
 		text-indent:0px;
 		top: 6670px;
@@ -971,6 +971,11 @@ Media Queries
 		padding-top:10px; 
 		width:105%;
 	}
+	#btv header h1 {
+		left:-50px;
+		position:relative;
+		right:0px;
+	}
 	#btv-coming-soon {
 		font-size: 36pt;
 		left:0px;
@@ -984,6 +989,7 @@ Media Queries
 	header h1 {
 		font-size:42pt;
 		position: relative;
+		left:0px;
 		right:0px;
 		text-align: center;
 	}
@@ -1000,7 +1006,7 @@ Media Queries
 	#schedule header h1 { padding-left:0px; }
 	#schedule table {
 		margin:0 auto;
-		padding-left:0px;
+		padding-left:10px;
 		position:relative;
 		right:20px;
 		width:850px;
@@ -1009,6 +1015,7 @@ Media Queries
 		font-size: 20pt;
 		padding-right: 7px;
 	}
+	.seperator { width:105%; }
 	#speakers header h1 { padding-left:0px; }
 	
 	#speaker-list {
@@ -1046,5 +1053,10 @@ Media Queries
 		text-align:center;
 	}
 	.top-btn { display:none; }
+	#tickets header h1 { 
+		position:relative; 
+		left:-35px; 
+		right:0px; 
+	}
 }
 
