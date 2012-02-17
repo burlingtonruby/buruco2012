@@ -137,3 +137,10 @@ Feb-17-2012-12:35
 
 	Finished up the media queries for the iPhone mobile browser.
 	Let me know if anything needs to be changed
+	
+Feb-17-2012-13:43
+
+	Began working on fixing the red sliding triangle for smaller screens.
+	I think Sean's solution is best, I tried changing the position based on
+	when the screen size is changed (also it checks the screen size when the page first loads),
+	this method works, but I feel like Sean's method will reduce the amount of code that is needed.

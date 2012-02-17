@@ -28,30 +28,94 @@ $(document).ready(function() {
 	triangle.stroke();
 	
 	/* Changes location of triangle based on what link is active */
-	$('.links').click(function(){
-		switch($(this).attr("id"))
-		{
-			case "speakers-link":
-				$("#link-selected").css("left","414px");
-				break;
-				
-			case "schedule-link":
-				$("#link-selected").css("left","560px");
-				break;
-				
-			case "sponsors-link":
-				$("#link-selected").css("left","712px");
-				break;
-				
-			case "tickets-link":
-				$("#link-selected").css("left","845px");
-				break;
-				
-			case "btv-link":
-				$("#link-selected").css("left","946px");
-				break;
-		}	
+	$(window).resize(function () { 
+		$('.speaker-title').html($(this).width());
 	});
+		
+		
+		if($(window).width() <= 908)
+		{
+			$('.links').click(function(){
+				switch($(this).attr("id"))
+				{
+					case "speakers-link":
+						$("#link-selected").css("left","300px");
+						break;
+						
+					case "schedule-link":
+						$("#link-selected").css("left","445px");
+						break;
+						
+					case "sponsors-link":
+						$("#link-selected").css("left","600px");
+						break;
+						
+					case "tickets-link":
+						$("#link-selected").css("left","730px");
+						break;
+						
+					case "btv-link":
+						$("#link-selected").css("left","834px");
+						break;
+				}	
+			});
+		}
+		else if($(window).width() <= 983)
+		{
+			$('.links').click(function(){
+				switch($(this).attr("id"))
+				{
+					case "speakers-link":
+						$("#link-selected").css("left","338px");
+						break;
+						
+					case "schedule-link":
+						$("#link-selected").css("left","482px");
+						break;
+						
+					case "sponsors-link":
+						$("#link-selected").css("left","636px");
+						break;
+						
+					case "tickets-link":
+						$("#link-selected").css("left","770px");
+						break;
+						
+					case "btv-link":
+						$("#link-selected").css("left","873px");
+						break;
+				}	
+			});
+		}
+		else if($(window).width() >= 984)
+		{
+			$('.links').click(function(){
+				switch($(this).attr("id"))
+				{
+					case "speakers-link":
+						$("#link-selected").css("left","414px");
+						break;
+						
+					case "schedule-link":
+						$("#link-selected").css("left","560px");
+						break;
+						
+					case "sponsors-link":
+						$("#link-selected").css("left","712px");
+						break;
+						
+					case "tickets-link":
+						$("#link-selected").css("left","845px");
+						break;
+						
+					case "btv-link":
+						$("#link-selected").css("left","946px");
+						break;
+				}	
+			});
+	}
+	// });
+	
 	$('.top-btn').click(function(){
 		$("#link-selected").css("left","100px");
 	});
