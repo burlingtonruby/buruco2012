@@ -124,3 +124,11 @@ Feb-17-2012-10:26
 	Adjusted the logo
 	Fixed the schedule table so it doesn't look so squished as before
 	In the BTV section: made a simple More/Less button for the extra links (lodging ect..)
+	
+Feb-17-2012-12:15
+	
+	Began working on the media queries specifically for mobile devices
+	It wasn't as easy as I expected, even though I altered the styles to 
+	support the screen size of the iPhone for a computer browser, these
+	styles looked completely different when on an actual mobile browser.
+	I am almost done adjusting the styles for the iPhone
