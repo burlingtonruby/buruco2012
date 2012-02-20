@@ -144,3 +144,9 @@ Feb-17-2012-13:43
 	I think Sean's solution is best, I tried changing the position based on
 	when the screen size is changed (also it checks the screen size when the page first loads),
 	this method works, but I feel like Sean's method will reduce the amount of code that is needed.
+	
+Feb-20-2012-15:30
+	
+	Finished working on the sliding red triangle.
+	It's position now is correctly adjusted based on
+	the size of the browser window. Hooray!
