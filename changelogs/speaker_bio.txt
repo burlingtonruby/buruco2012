@@ -29,3 +29,10 @@ Feb-22-2012-13:00
     back to the speakers list. I also created a separate js file 
     specifically for doing this, just to make it easier to read; as
     opposed to putting all the js in one file.
+    
+Feb-22-2012-13:34
+
+    I got the fadeToggle() working, it now fades out the list and brings
+    in the individual speaker's bio. Then when you click on the BACK
+    TO SPEAKERS text or image, to does the reverse. Some of the styles
+    get messed up, so I still need to fix those.

@@ -45,7 +45,7 @@ figure summary p {
     word-wrap:normal;
 }
 
-.img-container {
+#img-container {
     background-color:#FFF;
     border:2px solid #EBEBEB;
     float:left;
@@ -57,12 +57,12 @@ figure summary p {
     border-radius: 10px; 
 }
 
-.img-container img {
+#img-container img {
     left:10px;
     position:relative;
     top:10px;
 }
 
-.speaker-bio {
+#speaker-bio {
     display:none;
 }   
