@@ -1,0 +1,6 @@
+Feb-22-2012-11:07
+
+    Beginning to work in more depth on the Speakers section;
+    when the user clicks on the speaker, it will display their
+    full bio.
+    Added the 'Back To Speakers' arrow png to btv-assets folder.
