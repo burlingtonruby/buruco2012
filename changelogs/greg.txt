@@ -155,3 +155,8 @@ Feb-22-2012-9:57
 
 	There are a few issues with the position of the red sliding triange when the screen
 	size was changed in Safari and Chrome, began fixing those issues.
+    
+Feb-22-2012-10:37
+
+    Changed hard tabs to soft tabs.
+    Deleted test.html
