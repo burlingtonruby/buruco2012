@@ -4,3 +4,17 @@ Feb-22-2012-11:07
     when the user clicks on the speaker, it will display their
     full bio.
     Added the 'Back To Speakers' arrow png to btv-assets folder.
+    
+Feb-22-2012-12:10
+
+    Built the layout/positioning of elements for the individual
+    speaker bios. 
+    Need to now make it so it appears when a speaker from the
+    list of speakers is clicked.
+    I was thinking the best way to do it was to grab the innerHTML
+    of a speaker based on who is clicked. For example I click on
+    John Smith, so I store his specific info (i.e. $(this).html)
+    and store it into a variable, then append some new elements.
+    I also created a separate css file specifically for the individual
+    speaker bios, I figured this was best, so we don't have just 1
+    giant css file.

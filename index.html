@@ -2,6 +2,7 @@
   <head>
     <title>Burlington Ruby Conference</title>
     <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="speaker_bio_style.css" type="text/css" media="screen">
     <link rel="stylesheet" href="grid.css" type="text/css" media="screen">
 
     <script src="jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
@@ -52,12 +53,39 @@
 	<div id="speakers" name="speakers">
 		<div class="container">
 			<header>
-				<img class="section-header" src="btv-assets/speakers.png" alt="Speakers" Title="Speakers" /> 
-				<h1>SPEAKERS</h1>
+				<!-- <img class="section-header" src="btv-assets/speakers.png" alt="Speakers" Title="Speakers" />  commented out for testing -->
+                <img class="section-header" src="btv-assets/arrow.png" alt="Speakers" Title="Speakers" />
+				<!-- <h1>SPEAKERS</h1> commented out for testing -->
+                <h1>BACK TO SPEAKERS</h1>
 			</header>
 			<div id="speakers-top">
 				<a href="#" class="top-btn"><img src="btv-assets/top.png" alt="Top" Title="Top" /> Top</a>
 			</div>
+            <!-- This is just for testing the layout of how the individual speaker bios, later this will be 
+                  automatically generated using jQuery -->
+            <div class="speaker-bio">
+                <div class="img-container">
+                    <img src="btv-assets/john-smith.jpg" width="300" height="300" alt="John Smith" Title="John Smith" />
+                </div>
+                <figure>
+                    <span class="speaker-name">JOHN SMITH</span> <br />
+                        <span class="speaker-title">Ruby Expert</span>
+                        <summary>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
+                                magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
+                                nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie 
+                                consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent 
+                                luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue 
+                                nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in 
+                                iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est 
+                                etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc 
+                                putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, 
+                                qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+                            </p>
+                        </summary>
+                </figure>
+            </div>
 			<div id="speaker-list">
 				<div class="speaker-info">
 					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
