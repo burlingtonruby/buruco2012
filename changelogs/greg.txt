@@ -150,3 +150,8 @@ Feb-20-2012-15:30
 	Finished working on the sliding red triangle.
 	It's position now is correctly adjusted based on
 	the size of the browser window. Hooray!
+	
+Feb-22-2012-9:57
+
+	There are a few issues with the position of the red sliding triange when the screen
+	size was changed in Safari and Chrome, began fixing those issues.

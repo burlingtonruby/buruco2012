@@ -38,6 +38,7 @@ $(document).ready(function() {
 	*/
 	var currentLink = "Logo";
 	
+	
 	//Selects the currentLink variable
 	$('.links').click(function(){
 		switch($(this).attr("id"))
@@ -76,7 +77,7 @@ $(document).ready(function() {
 	{
 		//Stores the browser window size
 		var windowSize = $(window).width();
-		$('.speaker-title').html(windowSize);
+		//$('.speaker-title').html(windowSize);
 		
 		switch(currentLink)
 		{
@@ -126,7 +127,7 @@ $(document).ready(function() {
 				else if(windowSize <= 908) { 
 					$("#link-selected").css("left","300px");
 				}
-				else if(windowSize <= 983) { 
+				else if(windowSize <= 1000) { 
 					$("#link-selected").css("left","338px");
 				}
 				else { 
@@ -166,7 +167,7 @@ $(document).ready(function() {
 				else if(windowSize <= 908) { 
 					$("#link-selected").css("left","445px");
 				}
-				else if(windowSize <= 983) { 
+				else if(windowSize <= 1000) { 
 					$("#link-selected").css("left","482px");
 				}
 				else { 
@@ -205,7 +206,7 @@ $(document).ready(function() {
 				else if(windowSize <= 908) { 
 					$("#link-selected").css("left","600px");
 				}
-				else if(windowSize <= 983) { 
+				else if(windowSize <= 1000) { 
 					$("#link-selected").css("left","636px");
 				}
 				else { 
@@ -244,7 +245,7 @@ $(document).ready(function() {
 				else if(windowSize <= 908) { 
 					$("#link-selected").css("left","730px");
 				}
-				else if(windowSize <= 983) { 
+				else if(windowSize <= 1000) { 
 					$("#link-selected").css("left","770px");
 				}
 				else { 
@@ -283,7 +284,7 @@ $(document).ready(function() {
 				else if(windowSize <= 908) { 
 					$("#link-selected").css("left","834px");
 				}
-				else if(windowSize <= 983) { 
+				else if(windowSize <= 1000) { 
 					$("#link-selected").css("left","873px");
 				}
 				else { 
