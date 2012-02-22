@@ -6,20 +6,29 @@
 
     <script src="jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="jquery.noisy.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jquery.smooth-scroll.js" type="text/javascript" charset="utf-8"></script>
 
     <script src="application.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="http://use.typekit.com/wlp2wwl.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
   <body>
+	<div class="nav-container">
     <div class="nav-highlight"></div>
-    <div class="nav">
-      <div class="row">
-        <div class="twelve columns">
-          <img src="logo.png" width="206" height="30" alt="Burlington Ruby">
-        </div>
-      </div>
-    </div>
+		<div class="nav">
+		  <div class="row">
+			<div class="twelve columns">
+			  <canvas id="link-selected"></canvas>
+			  <img id="buruco-logo" src="logo.png" width="206" height="30" alt="Burlington Ruby">
+			  <a id="speakers-link" class="links" href="#speakers">SPEAKERS</a>
+			  <a id="schedule-link" class="links" href="#schedule">SCHEDULE</a>
+			  <a id="sponsors-link" class="links" href="#sponsors">SPONSORS</a>
+			  <a id="tickets-link" class="links" href="#tickets">TICKETS</a>
+			  <a id="btv-link" class="links" href="#btv">BTV</a>
+			</div>
+		  </div>
+		</div>
+	</div>
     <div class="intro-wrapper">
       <div class="row">
         <div class="twelve columns">
@@ -38,6 +47,287 @@
         </div>
       </div>
     </div>
+	<span id="nav2"><div class="nav"></div></div>
+	<!-- Speakers Section  -->
+	<div id="speakers" name="speakers">
+		<div class="container">
+			<header>
+				<img class="section-header" src="btv-assets/speakers.png" alt="Speakers" Title="Speakers" /> 
+				<h1>SPEAKERS</h1>
+			</header>
+			<div id="speakers-top">
+				<a href="#" class="top-btn"><img src="btv-assets/top.png" alt="Top" Title="Top" /> Top</a>
+			</div>
+			<div id="speaker-list">
+				<div class="speaker-info">
+					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<span class="speaker-name">JOHN SMITH</span> <br />
+					<span class="speaker-title">Ruby Expert</span>
+					<summary>
+						<p>
+							"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, 
+							egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, 
+							bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum." 
+						</p>
+					</summary>
+				</div>
+				<div class="speaker-info">
+					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<span class="speaker-name">JOHN SMITH</span> <br />
+					<span class="speaker-title">Ruby Expert</span>
+					<summary>
+						<p>
+							"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, 
+							egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, 
+							bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum." 
+						</p>
+					</summary>
+				</div>
+				<div class="speaker-info">
+					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<span class="speaker-name">JOHN SMITH</span> <br />
+					<span class="speaker-title">Ruby Expert</span>
+					<summary>
+						<p>
+							"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, 
+							egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, 
+							bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum." 
+						</p>
+					</summary>
+				</div>
+				<div class="speaker-info">
+					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<span class="speaker-name">JOHN SMITH</span> <br />
+					<span class="speaker-title">Ruby Expert</span>
+					<summary>
+						<p>
+							"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, 
+							egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, 
+							bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum." 
+						</p>
+					</summary>
+				</div>
+				<div class="speaker-info">
+					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<span class="speaker-name">JOHN SMITH</span> <br />
+					<span class="speaker-title">Ruby Expert</span>
+					<summary>
+						<p>
+							"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, 
+							egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, 
+							bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum." 
+						</p>
+					</summary>
+				</div>
+				<div class="speaker-info">
+					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<span class="speaker-name">JOHN SMITH</span> <br />
+					<span class="speaker-title">Ruby Expert</span>
+					<summary>
+						<p>
+							"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, 
+							egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, 
+							bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum." 
+						</p>
+					</summary>
+				</div>
+				<div class="speaker-info">
+					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<span class="speaker-name">JOHN SMITH</span> <br />
+					<span class="speaker-title">Ruby Expert</span>
+					<summary>
+						<p>
+							"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, 
+							egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, 
+							bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum." 
+						</p>
+					</summary>
+				</div>
+				<div class="speaker-info">
+					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<span class="speaker-name">JOHN SMITH</span> <br />
+					<span class="speaker-title">Ruby Expert</span>
+					<summary>
+						<p>
+							"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, 
+							egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, 
+							bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum." 
+						</p>
+					</summary>
+				</div>
+				<div class="speaker-info">
+					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<span class="speaker-name">JOHN SMITH</span> <br />
+					<span class="speaker-title">Ruby Expert</span>
+					<summary>
+						<p>
+							"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, 
+							egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, 
+							bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum." 
+						</p>
+					</summary>
+				</div>
+				<div class="speaker-info">
+					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<span class="speaker-name">JOHN SMITH</span> <br />
+					<span class="speaker-title">Ruby Expert</span>
+					<summary>
+						<p>
+							"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, 
+							egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, 
+							bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum." 
+						</p>
+					</summary>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="seperator"></div>
+	<!-- Schedule Section -->
+	<div id="schedule">
+		<div class="container">
+			<header>
+				<img class="section-header" src="btv-assets/clock.png" alt="Schedule" Title="Schedule" /> 
+				<h1>SCHEDULE</h1>
+			</header>
+			<div id="schedule-top">
+				<a href="#" class="top-btn"><img src="btv-assets/top.png" alt="Top" Title="Top" /> Top</a>
+			</div>
+			<table id="schedule-table">
+				<tr class="horizontal_dotted_line">
+					<td class="schedule-header">Date</td>
+					<td class="schedule-header">Time</td>
+					<td class="schedule-header">Event</td>
+					<td class="schedule-header">Location</td>
+					<td class="schedule-header">Details</td>
+				</tr>
+				<tr class="horizontal_dotted_line">
+					<td>
+						<span class="day-of-week">Fri</span> <br /> <span class="date">27</span>
+					</td>
+					<td>7:00 PM</td>
+					<td>Friday Night Meet-up</td>
+					<td>Farmhouse</td>
+					<td>
+						<a href="#" class="learn-more">Learn <br /> More</a>
+					</td>
+				</tr>
+				<tr class="horizontal_dotted_line">
+					<td>
+						<span class="day-of-week">Fri</span> <br /> <span class="date">27</span>
+					</td>
+					<td>7:00 PM</td>
+					<td>Friday Night Meet-up</td>
+					<td>Farmhouse</td>
+					<td>
+						<a href="#" class="learn-more">Learn <br /> More</a>
+					</td>
+				</tr>
+				<tr class="horizontal_dotted_line">
+					<td>
+						<span class="day-of-week">Fri</span> <br /> <span class="date">27</span>
+					</td>
+					<td>7:00 PM</td>
+					<td>Friday Night Meet-up</td>
+					<td>Farmhouse</td>
+					<td>
+						<a href="#" class="learn-more">Learn <br /> More</a>
+					</td>
+				</tr>
+				<tr class="horizontal_dotted_line">
+					<td>
+						<span class="day-of-week">Fri</span> <br /> <span class="date">27</span>
+					</td>
+					<td>7:00 PM</td>
+					<td>Friday Night Meet-up</td>
+					<td>Farmhouse</td>
+					<td>
+						<a href="#" class="learn-more">Learn <br /> More</a>
+					</td>
+				</tr>
+				<tr class="horizontal_dotted_line">
+					<td>
+						<span class="day-of-week">Fri</span> <br /> <span class="date">27</span>
+					</td>
+					<td>7:00 PM</td>
+					<td>Friday Night Meet-up</td>
+					<td>Farmhouse</td>
+					<td>
+						<a href="#" class="learn-more">Learn <br /> More</a>
+					</td>
+				</tr>
+				<tr class="horizontal_dotted_line">
+					<td>
+						<span class="day-of-week">Fri</span> <br /> <span class="date">27</span>
+					</td>
+					<td>7:00 PM</td>
+					<td>Friday Night Meet-up</td>
+					<td>Farmhouse</td>
+					<td>
+						<a href="#" class="learn-more">Learn <br /> More</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="seperator"></div>
+	<!-- Sponsors Section -->
+	<div id="sponsors">
+		<div class="container">
+			<header>
+				<img class="section-header" src="btv-assets/sponsors.png" alt="Sponsors" Title="Sponsors" /> 
+				<h1 id="sponsors-header">SPONSORS</h1>
+			</header>
+			<div id="sponsors-top">
+				<a href="#" class="top-btn"><img src="btv-assets/top.png" alt="Top" Title="Top" /> Top</a>
+			</div>
+			<div id="sponsors-coming-soon">
+				COMING SOON
+			</div>
+		</div>
+	</div>
+	<div class="seperator"></div>
+	<!-- Ticketes Section -->
+	<div id="tickets">
+		<div class="container">
+			<header>
+				<img class="section-header" src="btv-assets/tickets.png" alt="Tickets" Title="Tickets" /> 
+				<h1 id="tickets-header">TICKETS</h1>
+			</header>
+			<div id="tickets-top">
+				<a href="#" class="top-btn"><img src="btv-assets/top.png" alt="Top" Title="Top" /> Top</a>
+			</div>
+			<div id="tickets-coming-soon">
+				COMING SOON
+			</div>
+		</div>
+	</div>
+	<div class="seperator"></div>
+	<!-- BTV Section -->
+	<div id="btv">
+		<div class="container">
+			<header>
+				<img class="section-header" src="btv-assets/btv.png" alt="BTV" Title="BTV" /> 
+				<h1 id="btv-header">BTV</h1>
+				<div id="additional-links">  
+					<a href="#">LODGING</a>
+					<a href="#">DIRECTIONS</a>
+					<a href="#">PACKING</a>
+					<a href="#">FAMILY</a>
+					<a href="#">ATTRACTIONS</a>
+					<a href="#">DINING</a>
+				</div>
+				<div id="more-btn"><span id="btn-txt">MORE</span></div>
+			</header>
+			<div id="btv-top">
+				<a href="#" class="top-btn"><img src="btv-assets/top.png" alt="Top" Title="Top" /> Top</a>
+			</div>
+			<div id="btv-coming-soon">
+				COMING SOON
+			</div>
+		</div>
+	</div>
+	<div id="footer"></div>
   </body>
   <script type="text/javascript">
 

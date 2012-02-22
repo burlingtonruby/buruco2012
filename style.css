@@ -1,8 +1,15 @@
 body {
   margin:0;
+  margin-top:76px;
   background:#f2f2f2;
+ 
 }
 
+#footer {
+    display:block;
+    clear:both;
+    height:200px;
+ }
 div.nav-highlight {
   height:4px;
   background:#ff0000;
@@ -18,6 +25,44 @@ div.nav {
   background:-ms-linear-gradient(bottom, rgb(48,49,49) 21%, rgb(71,72,74) 61%);
   border-bottom:solid 1px #424040;
   height:70px;
+}
+
+.nav-container {
+    left: 0;
+    margin: auto 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+div.nav a {
+    color:#000;
+    font-size:16pt;
+    font-weight:bold;
+    text-decoration:none;
+    padding-left:15px;
+    font-family:"proxima-nova";
+    padding-right:15px;
+    text-align:center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+div.nav .links {
+    bottom: 5px;
+    left: 150px;
+    position: relative;
+}
+
+div.nav #link-selected {
+    height: 100px;
+    left: 100px;
+    position: absolute;
+    top: -8px;
+    width: 200px;
+    /* transition of red triangle when user selects different page */
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
 }
 
 div.nav img {
@@ -64,6 +109,285 @@ div.language {
 div.what {
   font-size:80px;
   line-height:70px;
+}
+
+/* Speakers Sections */
+#speakers {
+    background-image: url("btv-assets/speaker_bg.jpg");
+    background-repeat:repeat-x;
+}
+
+#speakers header h1 {
+    padding-left:80px;
+}
+
+div.speaker-info {
+    padding-top:10px;
+    padding-bottom:20px;
+}
+
+div.speaker-info img {
+    float:left;
+    padding-right: 15px;
+}
+
+#speaker-list {
+    -moz-column-count:2;
+    -webkit-column-count:2;
+    column-count:2;
+    -moz-column-gap:40px; 
+    -webkit-column-gap:40px;
+    column-gap:40px;
+}
+
+.speaker-name {
+    color:#5E5E5E;
+    font-size:18pt;
+    text-shadow:0px -1px 1px rgba(0,0,0,0.7);
+}
+
+.speaker-title {
+    color:#FF0000;
+    font-size:14pt;
+    font-style:italic;
+    font-weight:bold;
+}
+
+#speakers-top a {
+    bottom: 50px;
+    color: #000000;
+    float: right;
+    font-size: 16pt;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 0.5px 0.5px rgba(255, 255, 255, 0.7);
+}
+
+summary p {
+    color:#5E5E5E;
+    font-size:14pt;
+    height: 90px;
+    overflow:hidden;
+    width:250px;
+    text-overflow:ellipsis;
+    text-shadow:0px -0.5px 0.2px rgba(0,0,0,0.7);
+    white-space:wrap;
+    word-wrap:break-word;
+}
+
+
+/* Schedule Section */
+
+.date {
+    color:#FF0000;
+    font-size:20pt;
+    font-weight:bold;
+}
+
+.day-of-week {
+    color:#000;
+    font-size:14pt;
+    text-shadow:0px 1px 2px rgba(119,119,119,0.5);
+}
+
+.learn-more {
+    color:#FF0000;
+    font-size:16pt;
+    text-decoration:none;
+    text-shadow:0px 1px 2px rgba(251,145,144,0.5);
+}
+
+#schedule {
+    background-image:url("btv-assets/schedule_bg.jpg");
+    padding-bottom: 300px;
+    padding-top: 10px;
+}
+
+#schedule header h1 {
+    padding-left:70px;
+}
+
+#schedule-table {
+    height:500px;
+    padding-top:20px;
+    text-align:center;
+    width:1000px;
+}
+
+.schedule-header {
+    color:#D9D9D9;
+    font-family:sans-serif;
+    text-shadow:0px -0.2px 0.2px rgba(0,0,0,0.7);
+}
+
+tr.horizontal_dotted_line  td{
+    border-bottom: 3px dotted #D9D9D9;
+}
+
+#schedule-top a {
+    bottom: 50px;
+    color: #000000;
+    float: right;
+    font-size: 16pt;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 0.5px 0.5px rgba(255, 255, 255, 0.7);
+}
+
+
+/* Styles for Sponsors Section */
+#sponsors {
+    background-image:url("btv-assets/sponsors_bg.jpg");
+    padding-bottom:600px;
+    padding-top:10px;
+}
+
+#sponsors-coming-soon {
+    color:#666666;
+    font-size:25pt;
+    font-weight:bold;
+    left:400px;
+    top:200px;
+    position:relative;
+    text-shadow:0px 1px 1px rgba(103,103,103,0.7);
+}
+
+#sponsors-header {
+    color:#FFF;
+    padding-left:60px;
+}
+
+#sponsors-top a {
+    bottom: 50px;
+    color: #000000;
+    float: right;
+    font-size: 16pt;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 0.5px 0.5px rgba(255, 255, 255, 0.7);
+}
+
+
+/* Styles for Ticket section */
+#tickets {
+    background-image:url("btv-assets/tickets_bg.jpg");
+    padding-bottom:500px;
+    padding-top:10px;
+}
+
+#tickets-coming-soon {
+    color:#FFF;
+    font-size:25pt;
+    font-weight:bold;
+    left:400px;
+    top:200px;
+    position:relative;
+    text-shadow:0px 1px 1px rgba(217,217,217,0.7);
+}
+
+#tickets-header {
+    color:#FFF;
+    padding-left:50px;
+}
+
+#tickets-top a {
+    bottom: 50px;
+    color: #000000;
+    float: right;
+    font-size: 16pt;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 0.5px 0.5px rgba(255, 255, 255, 0.7);
+}
+
+
+/* Styling for BTV section */
+#additional-links {
+    background:rgba(0,0,0,0.5); 
+    border:1px solid rgba(0,0,0,0.7);
+    height:40px;
+    left: 325px;
+    position: absolute;
+    text-indent:15px;
+    top:4070px;
+    width:755px;
+    word-spacing: 50px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; 
+}
+
+#additional-links a{
+    color:#FFF;
+    font-weight:500;
+    position:relative;
+    text-align:center;
+    text-decoration:none;
+    top:10px;
+}
+
+#btv {
+    background-image:url("btv-assets/btv_bg.jpg");
+    padding-bottom:500px;
+    padding-top:10px;
+    -moz-box-shadow:0px 2px 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow:0px 2px 5px rgba(0,0,0,0.5);
+    box-shadow:0px 2px 5px rgba(0,0,0,0.5);
+}
+
+#btv-coming-soon {
+    color:#FFF;
+    font-size:25pt;
+    font-weight:bold;
+    left:400px;
+    top:200px;
+    position:relative;
+    text-shadow:0px 1px 1px rgba(207,207,207,0.7);
+}
+
+#btv-header {
+    color:#FFF;
+    padding-left:50px;
+    text-shadow:0px 1px 1px rgba(207,207,207,0.7);
+}
+
+#btv-top a {
+    bottom: 50px;
+    color: #000000;
+    float: right;
+    font-size: 16pt;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 0.5px 0.5px rgba(255, 255, 255, 0.7);
+}
+
+#more-btn { display:none; }
+
+/* General styling for each section */
+.container {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+header {
+    color:#FF0000;
+}
+
+.section-header {
+    float:left;
+}
+
+.seperator {
+    background-color:#FF0000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    height:5px;
+    position:absolute;
+    width:100%;
 }
 
 input[type="email"] {
@@ -115,3 +439,624 @@ input[type="submit"]:active {
 
 input::-webkit-input-placeholder { color:#fff; }
 input:-moz-placeholder { color:#fff; }
+
+
+/**************************
+Media Queries
+***************************/
+
+/*
+* Smaller laptops
+*/
+@media screen and (max-width:1300px) {
+    #additional-links { left: 275px; }
+}
+
+@media screen and (max-width:1200px) {
+    #additional-links { left: 225px; }
+}
+
+@media screen and (max-width:1100px) {
+    #additional-links { left: 200px;}
+}
+
+@media screen and (max-width:1050px) {
+    #additional-links { 
+        height:35px;
+        left: 220px;
+        top:4075px;
+        width: 650px;
+        word-spacing:30px;
+    }
+    
+    #additional-links a{
+        font-weight:300;
+        top:8px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #additional-links { 
+        width:560px;
+        top:4050px;        
+    }
+    
+    #additional-links a{ font-size:10pt; }
+    #btv-coming-soon { left:350px; }
+    #btv-top a{ right:100px; }
+    div.nav .links { left:75px;}
+    #schedule-table { width:900px; }
+    #speakers-top a{ right:90px; }
+    #schedule-top a{ right:90px; }
+    #sponsors-coming-soon { left:350px; }
+    #sponsors-top a{ right:90px; }
+    #tickets-coming-soon { left:350px; }
+    #tickets-top a{ right:90px; }
+}
+
+@media screen and (max-width:925px) {
+    #additional-links { 
+        left:200px; 
+        top:4010px;
+    }
+    
+    #btv-top a{ right:140px; }
+    div.nav .links { left:40px;}
+    #schedule-table { width:850px; }
+    #speakers-top a{ right:140px; }
+    #schedule-top a{ right:140px; }
+    #sponsors-top a{ right:140px; }
+    #tickets-top a{ right:140px; }
+    
+    .speaker-info summary p {
+        font-size:11pt;
+        width:230px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    #additional-links { 
+        left:180px; 
+        top:3970px;
+    }
+    #btv-coming-soon { left:325px; }
+    #btv-top a{ right:160px; }
+    div.nav .links { left:20px;}
+    #schedule-table { width:850px; }
+    #speakers-top a{ right:160px; }
+    #schedule-top a{ right:160px; }
+    #sponsors-coming-soon { left:325px; }
+    #sponsors-top a{ right:160px; }
+    #tickets-coming-soon { left:325px; }
+    #tickets-top a{ right:160px; }
+    
+    .speaker-info img {
+        height:100px;
+        width:100px;
+    }
+    .speaker-info summary p {
+        font-size:11pt;
+        width:200px;
+    }
+    #speaker-list {
+        -moz-column-gap:30px; 
+        -webkit-column-gap:30px;
+        column-gap:30px;
+    }
+    .speaker-name { font-size:16pt; }
+    .speaker-title { font-size:12pt; }
+}
+
+@media screen and (max-width:875px) {
+    #btv-top a{ right:190px; }
+    
+    div.nav .links { 
+        left:0px; 
+        font-size:14pt;
+    }
+    
+    #speakers-top a{ right:190px; }
+    #schedule-table { width:800px; }
+    #schedule-top a{ right:190px; }
+    #sponsors-top a{ right:190px; }
+    #tickets-top a{ right:190px; }
+    
+}
+
+@media screen and (max-width:875px) {
+    #additional-links { left:160px; }
+    #btv-coming-soon { left:300px; }
+    #btv-top a{ right:220px; }
+    #speakers-top a{ right:220px; }
+    #schedule-top a{ right:220px; }
+    #sponsors-coming-soon { left:300px; }
+    #sponsors-top a{ right:220px; }
+    #tickets-coming-soon { left:300px; }
+    #tickets-top a{ right:220px; }
+    
+    #speaker-list {
+        -moz-column-gap:10px; 
+        -webkit-column-gap:10px;
+        column-gap:10px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    #additional-links { 
+        font-size:8pt;
+        left:160px;
+        width:500px;
+        word-spacing:20px;
+    }
+    
+    #btv-coming-soon { left:275px; }
+    #btv-top a { right:240px; }
+    div.nav .links { font-size:12pt; }
+    #speakers-top a{ right:240px; }
+    #speaker-list { width:850px; }
+    #schedule-table { width: 750px; }
+    #schedule-top a{ right:240px; }
+    #sponsors-coming-soon { left:275px; }
+    #sponsors-top a{ right:240px; }
+    #tickets-coming-soon { left:275px; }
+    #tickets-top a{ right:240px; }
+    
+    #speaker-list {
+        -moz-column-gap:0px; 
+        -webkit-column-gap:0px;
+        column-gap:0px;
+    }
+    
+    summary p { width:180px; }
+}
+
+@media screen and (max-width:850px) {
+    #btv-top a { right:270px; }
+    #speakers-top a{ right:270px; }
+    #schedule-top a{ right:270px; }
+    #sponsors-top a{ right:270px; }
+    #tickets-top a{ right:270px; }
+}
+
+@media screen and (max-width:800px) {
+    #btv-top a { right:290px; }
+    #schedule-table { width: 700px; }
+    #speaker-list { width:800px; }
+    #speakers-top a{ right:290px; }
+    #schedule-top a{ right:290px; }
+    #sponsors-top a{ right:290px; }
+    #tickets-top a{ right:290px; }
+}
+
+@media screen and (max-width:750px) {
+    #additional-links {
+        left:80px;
+        top:4025px;
+        width:600px;
+        word-spacing:40px;
+    }
+    #btv-coming-soon{ left:250px; }
+    #btv-top a { right:310px; }
+    #buruco-logo {width:175px; }
+    
+    #schedule-table { 
+        padding-left:10px;
+        width: 650px; 
+    }
+    
+    #speaker-list { width:750px; }
+    #speakers-top a{ right:310px; }
+    #schedule-top a{ right:310px; }
+    #sponsors-coming-soon{ left:250px; }
+    #sponsors-top a{ right:310px; }
+    #tickets-coming-soon{ left:250px; }
+    #tickets-top a{ right:310px; }
+}
+
+@media screen and (max-width:725px) {
+    #additional-links { left:55px; }
+    #btv-top a { right:340px; }
+    #speaker-list { width:700px; }
+    #speakers-top a{ right:340px; }
+    #schedule-top a{ right:340px; }
+    #sponsors-top a{ right:340px; }
+    #tickets-top a{ right:340px; }
+}
+
+@media screen and (max-width:700px) {
+    #additional-links { 
+        left:40px; 
+        top:5200px;
+    }
+    #btv-coming-soon { left:200px; }
+    #btv-top a { right:360px; }
+    #buruco-logo { width:150px; }
+    #speakers-top a{ right:360px; }
+    #schedule-top a{ right:360px; }
+    #sponsors-coming-soon { left:200px; }
+    #sponsors-top a{ right:360px; }
+    #tickets-coming-soon { left:200px; }
+    #tickets-top a{ right:360px; }
+    
+    
+    .speaker-info img {
+        height:150px;
+        width:150px;
+    }
+    .speaker-info summary p {
+        font-size: 12pt;
+        height: 100px;
+        width: 275px;
+    }
+    #speaker-list {
+        position:relative;
+        margin:0 auto;
+        -moz-column-count:1;
+        -webkit-column-count:1;
+        column-count:1;
+    }
+    .speaker-name {
+        font-size:18pt;
+    }
+    .speaker-title {
+        font-size:14pt;
+    }
+}
+
+@media screen and (max-width:675px) {
+    #additional-links { left:20px; }
+    #btv-top a { right:390px; }
+    #buruco-logo { width:125px; }
+    #schedule-table { width:600px; }
+    #speakers-top a{ right:390px; }
+    #schedule-top a{ right:390px; }
+    #sponsors-top a{ right:390px; }
+    #tickets-top a{ right:390px; }
+}
+
+@media screen and (max-width:650px) {
+    #additional-links { left:15px; }
+    #btv-top a { right:410px; }
+    
+    div.nav .links { 
+        padding-left:10px; 
+        padding-right:10px;
+    }
+    
+    #schedule-table { width:575px; }
+    #speakers-top a{ right:410px; }
+    #schedule-top a{ right:410px; }
+    #sponsors-top a{ right:410px; }
+    #tickets-top a{ right:410px; }
+}
+
+@media screen and (max-width:625px) {
+    #additional-links {
+        width:550px;
+        word-spacing:30px;
+    }
+    
+    #btv-coming-soon { left:150px; }
+    #btv-top a { right:430px; }
+    #speakers-top a{ right:430px; }
+    #schedule-top a{ right:430px; }
+    #sponsors-coming-soon { left:150px; }
+    #sponsors-top a{ right:430px; }
+    #tickets-coming-soon { left:150px; }
+    #tickets-top a{ right:430px; }
+}
+
+@media screen and (max-width:600px) {
+    #btv-top a { right:450px; }
+    div.nav .links { padding-right:5px; }
+    #schedule-table { width:550px; }
+    #speakers-top a{ right:450px; }
+    #schedule-top a{ right:450px; }
+    #speaker-list { right:50px; }
+    #sponsors-top a{ right:450px; }
+    #tickets-top a{ right:450px; }
+}
+
+@media screen and (max-width:575px) {
+    #btv-top a { right:470px; }
+    
+    div.nav .links { 
+        padding-left:5px;
+        padding-right:2px; 
+    }
+    
+    #schedule-table { width:500px; }
+    #speakers-top a{ right:470px; }
+    #schedule-top a{ right:470px; }
+    #speaker-list { right:70px; }
+    #sponsors-top a{ right:470px; }
+    #tickets-top a{ right:470px; }
+
+}
+
+@media screen and (max-width:550px) {
+    #additional-links {
+        height: 100px;
+        left: 34px;
+        line-height: 45px;
+        text-align: center;
+        text-indent: 0;
+        top: 4525px;
+        width: 428px;
+        word-spacing: 37px;
+    }
+    
+    #additional-links a{ 
+        border-bottom:1px solid #FFF;
+        font-size:12pt; 
+    }
+    
+    #btv-coming-soon { left:120px; }
+    #btv header h1 { padding-left:0px; }
+    #btv-top a { display:none; }
+
+    #buruco-logo { 
+        height:30px;
+        left:150px;
+        position:relative;
+        width:206px;
+    }
+    
+    .date { font-size: 16pt; }
+    .day-of-week { font-size:12pt; }
+    div.intro-wrapper { display:none; }
+    header img { display:none; }
+    .learn-more { font-size:14pt; }
+    #nav2 .nav{ display:none; }
+    .twelve a{ display:none; }
+    #link-selected { display:none; }
+    #schedule header h1 { padding-left:0px; }
+    
+    .speaker-info img {
+        height:100px;
+        position:relative;
+        top:20px;
+        width:100px;
+    }
+    
+    #speakers header h1 { padding-left:0px; }
+    .speaker-info summary p { font-size:12pt; }
+    #speaker-list { right:100px; }
+    .speaker-name { font-size:16pt; }
+    .speaker-title { font-size:12pt; }
+    #speakers-top a{ display:none; }
+    #schedule-table { width:450px; }
+    #schedule-table td{ font-size:11pt; }
+    #schedule-top a{ display:none; }
+    #sponsors-coming-soon { left:120px; }
+    #sponsors header h1 { padding-left:0px; }
+    #sponsors-top a{ display:none; }
+    #tickets-coming-soon { left:120px; }
+    #tickets header h1 { padding-left:0px; }
+    #tickets-top a{ display:none; }
+}
+
+@media screen and (max-width:525px) {
+    #additional-links { left:20px; }
+    .learn-more { font-size:12pt; }
+    #schedule-table { width:425px; }
+    #speaker-list { right:120px; }
+}
+
+@media screen and (max-width:500px) {
+    #additional-links { 
+        left:10px; 
+        width:410px;
+        word-spacing:30px;
+    }
+    #btv-coming-soon { font-size:20pt; }
+    #buruco-logo { left:120px; }
+    .container { width:100%; }
+    header h1 { text-align:center; }
+    .speaker-info img { display:none; }
+    #speaker-list { right:0px; }
+    #sponsors-coming-soon { font-size:20pt; }
+    #tickets-coming-soon { font-size:20pt; }
+}
+
+@media screen and (max-width:475px) {
+    #additional-links {
+        height:300px; 
+        left:-150px;
+        text-align:left;
+        top: 4465px;
+        width:125px; 
+        -moz-transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+    }
+    #additional-links a { 
+        border:none;
+        left:5px;
+    }
+    #btn-txt {
+        position:relative;
+        top:12px;
+    }
+    #buruco-logo { left:110px; }
+    #more-btn {
+        background-image: -webkit-gradient(radial, center center, 0, center center, 200, from(#454647), to(#372F33));    
+        background-image: -moz-radial-gradient(center, circle closest-corner, #454647 0%, #372F33 100%);
+        color:#FFF;
+        display:block;
+        font-size:14pt;
+        font-weight:bold;
+        height:50px;
+        position:relative;
+        right:20px;
+        text-align:center;
+        text-shadow:0px -1px 1px #CBCBCB;
+        width:100px;
+        
+        /* CSS3 transitions */
+        -moz-transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+        /* Creates the button; generated from: http://css3generator.com/ */
+        -moz-border-radius-topright: 100px;
+        -moz-border-radius-bottomright: 100px;
+        -moz-border-radius: 0px 100px 100px 0px;
+        -webkit-border-radius-topright: 100px;
+        -webkit-border-radius-bottomright: 100px;
+        -webkit-border-radius: 0px 100px 100px 0px;
+        border-radius: px 100px 100px px; 
+        /* Box shadow */
+        -moz-box-shadow:5px 3px 10px rgba(0,0,0,0.7);
+        -webkit-box-shadow:5px 3px 10px rgba(0,0,0,0.7);
+        box-shadow:5px 3px 10px rgba(0,0,0,0.7);
+    }
+    #schedule-table { width:400px; }
+}
+
+@media screen and (max-width:450px) {
+    #btv-coming-soon {
+        font-size: 16pt;
+        left:70px;
+        top:250px;
+    }
+    #btv header h1 { left:125px; }
+    #buruco-logo { left:40px; }
+    #container { padding-left:10px;}
+    .date { font-size:12pt; }
+    .day-of-week { font-size:10pt; }
+    
+    header h1 { 
+        text-align:left; 
+        position:relative; 
+        left:70px;
+    }
+    
+    .learn-more { font-size:11pt; }
+    #schedule-table td { font-size:10pt; padding-right:7px; }
+    #schedule-table { 
+        width:265px; 
+        padding-left:0px; 
+    }
+    #sponsors-coming-soon {
+        font-size: 16pt;
+        left:70px;
+    }
+    #tickets-coming-soon {
+        font-size: 16pt;
+        left:70px;
+    }
+    #tickets header h1 { left:80px; }
+}
+
+/*
+* iPhone Styles
+*/
+
+@media screen and (max-device-width:320px) {
+    #additional-links {
+        height:75px; 
+        left:50px;
+        text-align:left;
+        text-indent:0px;
+        top: 6670px;
+        width:920px; 
+        -moz-transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+    }
+    #additional-links a { 
+        border:none;
+        font-size:18pt;
+        left:20px;
+        top:25px;
+    }
+    #btv { 
+        padding-top:10px; 
+        width:105%;
+    }
+    #btv header h1 {
+        left:-50px;
+        position:relative;
+        right:0px;
+    }
+    #btv-coming-soon {
+        font-size: 36pt;
+        left:0px;
+        text-align:center;
+        top:250px;
+    }
+    .date { font-size:30pt; }
+    .day-of-week { font-size:24pt; }
+    div.intro-wrapper { display:none; }
+    #footer { height:10px; }
+    header h1 {
+        font-size:42pt;
+        position: relative;
+        left:0px;
+        right:0px;
+        text-align: center;
+    }
+    header img { display:none; }
+    .learn-more { font-size:24pt; }
+    #link-selected { display:none; }
+    .links { display:none; }
+    #more-btn { display:none; }
+    #nav2 .nav { display:none; }
+    #schedule { 
+        padding-top:2px; 
+        width:105%; 
+    }
+    #schedule header h1 { padding-left:0px; }
+    #schedule table {
+        margin:0 auto;
+        padding-left:10px;
+        position:relative;
+        right:20px;
+        width:850px;
+    }
+    #schedule-table td {
+        font-size: 20pt;
+        padding-right: 7px;
+    }
+    .seperator { width:105%; }
+    #speakers header h1 { padding-left:0px; }
+    
+    #speaker-list {
+        right:0px;
+        margin: 0 auto;
+        position: relative;
+        width:700px;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+    .speaker-info img { display: none; }
+    .speaker-info summary p { width:750px; height:190px;}
+    .speaker-name { font-size:36pt; }
+    .speaker-title { font-size:24pt; }
+    summary p { font-size:24pt; }
+    #sponsors { 
+        padding-top:2px; 
+        width:105%; 
+    }
+    #sponsors-coming-soon {
+        font-size: 36pt;
+        left:0px;
+        text-align:center;
+    }
+    #sponsors header h1 { padding-left: 0; }
+    #tickets { 
+        padding-bottom:480px; 
+        padding-top:2px; 
+        width:105%; 
+    }
+    #tickets-coming-soon {
+        font-size: 36pt;
+        left:0px;
+        text-align:center;
+    }
+    .top-btn { display:none; }
+    #tickets header h1 { 
+        position:relative; 
+        left:-35px; 
+        right:0px; 
+    }
+}
+

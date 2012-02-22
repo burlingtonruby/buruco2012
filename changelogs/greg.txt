@@ -1,0 +1,162 @@
+Feb-02-2012-14:06
+
+	Building out html5/css3 from psd file
+	Added the hrefs to the top of the nav bar
+	Added CSS3 styles for links
+	Added red triangle to be used for the selected link
+	
+Feb-02-2012-15:42
+
+	The red triangle now hovers over the selected link in the top nav bar
+	
+Feb-02-2012-17:27
+
+	Worked on the Speakers section
+	Added the header of the section
+	Worked on the 2 column list of speakers
+	Worked on the line that divides each section
+	
+Feb-08-2012-9:36
+
+		Working on getting the red triangle on the nav bar to slide when changing pages
+		
+Feb-08-2012-11:04
+
+		Worked on the Schedule section, having issues with the dotted line seperator,
+		I am using bottom-border to created dotted line, but it's only working in FireFox,
+		in chrome the dotted lines don't stretch all the way.
+		Still need to add the styles for the schedule
+		
+Feb-08-2012-12:27
+
+	Changed the nav bar so it is fixed while the user is scrolling, clicking on the links
+	now makes the page slide down to the section clicked on, only issue is that the nav
+	bar offset needs to be fixed a bit
+	
+Feb-08-2012-13:30
+
+	I added some more styles to the schedule, I'm having some issues with the CSS3 multiple
+	column layout and seperating each column with a dotted line.  In FirFox it works okay,
+	but some of the columns aren't aligned the same; and in Chrome and Safari the columns
+	are really funky looking
+
+Feb-10-2012-9:49
+
+	Updated the folder 'btv assets' to btv-assets
+	Deleted btv assets
+	Updated id reference that was using javascript to jQuery
+	
+Feb-2-10-2012-11:16
+
+	Worked on styles for the Schedule section
+	Scraped the CSS3 multiple columns; wasn't working, and used tables instead
+	I made the fonts as close as I could to the comp, but they will probably have to
+	be adjusted once it is on the site that allows me to use the fonts from TypeKit fonts
+	
+Feb-2-2012-11:45
+
+	I added the Sponsors section, and it is complete except for the fonts
+	Tristan gave me the fonts that will be used, but I forget which fonts
+	are applied to each section, so I'll have to check with him
+	
+Feb-2-2012-12:00
+
+	I added the Tickets section
+	Also I noticed that, for example, if you click on the tickets link, the red
+	triangle is over the Tickets link, but if you click the Top link to go to the
+	top of the page, the red triangle remains over the Tickets link, which to me
+	didn't make sense, so I made the red triangle hover over the buruco logo when
+	the user clicks on any of the Top links
+	
+Feb-2-2012-13:01
+
+	I added the BTV section with all the styles
+	
+Feb-2-2012-13:11
+	
+	Removed a few extra break tags above the Speakers section.
+	Changed the position styles of the additional-links div
+	
+Feb-13-2012-16:18
+
+	Worked on media queries
+	Right now I am focusing on smaller laptop screen sizes / iPad
+	Everything is adjuste between the following dimensions (width): 750 - 1300px
+	The only thing that still needs to be adjusted up to this point it the red
+	triangle, because I changed the position and font-size of the nav bar links,
+	I think I might use javascript to detect the screen size, and based on that
+	change the position of the red triangle (adding on to my switch statement).
+	If anyone can think of a more efficient way of doing this, let me know :)
+	
+Feb-13-2012-17:09
+
+	Did some more work on the media queries
+	Additional screen sizes between 725px and 625px (width) are now supported
+	Some issues that are starting to come up since I am near the size of a mobile
+	device, is the head nav bar, I can't keep lowering the font-size and moving
+	the links to the left, because if they become too small it will become difficult
+	for the user to click on them, I was thinking of moving them down below the buruco
+	logo, but that would mean I would have to get rid of the sliding triangle, because 
+	then it would look really weird.  Let me know what you guys think
+	
+Feb-15-2012-11:06
+
+	Worked more on the media queries
+	The supported screen size now goes down to 500px
+	Some changes I made in order to support this small of a screen size include:
+		- Removing the navigation links at the top
+		- Removed the red sliding triangle
+		- Removed the image at the top
+		- Removed the images for the Speakers
+		- At the bottom, in the BTV section, made links onto 2 lines instead of 1
+		
+Feb-15-2012-13:10
+
+	Media queries now support down to a 450px screen 
+	Updated the BTV section:
+		- The links in this section are now off the screen (location, lodging, ect..)
+		- Added a 'more' button
+		- When the user clicks on the more button the links slide onto the left side of the screen
+		
+Feb-17-2012-10:26
+
+	Updated styles for iPhone sized version of site
+	Adjusted the logo
+	Fixed the schedule table so it doesn't look so squished as before
+	In the BTV section: made a simple More/Less button for the extra links (lodging ect..)
+	
+Feb-17-2012-12:15
+	
+	Began working on the media queries specifically for mobile devices
+	It wasn't as easy as I expected, even though I altered the styles to 
+	support the screen size of the iPhone for a computer browser, these
+	styles looked completely different when on an actual mobile browser.
+	I am almost done adjusting the styles for the iPhone
+	
+Feb-17-2012-12:35
+
+	Finished up the media queries for the iPhone mobile browser.
+	Let me know if anything needs to be changed
+	
+Feb-17-2012-13:43
+
+	Began working on fixing the red sliding triangle for smaller screens.
+	I think Sean's solution is best, I tried changing the position based on
+	when the screen size is changed (also it checks the screen size when the page first loads),
+	this method works, but I feel like Sean's method will reduce the amount of code that is needed.
+	
+Feb-20-2012-15:30
+	
+	Finished working on the sliding red triangle.
+	It's position now is correctly adjusted based on
+	the size of the browser window. Hooray!
+	
+Feb-22-2012-9:57
+
+	There are a few issues with the position of the red sliding triange when the screen
+	size was changed in Safari and Chrome, began fixing those issues.
+    
+Feb-22-2012-10:37
+
+    Changed hard tabs to soft tabs.
+    Deleted test.html
