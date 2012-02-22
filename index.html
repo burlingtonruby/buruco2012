@@ -10,6 +10,7 @@
 	<script src="jquery.smooth-scroll.js" type="text/javascript" charset="utf-8"></script>
 
     <script src="application.js" type="text/javascript" charset="utf-8"></script>
+    <script src="speaker_bio_script.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="http://use.typekit.com/wlp2wwl.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
@@ -53,10 +54,10 @@
 	<div id="speakers" name="speakers">
 		<div class="container">
 			<header>
-				<!-- <img class="section-header" src="btv-assets/speakers.png" alt="Speakers" Title="Speakers" />  commented out for testing -->
-                <img class="section-header" src="btv-assets/arrow.png" alt="Speakers" Title="Speakers" />
-				<!-- <h1>SPEAKERS</h1> commented out for testing -->
-                <h1>BACK TO SPEAKERS</h1>
+				<img class="section-header" src="btv-assets/speakers.png" alt="Speakers" Title="Speakers" />
+                <!-- <img class="section-header" src="btv-assets/arrow.png" alt="Back To Speakers" Title="Back To Speakers" />  commented out for testing -->
+				 <h1>SPEAKERS</h1> 
+                <!--<h1>BACK TO SPEAKERS</h1> commented out for testing -->
 			</header>
 			<div id="speakers-top">
 				<a href="#" class="top-btn"><img src="btv-assets/top.png" alt="Top" Title="Top" /> Top</a>
@@ -64,7 +65,7 @@
             <!-- This is just for testing the layout of how the individual speaker bios, later this will be 
                   automatically generated using jQuery -->
             <div class="speaker-bio">
-                <div class="img-container">
+                <!-- <div class="img-container">
                     <img src="btv-assets/john-smith.jpg" width="300" height="300" alt="John Smith" Title="John Smith" />
                 </div>
                 <figure>
@@ -84,11 +85,11 @@
                                 qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
                             </p>
                         </summary>
-                </figure>
-            </div>
+                </figure> -->
+            </div> 
 			<div id="speaker-list">
 				<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<img src="btv-assets/john-smith.jpg" class="speaker-img" height="150" width="150" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>
@@ -100,7 +101,7 @@
 					</summary>
 				</div>
 				<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<img src="btv-assets/john-smith.jpg" class="speaker-img" height="150" width="150" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>
@@ -112,7 +113,7 @@
 					</summary>
 				</div>
 				<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<img src="btv-assets/john-smith.jpg" class="speaker-img" height="150" width="150" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>
@@ -124,7 +125,7 @@
 					</summary>
 				</div>
 				<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<img src="btv-assets/john-smith.jpg" class="speaker-img" height="150" width="150" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>
@@ -136,7 +137,7 @@
 					</summary>
 				</div>
 				<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<img src="btv-assets/john-smith.jpg" class="speaker-img" height="150" width="150" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>
@@ -148,7 +149,7 @@
 					</summary>
 				</div>
 				<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<img src="btv-assets/john-smith.jpg" class="speaker-img" height="150" width="150" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>
@@ -160,7 +161,7 @@
 					</summary>
 				</div>
 				<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<img src="btv-assets/john-smith.jpg" class="speaker-img" height="150" width="150" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>
@@ -172,7 +173,7 @@
 					</summary>
 				</div>
 				<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<img src="btv-assets/john-smith.jpg" class="speaker-img" height="150" width="150" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>
@@ -184,7 +185,7 @@
 					</summary>
 				</div>
 				<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<img src="btv-assets/john-smith.jpg" class="speaker-img" height="150" width="150" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>
@@ -196,7 +197,7 @@
 					</summary>
 				</div>
 				<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<img src="btv-assets/john-smith.jpg" class="speaker-img" height="150" width="150" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>

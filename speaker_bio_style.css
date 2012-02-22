@@ -6,20 +6,20 @@
 * Change speakers section to not visible for testing
 * of individual speaker bio section. Also swap image
 * and title of section, just for initial testing.
-*/
+
 #speaker-list {
     display:none;
-}
+}*/
 
 /* 
 * Adding padding to #speakers element, because with the float
 * style in the .img-container, it causes the speakers section img
 * to overlap into the schedule section. This will be added programatically
 later, this is just for initial testing.
-*/
+
 #speakers {
     padding-bottom:600px;
-}
+}*/
 
 figure {
     bottom: 335px;
@@ -45,8 +45,6 @@ figure summary p {
     word-wrap:normal;
 }
 
-
-
 .img-container {
     background-color:#FFF;
     border:2px solid #EBEBEB;
@@ -64,3 +62,7 @@ figure summary p {
     position:relative;
     top:10px;
 }
+
+.speaker-bio {
+    display:none;
+}   

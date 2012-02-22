@@ -18,3 +18,14 @@ Feb-22-2012-12:10
     I also created a separate css file specifically for the individual
     speaker bios, I figured this was best, so we don't have just 1
     giant css file.
+    
+Feb-22-2012-13:00
+
+    I decidied to use a fadeToggle() in jQuery to transition between
+    the list of speakers, and the individual speaker bios.
+    I've made it so when you click on a speaker's name, it stores
+    their information. Also the Speaker Section Image and Title
+    fade out, and are replaced by the new image and title for going
+    back to the speakers list. I also created a separate js file 
+    specifically for doing this, just to make it easier to read; as
+    opposed to putting all the js in one file.
