@@ -815,6 +815,7 @@ Media Queries
     .twelve a{ display:none; }
     #link-selected { display:none; }
     #schedule header h1 { padding-left:0px; }
+    #speakers header img { display:none; }
     
     .speaker-info img {
         height:100px;

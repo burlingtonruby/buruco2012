@@ -45,7 +45,17 @@ speaker bios
         //information based on which speaker was clicked.
         //Also add the new Speaker Section Title and Image
         $("#speaker-list").fadeToggle("fast","linear",function() {     
-            $(".back-speakers").fadeToggle("fast","linear");
+            //If browser window is 550px or less, then don't display
+            //the 'Back To Speakers' Image
+            if($(window).width() <= 551) {
+                $(".speaker-header").css("display","none");
+                $("#back-txt").fadeToggle("fast","linear");
+            }
+            //Otherwise display both text and image
+            else {
+                $(".back-speakers").fadeToggle("fast","linear");
+            }
+        
             $("#speaker-bio").css("display","block");
             $("#speaker-bio").append("<div id='img-container'></div>");
             $("#img-container").append("<img src='"+speakerImg+"' width='300' height='300' alt='John Smith' Title='John Smith' />");
@@ -67,16 +77,23 @@ speaker bios
     });
     
     //Fade out the individual speaker's bio, and bring back the list of speakers
-    $(".back-speakers").click(function() {
-        //Fade out the Speaker Section title and image 
-        $(".back-speakers").fadeToggle("fast","linear");
-          
+    $(".back-speakers").click(function() {          
         //Fade out individual bio, and bring back list
         $("#speaker-bio").fadeToggle("fast","linear",function() {
              
             $("#speaker-bio").html("");
-            //Fade in the Speaker Section title and image 
-            $(".speaker-header").fadeToggle("fast","linear");
+            
+            if($(window).width() <= 551) {
+                $(".speaker-header").css("display","none");
+                $("#back-txt").fadeToggle("fast","linear");
+                $("#speaker-txt").fadeToggle("fast","linear");
+            }
+            else {
+                $(".back-speakers").css("display","none");
+                //Fade in the Speaker Section title and image 
+                $(".speaker-header").fadeToggle("fast","linear");
+            }
+            
             $("#speaker-list").css("display","block");
             $("#speakers").css("padding-bottom","0px");
             //Change back top position of addional-links div
