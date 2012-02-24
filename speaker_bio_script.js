@@ -13,7 +13,6 @@ speaker bios
     var speakerName;    //Stores the speaker's name
     var speakerTitle;   //Stores the speaker's title, i.e. Ruby Expert
     var speakerBio;     //Stores the bio summary of the speaker
-    var seeFullBio=false;     //If true, it means that an individual speaker bio is visible
 
     //Changes cursor to a pointer when the user hovers
     //over the speaker name
@@ -28,17 +27,25 @@ speaker bios
         speakerName = $(this).html();
         speakerTitle = $(this).next().next().html();
         speakerBio = $(this).next().next().next().html();
-        seeFullBio = true;
+        
+        /* 
+        * Smooth scrolling so if the user clicks on a speaker further
+        * down on the list, is scrolls up so they can see the full bio.
+        * https://github.com/kswedberg/jquery-smooth-scroll
+        */
+        $.smoothScroll({
+            scrollTarget: $("#speaker-list"),
+            offset: -140
+        });
         
         //Fade out the Speaker Section title and image 
-        $("#speakers header img, #speakers header h1").fadeToggle("slow","linear");
+        $(".speaker-header").fadeToggle("fast","linear");
         
         //Fade out the speaker list, and append the speaker's
         //information based on which speaker was clicked.
-        //Also add the new Speaker Section title and image
-        $("#speaker-list").fadeToggle("slow","linear",function() {
-            $("#speakers header").append("<img class='section-header' src='btv-assets/arrow.png' alt='Back To Speakers' Title='Back To Speakers' />");
-            $("#speakers header").append("<h1>BACK TO SPEAKERS</h1>");
+        //Also add the new Speaker Section Title and Image
+        $("#speaker-list").fadeToggle("fast","linear",function() {     
+            $(".back-speakers").fadeToggle("fast","linear");
             $("#speaker-bio").css("display","block");
             $("#speaker-bio").append("<div id='img-container'></div>");
             $("#img-container").append("<img src='"+speakerImg+"' width='300' height='300' alt='John Smith' Title='John Smith' />");
@@ -46,31 +53,35 @@ speaker bios
             $("figure").append("<span class='speaker-name'>"+speakerName+"</span> <br />");
             $("figure").append("<span class='speaker-title'>"+speakerTitle+"</span>");
             $("figure").append("<summary></summary>");
-            $("summary").append(speakerBio);
+            $("figure summary").append(speakerBio);
             $("#speakers").css("padding-bottom","600px");
+            //The additional-links div, moves down the screen when the individual
+            //speaker bio is displayed, so let's move it back up
+            $("#additional-links").css("top","3630px");
         });
     });
     
     //Change the cursor to a pointer, when hovering over the back arrow or text (BACK TO SPEAKERS)
-    $("#speakers header").hover(function() {
-        if(seeFullBio) {
-            $(this).css("cursor","pointer");
-        }
+    $(".back-speakers").hover(function() {
+        $(this).css("cursor","pointer");
     });
     
     //Fade out the individual speaker's bio, and bring back the list of speakers
-    $("#speakers header").click(function() {
-        if(seeFullBio) {
-            //Fade out the Speaker Section title and image 
-            $("#speakers header img, #speakers header h1").fadeToggle("slow","linear");
-            
-            //Fade out individual bio, and bring back list
-            $("#speaker-bio").fadeToggle("slow","linear",function() {
-                $("#speaker-bio").html("");
-                $("#speaker-list").css("display","block");
-                $("#speakers").css("padding-bottom","0px");
-            });
-        }
+    $(".back-speakers").click(function() {
+        //Fade out the Speaker Section title and image 
+        $(".back-speakers").fadeToggle("fast","linear");
+          
+        //Fade out individual bio, and bring back list
+        $("#speaker-bio").fadeToggle("fast","linear",function() {
+             
+            $("#speaker-bio").html("");
+            //Fade in the Speaker Section title and image 
+            $(".speaker-header").fadeToggle("fast","linear");
+            $("#speaker-list").css("display","block");
+            $("#speakers").css("padding-bottom","0px");
+            //Change back top position of addional-links div
+            $("#additional-links").css("top","4070px");
+        });
     });
 
 });

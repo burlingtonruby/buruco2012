@@ -112,6 +112,10 @@ div.what {
 }
 
 /* Speakers Sections */
+.back-speakers {
+    display:none;
+}
+
 #speakers {
     background-image: url("btv-assets/speaker_bg.jpg");
     background-repeat:repeat-x;

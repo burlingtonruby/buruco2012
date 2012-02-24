@@ -36,3 +36,9 @@ Feb-22-2012-13:34
     in the individual speaker's bio. Then when you click on the BACK
     TO SPEAKERS text or image, to does the reverse. Some of the styles
     get messed up, so I still need to fix those.
+    
+Feb-24-2012-10:14
+
+    Finished on the getting the individual speaker's bio to appear when clicking
+    on a specific speaker, and then back agaoin when clicking on the 'Back to Speakers'
+    Image or Text.  Now I just need to add the media queries for this section.
