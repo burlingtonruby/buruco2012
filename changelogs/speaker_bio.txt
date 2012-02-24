@@ -47,3 +47,10 @@ Feb-24-2012-11:58
 
     Finished the media queries for the individual speaker bio section, with the
     exception of mobile devices
+    
+Feb-24-2012-13:33
+
+    I realized that the additional-links div was starting to cause problems when
+    switching between the list of speakers, and the individual speaker bio. It
+    was because the position was absolute. Sean helped me fix it. There are only
+    a few more media queries for the aditional-links div that I need to fix.

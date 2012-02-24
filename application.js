@@ -325,13 +325,13 @@ $(document).ready(function() {
 	});
 	$("#more-btn").toggle(function() {
 		$("#btn-txt").html("LESS");
-		$(this).css("left","120px");
+		$(this).css("left","105px");
 		$(this).css("text-align","center");
-		$("#additional-links").css("left","10px");
+		$("#additional-links").css("left","-40px");
 	}, function() {
 		$("#btn-txt").html("MORE");
 		$(this).css("left","-20px");
-		$("#additional-links").css("left","-150px");
+		$("#additional-links").css("left","-180px");
 	});
 	
 	/* 

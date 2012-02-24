@@ -67,7 +67,7 @@ speaker bios
             $("#speakers").css("padding-bottom","600px");
             //The additional-links div, moves down the screen when the individual
             //speaker bio is displayed, so let's move it back up
-            $("#additional-links").css("top","3630px");
+            //$("#additional-links").css("top","3630px");
         });
     });
     
@@ -97,7 +97,7 @@ speaker bios
             $("#speaker-list").css("display","block");
             $("#speakers").css("padding-bottom","0px");
             //Change back top position of addional-links div
-            $("#additional-links").css("top","4070px");
+            //$("#additional-links").css("top","4070px");
         });
     });
 
