@@ -315,10 +315,10 @@ tr.horizontal_dotted_line  td{
     border: 1px solid rgba(0, 0, 0, 0.7);
     border-radius: 10px 10px 10px 10px;
     height: 42px;
-    left: 150px;
+    left: 142px;
     position: relative;
     top: -5px;
-    width: 760px;
+    width: 763px;
     word-spacing: 50px;
 }
 
@@ -485,7 +485,7 @@ Media Queries
 @media screen and (max-width:1000px) {
     #additional-links { 
         left:133px;
-        width:670px;       
+        width:686px;       
     }
     
     #additional-links a{ font-size:10pt; }
@@ -519,8 +519,8 @@ Media Queries
 
 @media screen and (max-width:900px) {
     #additional-links { 
-        left:145px;
-        width:600px;
+        left:132px;
+        width:625px;
         word-spacing:38px;
     }
     #btv-coming-soon { left:325px; }
@@ -570,7 +570,7 @@ Media Queries
 @media screen and (max-width:875px) {
     #additional-links { 
         width: 557px;
-        word-spacing: 30px;
+        word-spacing: 24px;
     }
     #btv-coming-soon { left:300px; }
     #btv-top a{ right:220px; }
@@ -591,9 +591,9 @@ Media Queries
 @media screen and (max-width:850px) {
     #additional-links { 
         font-size: 8pt;
-        left: 132px;
-        width: 517px;
-        word-spacing: 23px;
+        left: 125px;
+        width: 535px;
+        word-spacing: 21px;
     }
     
     #btv-coming-soon { left:275px; }
@@ -637,10 +637,10 @@ Media Queries
 
 @media screen and (max-width:750px) {
     #additional-links {
-            left: 60px;
+        left: 40px;
         top: 42px;
-        width: 607px;
-        word-spacing: 40px;
+        width: 615px;
+        word-spacing: 37px;
     }
     #btv-coming-soon{ left:250px; }
     #btv-top a { right:310px; }
