@@ -175,120 +175,120 @@ $(document).ready(function() {
 				}
 				break;
 				
-			case "Sponsors":
+			case "BTV":
 				if(windowSize <= 558) { 
-					$("#link-selected").css("left","348px");
+					$("#link-selected").css("left","323px");
 				}
 				else if(windowSize <= 583) { 
-					$("#link-selected").css("left","368px");
+					$("#link-selected").css("left","342px");
 				}
 				else if(windowSize <= 633) { 
-					$("#link-selected").css("left","378px");
+					$("#link-selected").css("left","355px");
 				}
 				else if(windowSize <= 658) { 
-					$("#link-selected").css("left","405px");
+					$("#link-selected").css("left","378px");
 				}
 				else if(windowSize <= 683) { 
-					$("#link-selected").css("left","428px");
+					$("#link-selected").css("left","404px");
 				}
 				else if(windowSize <= 733) { 
-					$("#link-selected").css("left","455px");
+					$("#link-selected").css("left","428px");
 				}
 				else if(windowSize <= 833) { 
-					$("#link-selected").css("left","485px");
+					$("#link-selected").css("left","460px");
 				}
 				else if(windowSize <= 858) { 
-					$("#link-selected").css("left","530px");
+					$("#link-selected").css("left","492px");
 				}
 				else if(windowSize <= 883) { 
-					$("#link-selected").css("left","575px");
+					$("#link-selected").css("left","537px");
 				}
 				else if(windowSize <= 908) { 
-					$("#link-selected").css("left","600px");
+					$("#link-selected").css("left","562px");
 				}
 				else if(windowSize <= 1000) { 
-					$("#link-selected").css("left","636px");
+					$("#link-selected").css("left","598px");
 				}
 				else { 
-					$("#link-selected").css("left","712px");
+					$("#link-selected").css("left","674px");
 				}
 				break;
 				
 			case "Tickets":
 				if(windowSize <= 558) { 
-					$("#link-selected").css("left","435px");
+					$("#link-selected").css("left","383px");
 				}
 				else if(windowSize <= 583) { 
-					$("#link-selected").css("left","465px");
+					$("#link-selected").css("left","411px");
 				}
 				else if(windowSize <= 633) { 
-					$("#link-selected").css("left","478px");
+					$("#link-selected").css("left","425px");
 				}
 				else if(windowSize <= 658) { 
-					$("#link-selected").css("left","514px");
+					$("#link-selected").css("left","461px");
 				}
 				else if(windowSize <= 683) { 
-					$("#link-selected").css("left","538px");
+					$("#link-selected").css("left","482px");
 				}
 				else if(windowSize <= 733) { 
-					$("#link-selected").css("left","564px");
+					$("#link-selected").css("left","510px");
 				}
 				else if(windowSize <= 833) { 
-					$("#link-selected").css("left","595px");
+					$("#link-selected").css("left","540px");
 				}
 				else if(windowSize <= 858) { 
-					$("#link-selected").css("left","660px");
+					$("#link-selected").css("left","595px");
 				}
 				else if(windowSize <= 883) { 
-					$("#link-selected").css("left","714px");
+					$("#link-selected").css("left","644px");
 				}
 				else if(windowSize <= 908) { 
-					$("#link-selected").css("left","730px");
+					$("#link-selected").css("left","667px");
 				}
 				else if(windowSize <= 1000) { 
-					$("#link-selected").css("left","770px");
+					$("#link-selected").css("left","700px");
 				}
 				else { 
-					$("#link-selected").css("left","845px");
+					$("#link-selected").css("left","770px");
 				}
 				break;
 				
-			case "BTV":
+			case "Sponsors":
 				if(windowSize <= 558) { 
-					$("#link-selected").css("left","498px");
+					$("#link-selected").css("left","468px");
 				}
 				else if(windowSize <= 583) { 
-					$("#link-selected").css("left","532px");
+					$("#link-selected").css("left","505px");
 				}
 				else if(windowSize <= 633) { 
-					$("#link-selected").css("left","553px");
+					$("#link-selected").css("left","527px");
 				}
 				else if(windowSize <= 658) {
-					$("#link-selected").css("left","597px");
+					$("#link-selected").css("left","569px");
 				}
 				else if(windowSize <= 683) { 
-					$("#link-selected").css("left","624px");
+					$("#link-selected").css("left","592px");
 				}
 				else if(windowSize <= 733) { 
-					$("#link-selected").css("left","650px");
+					$("#link-selected").css("left","617px");
 				}
 				else if(windowSize <= 833) { 
-					$("#link-selected").css("left","678px");
+					$("#link-selected").css("left","647px");
 				}
 				else if(windowSize <= 858) { 
-					$("#link-selected").css("left","755px");
+					$("#link-selected").css("left","718px");
 				}
 				else if(windowSize <= 883) { 
-					$("#link-selected").css("left","816px");
+					$("#link-selected").css("left","775px");
 				}
 				else if(windowSize <= 908) { 
-					$("#link-selected").css("left","834px");
+					$("#link-selected").css("left","797px");
 				}
 				else if(windowSize <= 1000) { 
-					$("#link-selected").css("left","873px");
+					$("#link-selected").css("left","833px");
 				}
 				else { 
-					$("#link-selected").css("left","946px");
+					$("#link-selected").css("left","910px");
 				}
 				break;
 		}
@@ -325,13 +325,13 @@ $(document).ready(function() {
 	});
 	$("#more-btn").toggle(function() {
 		$("#btn-txt").html("LESS");
-		$(this).css("left","120px");
+		$(this).css("left","105px");
 		$(this).css("text-align","center");
-		$("#additional-links").css("left","10px");
+		$("#additional-links").css("left","-40px");
 	}, function() {
 		$("#btn-txt").html("MORE");
 		$(this).css("left","-20px");
-		$("#additional-links").css("left","-150px");
+		$("#additional-links").css("left","-180px");
 	});
 	
 	/* 

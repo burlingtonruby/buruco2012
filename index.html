@@ -2,6 +2,7 @@
   <head>
     <title>Burlington Ruby Conference</title>
     <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="speaker_bio_style.css" type="text/css" media="screen">
     <link rel="stylesheet" href="grid.css" type="text/css" media="screen">
 
     <script src="jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
@@ -9,6 +10,7 @@
 	<script src="jquery.smooth-scroll.js" type="text/javascript" charset="utf-8"></script>
 
     <script src="application.js" type="text/javascript" charset="utf-8"></script>
+    <script src="speaker_bio_script.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="http://use.typekit.com/wlp2wwl.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
@@ -22,9 +24,9 @@
 			  <img id="buruco-logo" src="logo.png" width="206" height="30" alt="Burlington Ruby">
 			  <a id="speakers-link" class="links" href="#speakers">SPEAKERS</a>
 			  <a id="schedule-link" class="links" href="#schedule">SCHEDULE</a>
-			  <a id="sponsors-link" class="links" href="#sponsors">SPONSORS</a>
-			  <a id="tickets-link" class="links" href="#tickets">TICKETS</a>
 			  <a id="btv-link" class="links" href="#btv">BTV</a>
+			  <a id="tickets-link" class="links" href="#tickets">TICKETS</a>
+			  <a id="sponsors-link" class="links" href="#sponsors">SPONSORS</a>
 			</div>
 		  </div>
 		</div>
@@ -52,15 +54,19 @@
 	<div id="speakers" name="speakers">
 		<div class="container">
 			<header>
-				<img class="section-header" src="btv-assets/speakers.png" alt="Speakers" Title="Speakers" /> 
-				<h1>SPEAKERS</h1>
+				<img class="section-header speaker-header" src="btv-assets/speakers.png" alt="Speakers" Title="Speakers" />
+                <img class="section-header back-speakers" id="back-img" src="btv-assets/arrow.png" alt="Back To Speakers" Title="Back To Speakers" />
+				<h1 class="speaker-header" id="speaker-txt">SPEAKERS</h1> 
+                <h1 class="back-speakers" id="back-txt">BACK TO SPEAKERS</h1>
 			</header>
 			<div id="speakers-top">
 				<a href="#" class="top-btn"><img src="btv-assets/top.png" alt="Top" Title="Top" /> Top</a>
 			</div>
+            <!-- This is for the full Speaker Bio -->
+            <div id="speaker-bio"></div> 
 			<div id="speaker-list">
 				<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<img src="btv-assets/john-smith.jpg" class="speaker-img" height="150" width="150" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>
@@ -72,7 +78,25 @@
 					</summary>
 				</div>
 				<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<img src="btv-assets/john-smith.jpg" class="speaker-img" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<span class="speaker-name">JOE</span> <br />
+					<span class="speaker-title">Ruby Expert</span>
+					<summary>
+						<p>
+							"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, 
+							egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, 
+							bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum." 
+							"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, 
+							egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, 
+							bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum." 
+							"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, 
+							egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, 
+							bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum." 
+						</p>
+					</summary>
+				</div>
+				<div class="speaker-info">
+					<img src="btv-assets/john-smith.jpg" class="speaker-img" height="150" width="150" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>
@@ -84,7 +108,7 @@
 					</summary>
 				</div>
 				<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<img src="btv-assets/john-smith.jpg" class="speaker-img" height="150" width="150" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>
@@ -96,7 +120,7 @@
 					</summary>
 				</div>
 				<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<img src="btv-assets/john-smith.jpg" class="speaker-img" height="150" width="150" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>
@@ -108,7 +132,7 @@
 					</summary>
 				</div>
 				<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<img src="btv-assets/john-smith.jpg" class="speaker-img" height="150" width="150" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>
@@ -120,7 +144,7 @@
 					</summary>
 				</div>
 				<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<img src="btv-assets/john-smith.jpg" class="speaker-img" height="150" width="150" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>
@@ -132,7 +156,7 @@
 					</summary>
 				</div>
 				<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<img src="btv-assets/john-smith.jpg" class="speaker-img" height="150" width="150" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>
@@ -144,7 +168,7 @@
 					</summary>
 				</div>
 				<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<img src="btv-assets/john-smith.jpg" class="speaker-img" height="150" width="150" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>
@@ -156,19 +180,7 @@
 					</summary>
 				</div>
 				<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
-					<span class="speaker-name">JOHN SMITH</span> <br />
-					<span class="speaker-title">Ruby Expert</span>
-					<summary>
-						<p>
-							"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, 
-							egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, 
-							bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum." 
-						</p>
-					</summary>
-				</div>
-				<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" height="150" width="150" alt="John Smith" Title="John Smith" />
+					<img src="btv-assets/john-smith.jpg" class="speaker-img" height="150" width="150" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>
@@ -271,17 +283,26 @@
 		</div>
 	</div>
 	<div class="seperator"></div>
-	<!-- Sponsors Section -->
-	<div id="sponsors">
+    <!-- BTV Section -->
+	<div id="btv">
 		<div class="container">
 			<header>
-				<img class="section-header" src="btv-assets/sponsors.png" alt="Sponsors" Title="Sponsors" /> 
-				<h1 id="sponsors-header">SPONSORS</h1>
+				<img class="section-header" src="btv-assets/btv.png" alt="BTV" Title="BTV" /> 
+				<h1 id="btv-header">BTV</h1>
+				<div id="additional-links">  
+					<a href="#">DIRECTIONS</a>
+                    <a href="#" class="bottom-links">RESTAURANTS</a>
+					<a href="#">ATTRACTIONS</a>
+                    <a href="#" class="bottom-links">SHOPPING</a>
+                    <a href="#">LODGING</a>
+				</div>
+                <div id="btv-top">
+                    <a href="#" class="top-btn"><img src="btv-assets/top.png" alt="Top" Title="Top" /> Top</a>
+                </div>
+				<div id="more-btn"><span id="btn-txt">MORE</span></div>
 			</header>
-			<div id="sponsors-top">
-				<a href="#" class="top-btn"><img src="btv-assets/top.png" alt="Top" Title="Top" /> Top</a>
-			</div>
-			<div id="sponsors-coming-soon">
+			
+			<div id="btv-coming-soon">
 				COMING SOON
 			</div>
 		</div>
@@ -303,26 +324,17 @@
 		</div>
 	</div>
 	<div class="seperator"></div>
-	<!-- BTV Section -->
-	<div id="btv">
+	<!-- Sponsors Section -->
+	<div id="sponsors">
 		<div class="container">
 			<header>
-				<img class="section-header" src="btv-assets/btv.png" alt="BTV" Title="BTV" /> 
-				<h1 id="btv-header">BTV</h1>
-				<div id="additional-links">  
-					<a href="#">LODGING</a>
-					<a href="#">DIRECTIONS</a>
-					<a href="#">PACKING</a>
-					<a href="#">FAMILY</a>
-					<a href="#">ATTRACTIONS</a>
-					<a href="#">DINING</a>
-				</div>
-				<div id="more-btn"><span id="btn-txt">MORE</span></div>
+				<img class="section-header" src="btv-assets/sponsors.png" alt="Sponsors" Title="Sponsors" /> 
+				<h1 id="sponsors-header">SPONSORS</h1>
 			</header>
-			<div id="btv-top">
+			<div id="sponsors-top">
 				<a href="#" class="top-btn"><img src="btv-assets/top.png" alt="Top" Title="Top" /> Top</a>
 			</div>
-			<div id="btv-coming-soon">
+			<div id="sponsors-coming-soon">
 				COMING SOON
 			</div>
 		</div>

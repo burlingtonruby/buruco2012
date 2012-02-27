@@ -112,6 +112,10 @@ div.what {
 }
 
 /* Speakers Sections */
+.back-speakers {
+    display:none;
+}
+
 #speakers {
     background-image: url("btv-assets/speaker_bg.jpg");
     background-repeat:repeat-x;
@@ -307,25 +311,23 @@ tr.horizontal_dotted_line  td{
 
 /* Styling for BTV section */
 #additional-links {
-    background:rgba(0,0,0,0.5); 
-    border:1px solid rgba(0,0,0,0.7);
-    height:40px;
-    left: 325px;
-    position: absolute;
-    text-indent:15px;
-    top:4070px;
-    width:755px;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 10px 10px 10px 10px;
+    height: 42px;
+    left: 142px;
+    position: relative;
+    text-indent: 22px;
+    top: -5px;
+    width: 763px;
     word-spacing: 50px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px; 
 }
 
 #additional-links a{
     color:#FFF;
     font-weight:500;
     position:relative;
-    text-align:center;
+    right:14px;
     text-decoration:none;
     top:10px;
 }
@@ -351,12 +353,27 @@ tr.horizontal_dotted_line  td{
 
 #btv-header {
     color:#FFF;
-    padding-left:50px;
+    display:inline;
+    padding-left:12px;
     text-shadow:0px 1px 1px rgba(207,207,207,0.7);
 }
 
+#btv header h1 {
+    position:relative;
+    top:33px;
+}
+
+#btv header .section-header {
+    position:relative;
+    top:33px;
+}
+
+#btv .section-header {
+    display:inline;
+}
+
 #btv-top a {
-    bottom: 50px;
+    bottom: 40px;
     color: #000000;
     float: right;
     font-size: 16pt;
@@ -366,7 +383,9 @@ tr.horizontal_dotted_line  td{
     text-shadow: 0 0.5px 0.5px rgba(255, 255, 255, 0.7);
 }
 
+
 #more-btn { display:none; }
+
 
 /* General styling for each section */
 .container {
@@ -448,27 +467,16 @@ Media Queries
 /*
 * Smaller laptops
 */
-@media screen and (max-width:1300px) {
-    #additional-links { left: 275px; }
-}
 
 @media screen and (max-width:1200px) {
-    #additional-links { left: 225px; }
+    #additional-links { left: 142px; }
 }
 
 @media screen and (max-width:1100px) {
-    #additional-links { left: 200px;}
+    #additional-links { left: 150px;}
 }
 
 @media screen and (max-width:1050px) {
-    #additional-links { 
-        height:35px;
-        left: 220px;
-        top:4075px;
-        width: 650px;
-        word-spacing:30px;
-    }
-    
     #additional-links a{
         font-weight:300;
         top:8px;
@@ -477,8 +485,8 @@ Media Queries
 
 @media screen and (max-width:1000px) {
     #additional-links { 
-        width:560px;
-        top:4050px;        
+        left:133px;
+        width:686px;       
     }
     
     #additional-links a{ font-size:10pt; }
@@ -495,11 +503,7 @@ Media Queries
 }
 
 @media screen and (max-width:925px) {
-    #additional-links { 
-        left:200px; 
-        top:4010px;
-    }
-    
+    #additional-links { left:125px; }
     #btv-top a{ right:140px; }
     div.nav .links { left:40px;}
     #schedule-table { width:850px; }
@@ -516,8 +520,9 @@ Media Queries
 
 @media screen and (max-width:900px) {
     #additional-links { 
-        left:180px; 
-        top:3970px;
+        left:132px;
+        width:625px;
+        word-spacing:38px;
     }
     #btv-coming-soon { left:325px; }
     #btv-top a{ right:160px; }
@@ -564,7 +569,10 @@ Media Queries
 }
 
 @media screen and (max-width:875px) {
-    #additional-links { left:160px; }
+    #additional-links { 
+        width: 557px;
+        word-spacing: 24px;
+    }
     #btv-coming-soon { left:300px; }
     #btv-top a{ right:220px; }
     #speakers-top a{ right:220px; }
@@ -583,10 +591,10 @@ Media Queries
 
 @media screen and (max-width:850px) {
     #additional-links { 
-        font-size:8pt;
-        left:160px;
-        width:500px;
-        word-spacing:20px;
+        font-size: 8pt;
+        left: 125px;
+        width: 535px;
+        word-spacing: 21px;
     }
     
     #btv-coming-soon { left:275px; }
@@ -630,10 +638,10 @@ Media Queries
 
 @media screen and (max-width:750px) {
     #additional-links {
-        left:80px;
-        top:4025px;
-        width:600px;
-        word-spacing:40px;
+        left: 40px;
+        top: 42px;
+        width: 615px;
+        word-spacing: 37px;
     }
     #btv-coming-soon{ left:250px; }
     #btv-top a { right:310px; }
@@ -654,7 +662,7 @@ Media Queries
 }
 
 @media screen and (max-width:725px) {
-    #additional-links { left:55px; }
+    #additional-links { left:30px; }
     #btv-top a { right:340px; }
     #speaker-list { width:700px; }
     #speakers-top a{ right:340px; }
@@ -665,8 +673,8 @@ Media Queries
 
 @media screen and (max-width:700px) {
     #additional-links { 
-        left:40px; 
-        top:5200px;
+        left: 20px;
+        top:55px;
     }
     #btv-coming-soon { left:200px; }
     #btv-top a { right:360px; }
@@ -704,7 +712,7 @@ Media Queries
 }
 
 @media screen and (max-width:675px) {
-    #additional-links { left:20px; }
+    #additional-links { left:4px; }
     #btv-top a { right:390px; }
     #buruco-logo { width:125px; }
     #schedule-table { width:600px; }
@@ -715,7 +723,7 @@ Media Queries
 }
 
 @media screen and (max-width:650px) {
-    #additional-links { left:15px; }
+    #additional-links { left:-11px; }
     #btv-top a { right:410px; }
     
     div.nav .links { 
@@ -732,12 +740,26 @@ Media Queries
 
 @media screen and (max-width:625px) {
     #additional-links {
-        width:550px;
-        word-spacing:30px;
+        height: 82px;
+        left: 49px;
+        line-height: 33px;
+        text-align: left;
+        width: 360px;
+        word-spacing: 30px;
+        -moz-column-count:3;
+        -webkit-column-count: 3;
+        column-count: 3;
     }
-    
+    #additional-links a { 
+        font-size:12pt; 
+        left:0px;
+    }
+     #additional-links .bottom-links { left:65px; }
     #btv-coming-soon { left:150px; }
-    #btv-top a { right:430px; }
+    #btv-top a { 
+        bottom:80px;
+        right:430px;
+    }
     #speakers-top a{ right:430px; }
     #schedule-top a{ right:430px; }
     #sponsors-coming-soon { left:150px; }
@@ -775,17 +797,6 @@ Media Queries
 }
 
 @media screen and (max-width:550px) {
-    #additional-links {
-        height: 100px;
-        left: 34px;
-        line-height: 45px;
-        text-align: center;
-        text-indent: 0;
-        top: 4525px;
-        width: 428px;
-        word-spacing: 37px;
-    }
-    
     #additional-links a{ 
         border-bottom:1px solid #FFF;
         font-size:12pt; 
@@ -811,6 +822,7 @@ Media Queries
     .twelve a{ display:none; }
     #link-selected { display:none; }
     #schedule header h1 { padding-left:0px; }
+    #speakers header img { display:none; }
     
     .speaker-info img {
         height:100px;
@@ -844,11 +856,7 @@ Media Queries
 }
 
 @media screen and (max-width:500px) {
-    #additional-links { 
-        left:10px; 
-        width:410px;
-        word-spacing:30px;
-    }
+    #additional-links { left:-11px; }
     #btv-coming-soon { font-size:20pt; }
     #buruco-logo { left:120px; }
     .container { width:100%; }
@@ -862,9 +870,9 @@ Media Queries
 @media screen and (max-width:475px) {
     #additional-links {
         height:300px; 
-        left:-150px;
+        left:-180px;
         text-align:left;
-        top: 4465px;
+        text-indent:0px;
         width:125px; 
         -moz-transition: all 0.3s linear;
         -webkit-transition: all 0.3s linear;
@@ -873,6 +881,7 @@ Media Queries
         border:none;
         left:5px;
     }
+    #additional-links .bottom-links { left:5px; }
     #btn-txt {
         position:relative;
         top:12px;
@@ -982,6 +991,7 @@ Media Queries
         text-align:center;
         top:250px;
     }
+    #btv header .section-header { display:none; }
     .date { font-size:30pt; }
     .day-of-week { font-size:24pt; }
     div.intro-wrapper { display:none; }
