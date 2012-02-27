@@ -229,3 +229,11 @@ Feb-27-2012-14:39
     I removed the Packing and Family links. I also changed 'Dining' to
     'Restaurants'.  And adding Shopping, to keep the mobile version and
     web version parallel.
+    
+Feb-27-2012-17:36
+
+    Began adding the sections that will contain the content for the BTV section:
+    Directions, Restaurants, Attractions, Shopping, and Lodging. Added a new
+    js file (btv_content_script.js), that controls the jQuery for that section.
+    Added the scrolling affect; so if you click on Restaurants for example, the 
+    screen will scroll down to the Restaurants section.

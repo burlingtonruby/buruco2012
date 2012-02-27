@@ -310,6 +310,17 @@ tr.horizontal_dotted_line  td{
 
 
 /* Styling for BTV section */
+#additional-content {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 10px 10px 10px 10px;
+    color:#FFF;
+    left: 142px;
+    position: relative;
+    text-indent:15px;
+    width: 763px;
+}
+
 #additional-links {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(0, 0, 0, 0.7);

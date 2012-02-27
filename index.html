@@ -11,6 +11,7 @@
 
     <script src="application.js" type="text/javascript" charset="utf-8"></script>
     <script src="speaker_bio_script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="btv_content_script.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="http://use.typekit.com/wlp2wwl.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
@@ -290,11 +291,11 @@
 				<img class="section-header" src="btv-assets/btv.png" alt="BTV" Title="BTV" /> 
 				<h1 id="btv-header">BTV</h1>
 				<div id="additional-links">  
-					<a href="#">DIRECTIONS</a>
-                    <a href="#" class="bottom-links">RESTAURANTS</a>
-					<a href="#">ATTRACTIONS</a>
-                    <a href="#" class="bottom-links">SHOPPING</a>
-                    <a href="#">LODGING</a>
+					<a href="#conference-directions">DIRECTIONS</a>
+                    <a href="#restaurants-list" class="bottom-links">RESTAURANTS</a>
+					<a href="#attractions-list">ATTRACTIONS</a>
+                    <a href="#shopping-list" class="bottom-links">SHOPPING</a>
+                    <a href="#lodging-list">LODGING</a>
 				</div>
                 <div id="btv-top">
                     <a href="#" class="top-btn"><img src="btv-assets/top.png" alt="Top" Title="Top" /> Top</a>
@@ -302,9 +303,28 @@
 				<div id="more-btn"><span id="btn-txt">MORE</span></div>
 			</header>
 			
-			<div id="btv-coming-soon">
+			<!--<div id="btv-coming-soon">
 				COMING SOON
 			</div>
+            -->
+            <!-- Displays the Directions, Restaurants, Attractions, Shopping, and Lodging Information --> 
+            <div id="additional-content">
+                <div id="conference-directions">
+                    <h2>DIRECTIONS</h2>
+                </div>
+                <div id="restaurants-list">
+                    <h2>RESTAURANTS</h2>
+                </div>
+                <div id="attractions-list">
+                    <h2>ATTRACTIONS</h2>
+                </div>
+                <div id="shopping-list">
+                    <h2>SHOPPING</h2>
+                </div>
+                <div id="lodging-list">
+                    <h2>LODGING</h2>
+                </div>
+            </div>
 		</div>
 	</div>
 	<div class="seperator"></div>
