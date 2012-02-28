@@ -237,3 +237,9 @@ Feb-27-2012-17:36
     js file (btv_content_script.js), that controls the jQuery for that section.
     Added the scrolling affect; so if you click on Restaurants for example, the 
     screen will scroll down to the Restaurants section.
+    
+Feb-27-2012-19:41
+
+    Started to work on the 'Directions' section. Created a button, that, when
+    the user clicks it, gives directions based on current location. Has some
+    bugs that I'm working out.

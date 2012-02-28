@@ -394,6 +394,9 @@ tr.horizontal_dotted_line  td{
     text-shadow: 0 0.5px 0.5px rgba(255, 255, 255, 0.7);
 }
 
+#map-canvas {
+    position:relative;
+}
 
 #more-btn { display:none; }
 
