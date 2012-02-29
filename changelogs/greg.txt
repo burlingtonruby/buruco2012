@@ -290,3 +290,7 @@ Feb-29-2012-13:22
     and then shows you directions to the place you clicked on, i.e. Hilton. Having some
     trouble though with the Church Street address, I just tried using Church Street as the
     address and it doesn't work too well.
+    
+Feb-29-2012-13:30
+
+    I added Double Tree into the logding section.
