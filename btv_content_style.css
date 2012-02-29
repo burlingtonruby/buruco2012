@@ -15,6 +15,7 @@
     width: 763px;
 }
 
+
 #conference-address, #conference-directions h2, #restaurants-list h2,
 #attractions-list h2, #shopping-list h2, #lodging-list h2 {
     left:10px;
@@ -41,20 +42,47 @@
 
 /* Restaurants section */
 
-#sweetwaters {
-    height:150px;
-    width:750px;
-}
-
-#sweetwaters-content {
+/* General Restaurant styles */
+.restaurant-content {
     font-size:15pt;
     left:150px;
     position:relative;
 }
 
-#sweetwaters-img {
+.restaurant-img {
     float:left;
     left:50px;
     position:relative;
     width:300px;
+}
+
+#restaurants-list a {
+    color:#FFF;
+    font-style:italic;
+}
+
+/* Sweetwaters */
+#sweetwaters {
+    height:250px;
+    width:750px;
+}
+
+#sweetwaters img {
+    height:200px;
+}
+
+/* Vermont Pub & Brewery */
+#vpb {
+    height:250px;
+    width:750px;
+}
+
+/* L'Amante */
+#lamante {
+    height:250px;
+    width:750px;
+}
+
+#lamante img {
+    height:200px;
 }
