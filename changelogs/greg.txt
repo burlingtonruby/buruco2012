@@ -282,3 +282,11 @@ Feb-29-2012-12:59
     do, there shop will be placed on the website and mobile applications. Until I talk to 
     the shops I skipped ahead to the lodging section. I added 1 hotel (Hilton) and applied
     styles to it.
+    
+Feb-29-2012-13:22
+
+    Worked on the 'Get Directions' links, now when you click on them, it opens
+    up a new tab to google maps; google maps asks if it can use your current location
+    and then shows you directions to the place you clicked on, i.e. Hilton. Having some
+    trouble though with the Church Street address, I just tried using Church Street as the
+    address and it doesn't work too well.

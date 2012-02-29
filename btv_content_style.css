@@ -27,6 +27,13 @@
     position:relative;
 }
 
+#sweetwaters, #vpb, #lamante, #echo,
+#bike-path, #downtown, #northbeac,
+#hilton {
+    height:250px;
+    width:750px;
+}
+
 
 /*********************
 Directions section 
@@ -65,26 +72,12 @@ Restaurant section
 }
 
 /* Sweetwaters */
-#sweetwaters {
-    height:250px;
-    width:750px;
-}
 
 #sweetwaters img {
     height:200px;
 }
 
-/* Vermont Pub & Brewery */
-#vpb {
-    height:250px;
-    width:750px;
-}
-
 /* L'Amante */
-#lamante {
-    height:250px;
-    width:750px;
-}
 
 #lamante img {
     height:200px;
@@ -110,31 +103,6 @@ Attractions section
 }
 
 
-/* Echo */
-#echo {
-    height:250px;
-    width:750px;
-}
-
-/* Burlington Bike Path */
-#bike-path {
-    height:250px;
-    width:750px;
-}
-
-/* Downtown Burlington */
-#downtown {
-    height:250px;
-    width:750px;
-}
-
-/* North Beach */
-#north-beach {
-    height:250px;
-    width:750px;
-}
-
-
 /*********************
 Lodging section 
 *********************/
@@ -150,10 +118,4 @@ Lodging section
     left:50px;
     position:relative;
     width:300px;
-}
-
-/* The Hilton */
-#hilton {
-    height:250px;
-    width:750px;
 }
