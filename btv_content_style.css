@@ -10,11 +10,16 @@
     border: 1px solid rgba(0, 0, 0, 0.7);
     border-radius: 10px 10px 10px 10px;
     color:#FFF;
+    font-size:15pt;
     left: 142px;
     position: relative;
     width: 763px;
 }
 
+#additional-content a {
+    color:#FFF;
+    font-style:italic;
+}
 
 #conference-address, #conference-directions h2, #restaurants-list h2,
 #attractions-list h2, #shopping-list h2, #lodging-list h2 {
@@ -44,7 +49,6 @@
 
 /* General Restaurant styles */
 .restaurant-content {
-    font-size:15pt;
     left:150px;
     position:relative;
 }
@@ -54,11 +58,6 @@
     left:50px;
     position:relative;
     width:300px;
-}
-
-#restaurants-list a {
-    color:#FFF;
-    font-style:italic;
 }
 
 /* Sweetwaters */
@@ -85,4 +84,28 @@
 
 #lamante img {
     height:200px;
+}
+
+
+
+/* Attractions section */
+
+/* General styles for Attractions section */
+.attraction-content {
+    left:50px;
+    position:relative;
+}
+
+.attraction-img {
+    float:right;
+    position:relative;
+    right:50px;
+    width:300px;
+}
+
+
+/* Echo */
+#echo {
+    height:250px;
+    width:750px;
 }

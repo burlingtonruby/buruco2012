@@ -261,3 +261,11 @@ Feb-29-2012-11:14
     I added to more restaurants: Vermont Pub & Brewery and L'Amante.
     I also updated the 'Get Directions' button so that there are now 2 links:
     Website | Get Directions
+    
+Feb-29-2012-11:47
+
+    I began working on adding and styling the Attractions section. So far I have
+    only included 1: Echo.  I am also thinking of insteading of having long list
+    of restaurants, attractions, etc.. have it so when you click on one of the 
+    additional links, it fade toggles that section, similar to how the speakers
+    section works.
