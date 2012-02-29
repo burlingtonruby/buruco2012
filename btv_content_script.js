@@ -21,9 +21,5 @@ $(document).ready(function() {
     * Gets the directions, from the user's current location, to the address that 
     * will be specified by us (to the Ruby conference)
     */
-    $("#get-directions").click(function() {
-        initGeolocation();
-        //make map visible
-        $("#map-canvas").css("display","block");
-    });
+    $("#get-directions").click(initGeolocation);
 });

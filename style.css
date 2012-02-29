@@ -310,17 +310,6 @@ tr.horizontal_dotted_line  td{
 
 
 /* Styling for BTV section */
-#additional-content {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(0, 0, 0, 0.7);
-    border-radius: 10px 10px 10px 10px;
-    color:#FFF;
-    left: 142px;
-    position: relative;
-    text-indent:15px;
-    width: 763px;
-}
-
 #additional-links {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(0, 0, 0, 0.7);
@@ -392,20 +381,6 @@ tr.horizontal_dotted_line  td{
     position: relative;
     text-decoration: none;
     text-shadow: 0 0.5px 0.5px rgba(255, 255, 255, 0.7);
-}
-
-#get-directions {
-    left:10px;
-    position:relative;
-}
-
-#map-canvas {
-    display: none;
-    height: 500px;
-    left: 7px;
-    position: relative;
-    top: 10px;
-    width: 750px;
 }
 
 #more-btn { display:none; }

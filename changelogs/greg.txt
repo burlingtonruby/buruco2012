@@ -248,3 +248,10 @@ Feb-29-2012-9:55
 
     The Directions section now works, when you click the 'Get Directions' button,
     it gives you the directions from your current location to the address specified.
+    
+Feb-29-10:31
+
+    Started to work on the Restaurants section; just addded 1 restaurant (Sweetwaters).
+    I added a new stylesheet (btv_content_style.css) to control the styles just for the
+    additional content within the BTV section: Directions, Restaurants, Attractions,
+    Shopping, and Lodging.  The font styles might have to be tweeked.
