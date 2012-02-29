@@ -269,3 +269,8 @@ Feb-29-2012-11:47
     of restaurants, attractions, etc.. have it so when you click on one of the 
     additional links, it fade toggles that section, similar to how the speakers
     section works.
+    
+Feb-29-2012-12:42
+
+    I added the Burlington Bike Path, Downtown Burlington, and North Beach to
+    the attractions section.
