@@ -394,8 +394,18 @@ tr.horizontal_dotted_line  td{
     text-shadow: 0 0.5px 0.5px rgba(255, 255, 255, 0.7);
 }
 
-#map-canvas {
+#get-directions {
+    left:10px;
     position:relative;
+}
+
+#map-canvas {
+    display: none;
+    height: 500px;
+    left: 7px;
+    position: relative;
+    top: 10px;
+    width: 750px;
 }
 
 #more-btn { display:none; }

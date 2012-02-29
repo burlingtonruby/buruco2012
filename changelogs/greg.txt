@@ -243,3 +243,8 @@ Feb-27-2012-19:41
     Started to work on the 'Directions' section. Created a button, that, when
     the user clicks it, gives directions based on current location. Has some
     bugs that I'm working out.
+    
+Feb-29-2012-9:55
+
+    The Directions section now works, when you click the 'Get Directions' button,
+    it gives you the directions from your current location to the address specified.
