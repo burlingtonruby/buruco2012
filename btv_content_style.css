@@ -28,7 +28,9 @@
 }
 
 
-/* Directions section */
+/*********************
+Directions section 
+*********************/
 
 #get-directions {
     left:10px;
@@ -45,7 +47,9 @@
 }
 
 
-/* Restaurants section */
+/*********************
+Restaurant section 
+*********************/
 
 /* General Restaurant styles */
 .restaurant-content {
@@ -88,7 +92,9 @@
 
 
 
-/* Attractions section */
+/*********************
+Attractions section 
+*********************/
 
 /* General styles for Attractions section */
 .attraction-content {
@@ -124,6 +130,30 @@
 
 /* North Beach */
 #north-beach {
+    height:250px;
+    width:750px;
+}
+
+
+/*********************
+Lodging section 
+*********************/
+
+/* General lodging styles */
+.lodging-content {
+    left:150px;
+    position:relative;
+}
+
+.lodging-img {
+    float:left;
+    left:50px;
+    position:relative;
+    width:300px;
+}
+
+/* The Hilton */
+#hilton {
     height:250px;
     width:750px;
 }

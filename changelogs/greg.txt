@@ -274,3 +274,11 @@ Feb-29-2012-12:42
 
     I added the Burlington Bike Path, Downtown Burlington, and North Beach to
     the attractions section.
+    
+Feb-29-2012-12:59
+
+    I am leaving the Shopping section blank for now, Adam had a really good idea; I'll
+    go to a few shops around Burlington and see if they want to sponsor the event, if they
+    do, there shop will be placed on the website and mobile applications. Until I talk to 
+    the shops I skipped ahead to the lodging section. I added 1 hotel (Hilton) and applied
+    styles to it.
