@@ -56,55 +56,6 @@ Directions section
 
 
 /*********************
-Restaurant section 
-*********************/
-
-/* General Restaurant styles */
-.restaurant-content {
-    left:150px;
-    position:relative;
-}
-
-.restaurant-img {
-    float:left;
-    left:50px;
-    position:relative;
-    width:300px;
-}
-
-/* Sweetwaters */
-
-#sweetwaters img {
-    height:200px;
-}
-
-/* L'Amante */
-
-#lamante img {
-    height:200px;
-}
-
-
-
-/*********************
-Attractions section 
-*********************/
-
-/* General styles for Attractions section */
-.attraction-content {
-    left:50px;
-    position:relative;
-}
-
-.attraction-img {
-    float:right;
-    position:relative;
-    right:50px;
-    width:300px;
-}
-
-
-/*********************
 Lodging section 
 *********************/
 
@@ -129,6 +80,55 @@ Lodging section
 #marriott  img{
     height:200px;
 }
+
+/*********************
+Restaurant section 
+*********************/
+
+/* General Restaurant styles */
+.restaurant-content {
+    left:50px;
+    position:relative;
+}
+
+.restaurant-img {
+    float:right;
+    position:relative;
+    right:50px;
+    width:300px;
+}
+
+/* Sweetwaters */
+
+#sweetwaters img {
+    height:200px;
+}
+
+/* L'Amante */
+
+#lamante img {
+    height:200px;
+}
+
+
+
+/*********************
+Attractions section 
+*********************/
+
+/* General styles for Attractions section */
+.attraction-content {
+    left:150px;
+    position:relative;
+}
+
+.attraction-img {
+    float:left;
+    left:50px;
+    position:relative;
+    width:300px;
+}
+
 
 
 /**************************
@@ -160,7 +160,6 @@ Media Queries
         width:625px;
     }
     .attraction-img {
-        left:-180px;
         width:200px;
     }
     .lodging-img {
@@ -170,9 +169,9 @@ Media Queries
         width:600px;
     }
     .restaurant-img {
+        left:-180px;
         width:200px;
     }
-
 }
 
 @media screen and (max-width:875px) {
@@ -180,10 +179,10 @@ Media Queries
         width: 557px;
     }
     .attraction-content {
-        left: 25px;
+        left: 100px;
     }
     .attraction-img {
-        left:-215px;
+        left:25px;
     }
     .lodging-img {
         left:25px;
@@ -192,10 +191,10 @@ Media Queries
         width:540px;
     }
     .restaurant-content {
-        left: 100px;
+        left: 25px;
     }
     .restaurant-img {
-        left:25px;
+        left:-215px;
     }
 }
 
@@ -205,7 +204,7 @@ Media Queries
         width: 535px;
     }
     .attraction-content {
-        left: 158px;
+        left: 150px;
     }
     .attraction-img {
         display:none;
@@ -216,8 +215,9 @@ Media Queries
     #map-canvas {
         width:520px;
     }
+    
     .restaurant-content {
-        left: 150px;
+        left: 158px;
     }
     .restaurant-img {
         display:none;
