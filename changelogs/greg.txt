@@ -315,6 +315,10 @@ Mar-2-2012-12:02
 
     Switched the Lodging and Restaurants section.
     
-Mar-2-12:13
+Mar-2-2012-12:13
 
     Made a small change to the styles for the restaurant images.
+    
+Mar-2-2012-12:41
+
+    Started new branch: speaker_bio where I will add the current speakers
