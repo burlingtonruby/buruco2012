@@ -38,7 +38,7 @@
 
 function calcRoute() {
    var start = coords;
-   var end = new google.maps.LatLng(44.477752, -73.208875);
+   var end = new google.maps.LatLng(44.47749, -73.21992);
    var request = {
      origin:start,
      destination:end,

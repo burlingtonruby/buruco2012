@@ -294,3 +294,9 @@ Feb-29-2012-13:22
 Feb-29-2012-13:30
 
     I added Double Tree into the logding section.
+    
+Mar-2-2012010:58
+
+    Updated the directions section so it now gives directions to the correct address
+    of the event. Removed the 'Shopping' section for now.  I also began working on
+    the media queries for the BTV additional content section.
