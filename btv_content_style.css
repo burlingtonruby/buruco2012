@@ -248,9 +248,58 @@ Media Queries
 }
 
 @media screen and (max-width:650px) {
-    #additional-content { left:50px; }
+    #additional-content { 
+        left:50px;
+        width:497px;
+    }
 }    
  
 @media screen and (max-width:600px) {
     #additional-content { left:30px; }
 }    
+
+@media screen and (max-width:550px) {
+    #additional-content { left:-1px; }
+}
+
+@media screen and (max-width:525px) {
+    #additional-content { 
+        left:10px;
+        width:450px;
+    }
+    .attraction-content { left:140px; }
+    .lodging-content { left:140px; }
+    #map-canvas { width:435px; }
+    .restaurant-content { left:140px; }
+}
+
+@media screen and (max-width:500px) {
+    #additional-content { left:-11px; }
+}
+
+@media screen and (max-width:475px) {
+    #additional-content { width:410px; }
+    .attraction-content { left:90px; }
+    .lodging-content { left:90px; }
+    #map-canvas { width:400px; }
+    .restaurant-content { left:90px; }
+}
+
+@media screen and (max-width:450px) {
+    #additional-content { 
+        left:0px;
+        width:375px; 
+    }
+    .attraction-content { left:70px; }
+    .lodging-content { left:70px; }
+    #map-canvas { width:360px; }
+    .restaurant-content { left:70px; }
+}
+
+@media screen and (max-width:425px) {
+    #additional-content { 
+        font-size:12pt;
+        left:0px;
+        width:350px; 
+    }
+}
