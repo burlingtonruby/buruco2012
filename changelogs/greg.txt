@@ -330,3 +330,12 @@ Mar-2-2012-13:04
     that was given on the site (http://confoo.ca/en/2012/session/renee). He said to grab
     the image from this page as well.  We will probably need to use Adobe Bridge or
     Fireworks to resize his image.
+    
+Mar-2-2012-13:28
+
+    I added the next 2 speakers. I resized the images (giving them generic class names!),
+    however, this makes marc andre's image look very stretched out, dan croak's image very
+    grainy, and only joshua hull's looks ok (except when it is full size). I don't have any
+    image editing software (photoshop or fireworks would prob work) so I can't do this. I was
+    thinking of having 2 images (one thumbnail and one full size) so the images don't have to be
+    streteched out.  I still need to add more info for marc andre's bio.

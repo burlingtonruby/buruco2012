@@ -58,7 +58,7 @@ speaker bios
         
             $("#speaker-bio").css("display","block");
             $("#speaker-bio").append("<div id='img-container'></div>");
-            $("#img-container").append("<img src='"+speakerImg+"' width='300' height='300' alt='John Smith' Title='John Smith' />");
+            $("#img-container").append("<img src='"+speakerImg+"' class='full-img' width='300' height='300' alt='"+speakerName+"' Title='"+speakerName+"' />");
             $("#speaker-bio").append("<figure></figure>");
             $("figure").append("<span class='speaker-name'>"+speakerName+"</span> <br />");
             $("figure").append("<span class='speaker-title'>"+speakerTitle+"</span>");
