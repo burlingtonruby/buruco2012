@@ -314,3 +314,7 @@ Mar-2-2012-11:39
 Mar-2-2012-12:02
 
     Switched the Lodging and Restaurants section.
+    
+Mar-2-12:13
+
+    Made a small change to the styles for the restaurant images.

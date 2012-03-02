@@ -152,6 +152,9 @@ Media Queries
     #map-canvas {
         width:650px;
     }
+    .restaurant-img {
+        left:-100px;
+    }
 }
 
 @media screen and (max-width:900px) {
@@ -172,6 +175,7 @@ Media Queries
         left:-180px;
         width:200px;
     }
+    
 }
 
 @media screen and (max-width:875px) {
