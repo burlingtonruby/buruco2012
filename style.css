@@ -320,7 +320,7 @@ tr.horizontal_dotted_line  td{
     text-indent: 22px;
     top: -5px;
     width: 763px;
-    word-spacing: 50px;
+    word-spacing: 100px;
 }
 
 #additional-links a{
@@ -382,7 +382,6 @@ tr.horizontal_dotted_line  td{
     text-decoration: none;
     text-shadow: 0 0.5px 0.5px rgba(255, 255, 255, 0.7);
 }
-
 
 #more-btn { display:none; }
 
@@ -522,7 +521,7 @@ Media Queries
     #additional-links { 
         left:132px;
         width:625px;
-        word-spacing:38px;
+        word-spacing:78px;
     }
     #btv-coming-soon { left:325px; }
     #btv-top a{ right:160px; }
@@ -571,7 +570,7 @@ Media Queries
 @media screen and (max-width:875px) {
     #additional-links { 
         width: 557px;
-        word-spacing: 24px;
+        word-spacing: 56px;
     }
     #btv-coming-soon { left:300px; }
     #btv-top a{ right:220px; }
@@ -590,11 +589,11 @@ Media Queries
 }
 
 @media screen and (max-width:850px) {
-    #additional-links { 
-        font-size: 8pt;
+    #additional-links {
+        font-size: 14pt;
         left: 125px;
         width: 535px;
-        word-spacing: 21px;
+        word-spacing: 47px;
     }
     
     #btv-coming-soon { left:275px; }
@@ -641,7 +640,7 @@ Media Queries
         left: 40px;
         top: 42px;
         width: 615px;
-        word-spacing: 37px;
+        word-spacing: 73px;
     }
     #btv-coming-soon{ left:250px; }
     #btv-top a { right:310px; }
@@ -740,21 +739,19 @@ Media Queries
 
 @media screen and (max-width:625px) {
     #additional-links {
-        height: 82px;
+        font-size: 10pt;
+        height: 43px;
         left: 49px;
-        line-height: 33px;
         text-align: left;
-        width: 360px;
-        word-spacing: 30px;
-        -moz-column-count:3;
-        -webkit-column-count: 3;
-        column-count: 3;
+        text-indent: 0;
+        width: 497px;
+        word-spacing: 18px;
     }
     #additional-links a { 
         font-size:12pt; 
         left:0px;
     }
-     #additional-links .bottom-links { left:65px; }
+    /*#additional-links .bottom-links { left:65px; }*/
     #btv-coming-soon { left:150px; }
     #btv-top a { 
         bottom:80px;
@@ -769,6 +766,7 @@ Media Queries
 }
 
 @media screen and (max-width:600px) {
+    #additional-links { left:30px; }
     #btv-top a { right:450px; }
     div.nav .links { padding-right:5px; }
     #schedule-table { width:550px; }
@@ -797,6 +795,7 @@ Media Queries
 }
 
 @media screen and (max-width:550px) {
+    #additional-links { left:-1px; }
     #additional-links a{ 
         border-bottom:1px solid #FFF;
         font-size:12pt; 
@@ -804,6 +803,7 @@ Media Queries
     
     #btv-coming-soon { left:120px; }
     #btv header h1 { padding-left:0px; }
+    #btv .section-header{ display: none; }
     #btv-top a { display:none; }
 
     #buruco-logo { 
@@ -849,7 +849,12 @@ Media Queries
 }
 
 @media screen and (max-width:525px) {
-    #additional-links { left:20px; }
+    #additional-links { 
+        left:10px;
+        width:450px;
+        word-spacing:25px;
+    }
+    #additional-links a { font-size: 10pt; }
     .learn-more { font-size:12pt; }
     #schedule-table { width:425px; }
     #speaker-list { right:120px; }
@@ -869,24 +874,93 @@ Media Queries
 
 @media screen and (max-width:475px) {
     #additional-links {
-        height:300px; 
+        /*height:300px; 
         left:-180px;
         text-align:left;
         text-indent:0px;
         width:125px; 
         -moz-transition: all 0.3s linear;
-        -webkit-transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;*/
+        width:410px;
+        word-spacing:20px;
     }
     #additional-links a { 
         border:none;
-        left:5px;
+        left:-10px;
+        text-decoration:underline;
     }
-    #additional-links .bottom-links { left:5px; }
+    /* #additional-links .bottom-links { left:5px; } */
     #btn-txt {
         position:relative;
         top:12px;
     }
     #buruco-logo { left:110px; }
+    #more-btn {
+        /*background-image: -webkit-gradient(radial, center center, 0, center center, 200, from(#454647), to(#372F33));    
+        background-image: -moz-radial-gradient(center, circle closest-corner, #454647 0%, #372F33 100%);
+        color:#FFF;
+        display:block;
+        font-size:14pt;
+        font-weight:bold;
+        height:50px;
+        position:relative;
+        right:20px;
+        text-align:center;
+        text-shadow:0px -1px 1px #CBCBCB;
+        width:100px;*/
+        
+        /* CSS3 transitions 
+        -moz-transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;*/
+        /* Creates the button; generated from: http://css3generator.com/ 
+        -moz-border-radius-topright: 100px;
+        -moz-border-radius-bottomright: 100px;
+        -moz-border-radius: 0px 100px 100px 0px;
+        -webkit-border-radius-topright: 100px;
+        -webkit-border-radius-bottomright: 100px;
+        -webkit-border-radius: 0px 100px 100px 0px;
+        border-radius: px 100px 100px px; */
+        /* Box shadow 
+        -moz-box-shadow:5px 3px 10px rgba(0,0,0,0.7);
+        -webkit-box-shadow:5px 3px 10px rgba(0,0,0,0.7);
+        box-shadow:5px 3px 10px rgba(0,0,0,0.7);*/
+    }
+    #schedule-table { width:400px; }
+}
+
+@media screen and (max-width:450px) {
+    #additional-links {
+        height: 300px;
+        left: -180px;
+        line-height: 45px;
+        text-align: left;
+        text-indent: 0;
+        width: 162px;
+        -moz-transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+    }
+    #additional-links a {
+        font-size:12pt;
+        left:35px;
+    }
+    #btv-coming-soon {
+        font-size: 16pt;
+        left:70px;
+        top:250px;
+    }
+    #btv header h1 { left:125px; }
+    #buruco-logo { left:40px; }
+    #container { padding-left:10px;}
+    .date { font-size:12pt; }
+    .day-of-week { font-size:10pt; }
+    
+    header h1 { 
+        text-align:left; 
+        position:relative; 
+        left:70px;
+    }
+    
+    .learn-more { font-size:11pt; }
     #more-btn {
         background-image: -webkit-gradient(radial, center center, 0, center center, 200, from(#454647), to(#372F33));    
         background-image: -moz-radial-gradient(center, circle closest-corner, #454647 0%, #372F33 100%);
@@ -917,28 +991,6 @@ Media Queries
         -webkit-box-shadow:5px 3px 10px rgba(0,0,0,0.7);
         box-shadow:5px 3px 10px rgba(0,0,0,0.7);
     }
-    #schedule-table { width:400px; }
-}
-
-@media screen and (max-width:450px) {
-    #btv-coming-soon {
-        font-size: 16pt;
-        left:70px;
-        top:250px;
-    }
-    #btv header h1 { left:125px; }
-    #buruco-logo { left:40px; }
-    #container { padding-left:10px;}
-    .date { font-size:12pt; }
-    .day-of-week { font-size:10pt; }
-    
-    header h1 { 
-        text-align:left; 
-        position:relative; 
-        left:70px;
-    }
-    
-    .learn-more { font-size:11pt; }
     #schedule-table td { font-size:10pt; padding-right:7px; }
     #schedule-table { 
         width:265px; 

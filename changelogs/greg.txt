@@ -160,3 +160,161 @@ Feb-22-2012-10:37
 
     Changed hard tabs to soft tabs.
     Deleted test.html
+    
+Feb-22-2012-11:07
+
+    Beginning to work in more depth on the Speakers section;
+    when the user clicks on the speaker, it will display their
+    full bio.
+    Added the 'Back To Speakers' arrow png to btv-assets folder.
+
+Feb-22-2012-12:10
+
+    Built the layout/positioning of elements for the individual
+    speaker bios. 
+    Need to now make it so it appears when a speaker from the
+    list of speakers is clicked.
+    I was thinking the best way to do it was to grab the innerHTML
+    of a speaker based on who is clicked. For example I click on
+    John Smith, so I store his specific info (i.e. $(this).html)
+    and store it into a variable, then append some new elements.
+    I also created a separate css file specifically for the individual
+    speaker bios, I figured this was best, so we don't have just 1
+    giant css file.
+
+Feb-22-2012-13:00
+
+    I decidied to use a fadeToggle() in jQuery to transition between
+    the list of speakers, and the individual speaker bios.
+    I've made it so when you click on a speaker's name, it stores
+    their information. Also the Speaker Section Image and Title
+    fade out, and are replaced by the new image and title for going
+    back to the speakers list. I also created a separate js file 
+    specifically for doing this, just to make it easier to read; as
+    opposed to putting all the js in one file.
+
+Feb-22-2012-13:34
+
+    I got the fadeToggle() working, it now fades out the list and brings
+    in the individual speaker's bio. Then when you click on the BACK
+    TO SPEAKERS text or image, to does the reverse. Some of the styles
+    get messed up, so I still need to fix those.
+
+Feb-24-2012-10:14
+
+    Finished on the getting the individual speaker's bio to appear when clicking
+    on a specific speaker, and then back agaoin when clicking on the 'Back to Speakers'
+    Image or Text.  Now I just need to add the media queries for this section.
+
+Feb-24-2012-11:58
+
+    Finished the media queries for the individual speaker bio section, with the
+    exception of mobile devices
+
+Feb-24-2012-13:33
+
+    I realized that the additional-links div was starting to cause problems when
+    switching between the list of speakers, and the individual speaker bio. It
+    was because the position was absolute. Sean helped me fix it. There are only
+    a few more media queries for the aditional-links div that I need to fix.
+
+Feb-27-2012-14:20
+
+    Switched the BTV and Sponsor sections and adjusted the sliding red triangle
+    so that it is still aligned correctly.
+
+Feb-27-2012-14:39
+
+    Updated the addtional-links div in the BTV section.
+    I removed the Packing and Family links. I also changed 'Dining' to
+    'Restaurants'.  And adding Shopping, to keep the mobile version and
+    web version parallel.
+    
+Feb-27-2012-17:36
+
+    Began adding the sections that will contain the content for the BTV section:
+    Directions, Restaurants, Attractions, Shopping, and Lodging. Added a new
+    js file (btv_content_script.js), that controls the jQuery for that section.
+    Added the scrolling affect; so if you click on Restaurants for example, the 
+    screen will scroll down to the Restaurants section.
+    
+Feb-27-2012-19:41
+
+    Started to work on the 'Directions' section. Created a button, that, when
+    the user clicks it, gives directions based on current location. Has some
+    bugs that I'm working out.
+    
+Feb-29-2012-9:55
+
+    The Directions section now works, when you click the 'Get Directions' button,
+    it gives you the directions from your current location to the address specified.
+    
+Feb-29-2012-10:31
+
+    Started to work on the Restaurants section; just addded 1 restaurant (Sweetwaters).
+    I added a new stylesheet (btv_content_style.css) to control the styles just for the
+    additional content within the BTV section: Directions, Restaurants, Attractions,
+    Shopping, and Lodging.  The font styles might have to be tweeked.
+    
+Feb-29-2012-11:14
+
+    I added to more restaurants: Vermont Pub & Brewery and L'Amante.
+    I also updated the 'Get Directions' button so that there are now 2 links:
+    Website | Get Directions
+    
+Feb-29-2012-11:47
+
+    I began working on adding and styling the Attractions section. So far I have
+    only included 1: Echo.  I am also thinking of insteading of having long list
+    of restaurants, attractions, etc.. have it so when you click on one of the 
+    additional links, it fade toggles that section, similar to how the speakers
+    section works.
+    
+Feb-29-2012-12:42
+
+    I added the Burlington Bike Path, Downtown Burlington, and North Beach to
+    the attractions section.
+    
+Feb-29-2012-12:59
+
+    I am leaving the Shopping section blank for now, Adam had a really good idea; I'll
+    go to a few shops around Burlington and see if they want to sponsor the event, if they
+    do, there shop will be placed on the website and mobile applications. Until I talk to 
+    the shops I skipped ahead to the lodging section. I added 1 hotel (Hilton) and applied
+    styles to it.
+    
+Feb-29-2012-13:22
+
+    Worked on the 'Get Directions' links, now when you click on them, it opens
+    up a new tab to google maps; google maps asks if it can use your current location
+    and then shows you directions to the place you clicked on, i.e. Hilton. Having some
+    trouble though with the Church Street address, I just tried using Church Street as the
+    address and it doesn't work too well.
+    
+Feb-29-2012-13:30
+
+    I added Double Tree into the logding section.
+    
+Mar-2-2012-10:58
+
+    Updated the directions section so it now gives directions to the correct address
+    of the event. Removed the 'Shopping' section for now.  I also began working on
+    the media queries for the BTV additional content section.
+    
+Mar-2-2012-11:29
+
+    I finished up the media queries for the BTV section. I have to remember to add
+    media queries for the speakers section. I also need to adjust the media queries
+    for mobile devices.
+    
+Mar-2-2012-11:39
+
+    I replaced Double Tree with the Marriot.
+    
+Mar-2-2012-12:02
+
+    Switched the Lodging and Restaurants section.
+    
+Mar-2-12:13
+
+    Made a small change to the styles for the restaurant images.
