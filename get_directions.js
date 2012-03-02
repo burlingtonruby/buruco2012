@@ -20,7 +20,7 @@
  function success(position) 
  {
     //Show map
-    document.getElementById("map-canvas").style.display = "block";
+   $("#map-canvas").css("display","block");
     directionsDisplay = new google.maps.DirectionsRenderer();
     coords = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
 
