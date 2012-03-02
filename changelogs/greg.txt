@@ -306,3 +306,7 @@ Mar-2-2012-11:29
     I finished up the media queries for the BTV section. I have to remember to add
     media queries for the speakers section. I also need to adjust the media queries
     for mobile devices.
+    
+Mar-2-2012-11:39
+
+    I replaced Double Tree with the Marriot.

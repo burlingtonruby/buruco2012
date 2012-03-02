@@ -121,6 +121,15 @@ Lodging section
     width:300px;
 }
 
+/* Marriott */
+#marriott {
+    height:300px;
+}
+
+#marriott  img{
+    height:200px;
+}
+
 
 /**************************
 Media Queries
