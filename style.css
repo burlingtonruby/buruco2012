@@ -412,7 +412,7 @@ header {
     background-color:#FF0000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
     height:5px;
-    position:absolute;
+    position:relative;
     width:100%;
 }
 

@@ -339,3 +339,9 @@ Mar-2-2012-13:28
     image editing software (photoshop or fireworks would prob work) so I can't do this. I was
     thinking of having 2 images (one thumbnail and one full size) so the images don't have to be
     streteched out.  I still need to add more info for marc andre's bio.
+    
+Mar-13-2012-19:28
+
+    Fixed some browser compatability issues in Safari. The position of the red bar that separates each
+    section was getting messed up when clicking on a speaker. Just changed positioning from absolute to
+    relative;
