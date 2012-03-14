@@ -363,3 +363,8 @@ Mar-14-2012-10:27
 
     Worked with Adam to fix image sizing for speakers. Added topic titles and where the speaker works.
     Also, I changed the dates for the conference to the 28 - 29.
+    
+Mar-14-2012-11:00
+
+    Added 3 more speakers; corey haines, alex maccaw, and harold gimenez. I added in their photos, summaries, and
+    where they work.
