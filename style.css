@@ -328,7 +328,7 @@ tr.horizontal_dotted_line  td{
     text-indent: 22px;
     top: -5px;
     width: 763px;
-    word-spacing: 100px;
+    word-spacing: 95px;
 }
 
 #additional-links a{
@@ -548,14 +548,15 @@ Media Queries
     }
     .speaker-info summary p {
         font-size:11pt;
-        width:200px;
+        height:88px;
+        width:180px;
     }
     #speaker-list {
         -moz-column-gap:30px; 
         -webkit-column-gap:30px;
         column-gap:30px;
     }
-    .speaker-name { font-size:16pt; }
+    .speaker-name { font-size:15pt; }
     .speaker-title { font-size:12pt; }
 }
 
@@ -594,6 +595,7 @@ Media Queries
         -webkit-column-gap:10px;
         column-gap:10px;
     }
+    .speaker-name { font-size:13pt; }
 }
 
 @media screen and (max-width:850px) {
@@ -700,7 +702,7 @@ Media Queries
     }
     .speaker-info summary p {
         font-size: 12pt;
-        height: 100px;
+        height: 93px;
         width: 275px;
     }
     #speaker-list {
@@ -1017,7 +1019,7 @@ Media Queries
 
 /*
 * iPhone Styles
-*/
+
 
 @media screen and (max-device-width:320px) {
     #additional-links {
@@ -1129,4 +1131,4 @@ Media Queries
         right:0px; 
     }
 }
-
+*/
