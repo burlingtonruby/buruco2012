@@ -395,3 +395,7 @@ Mar-14-2012-12:04
     of some security restrictions, so it should work fine once the site is live. 
     - http://stackoverflow.com/questions/6181379/w3c-geolocation-api-not-working-in-chrome
     - http://stackoverflow.com/questions/5423938/html-5-geo-location-prompt-in-chrome
+    
+Mar-14-2012-12:17
+
+    Changed location in Schedule section on Friday the 27th to TBA.
