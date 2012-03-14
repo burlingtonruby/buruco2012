@@ -125,6 +125,7 @@ Attractions section
 .attraction-img {
     float:left;
     left:50px;
+    height:235px;
     position:relative;
     width:300px;
 }

@@ -346,7 +346,15 @@ Mar-13-2012-19:28
     section was getting messed up when clicking on a speaker. Just changed positioning from absolute to
     relative.
     
-Mar-13-20:03
+Mar-13-2012-20:03
 
     Fixed a few more minor browser issues with webkit. Also updated some of the media queries. I commented
     out the media queries for mobile devices until all the sections are complete.
+    
+Mar-13-2012-20:37
+
+    Used the Image Preview tool in Fireworks to resize all current speaker images. It didn't really help with
+    making them clearer when enlarged, but it allowed me to adjust the speaker_bio_script.js file so that when
+    we do have the correct full size images, they will be correctly replace when a user clicks on a speaker's name,
+    as opposed to just changing the height and width properties of the image. I also discovered that jpg image quality
+    is reduced every time that it is saved, so I converted all speaker images to pngs.
