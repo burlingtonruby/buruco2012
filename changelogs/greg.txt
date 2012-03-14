@@ -374,3 +374,7 @@ Mar-14-2012-11:08
     Updated the Schedule section. I added 3 days of events, and commented out the rest for now. For Friday the 27th, I left
     as is. For Saturday the 28th, I added 4 speakers, changed the time to TBA, and changed the location to Main Street Landing Performing Arts Center.
     I did the same for Sunday the 29th. I also commented out all the "Learn More" hrefs for now.
+    
+Mar-14-2012-11:24
+
+    Removed the height and width properties from the images since we have now manually resized them with photoshop.

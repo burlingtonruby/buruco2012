@@ -60,7 +60,7 @@ speaker bios
         
             $("#speaker-bio").css("display","block");
             $("#speaker-bio").append("<div id='img-container'></div>");
-            $("#img-container").append("<img src='"+speakerImgFull+"-full.png' class='full-img' width='300' height='300' alt='"+speakerName+"' Title='"+speakerName+"' />");
+            $("#img-container").append("<img src='"+speakerImgFull+"-full.png' class='full-img' alt='"+speakerName+"' Title='"+speakerName+"' />");
             $("#speaker-bio").append("<figure></figure>");
             $("figure").append("<span class='speaker-name'>"+speakerName+"</span> <br />");
             $("figure").append("<span class='speaker-title'>"+speakerTitle+"</span>");
