@@ -387,3 +387,11 @@ Mar-14-2012-11:31
 Mar-14-2012-11:48
 
     Made some changes to the padding-bottom styles of each section because there were really big gaps in between each section.
+    
+Mar-14-2012-12:04
+
+    I was testing using geolocation for getting directions to the conference in FireFox, Chrome, and Safari. In FireFox and Safari
+    it was working, but in Chrome it was not. I found out that if you are on a local webpage 'file:///', chrome will block it because
+    of some security restrictions, so it should work fine once the site is live. 
+    - http://stackoverflow.com/questions/6181379/w3c-geolocation-api-not-working-in-chrome
+    - http://stackoverflow.com/questions/5423938/html-5-geo-location-prompt-in-chrome

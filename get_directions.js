@@ -53,5 +53,6 @@ function calcRoute() {
 
 function fail()
 {
-   // Could not obtain location
+    // Could not obtain location
+    alert('Failed to retreive your location.');
 } 
