@@ -399,3 +399,7 @@ Mar-14-2012-12:04
 Mar-14-2012-12:17
 
     Changed location in Schedule section on Friday the 27th to TBA.
+    
+Mar-14-2012-12:20
+
+    Added topic titles to alex maccaw, corey haines, and harold gimenez.
