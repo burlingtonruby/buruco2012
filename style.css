@@ -1021,33 +1021,60 @@ Media Queries
 
 /*
 * iPhone Styles
-
+*/
 
 @media screen and (max-device-width:320px) {
-    #additional-links {
-        height:75px; 
+    #btv #additional-content {
         left:50px;
-        text-align:left;
-        text-indent:0px;
-        top: 6670px;
-        width:920px; 
-        -moz-transition: all 0.3s linear;
-        -webkit-transition: all 0.3s linear;
+        font-size:26pt;
+        width:850px;
+        top:80px;
     }
-    #additional-links a { 
-        border:none;
-        font-size:18pt;
-        left:20px;
-        top:25px;
+    #btv #get-directions {
+        height:200px;
+    }
+    #btv .attraction-img { display:none; }
+    #btv #btv-separator { width:100% }
+    #btv .lodging-img { display:none; }
+    #btv .restaurant-img { display:none; }
+    
+    #btv #echo, #btv #bike-path, #btv #downtown, #btv #north-beach,
+    #btv #hilton, #btv #marriott {
+        height:450px;
+        left:50px;
+        position:relative; 
+        text-align:left;
+        width:400px;
+    }
+    #btv #downtown { padding-bottom: 75px; }
+    #btv #sweetwaters, #btv #vpb, #btv #lamante {
+        height:450px;
+        left:150px;
+        position:relative;    
+        text-align:left;
+        width:400px;
+    }
+    
+    #additional-links {
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(0, 0, 0, 0.7);
+        border-radius: 10px 10px 10px 10px;
+        height: 85px;
+        left: 50px;
+        position: relative;
+        text-indent: 22px;
+        top: 50px;
+        width: 850px;
+        word-spacing: 30px;
+    }
+    #additional-links a {
+        bottom:0px;
+        font-size:20pt;
+        top:0px;
     }
     #btv { 
         padding-top:10px; 
         width:105%;
-    }
-    #btv header h1 {
-        left:-50px;
-        position:relative;
-        right:0px;
     }
     #btv-coming-soon {
         font-size: 36pt;
@@ -1056,14 +1083,16 @@ Media Queries
         top:250px;
     }
     #btv header .section-header { display:none; }
+    #buruco-logo { position:relative; left:350px; }
     .date { font-size:30pt; }
     .day-of-week { font-size:24pt; }
     div.intro-wrapper { display:none; }
     #footer { height:10px; }
-    header h1 {
-        font-size:42pt;
-        position: relative;
+    header{
+        font-size:36pt;
         left:0px;
+        padding:0px;
+        position: relative;
         right:0px;
         text-align: center;
     }
@@ -1133,4 +1162,4 @@ Media Queries
         right:0px; 
     }
 }
-*/
+

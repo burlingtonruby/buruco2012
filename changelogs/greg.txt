@@ -415,3 +415,12 @@ Mar-16-2012-16:15
     I left all the code that was there but just commented it out, in case we do add that Shopping section.  I told Adam the other day that
     I was testing the site on my small laptop screen and a larger monitor on campus, and that the speaker bio text would be cut off at some
     points (you would only see the top-half of the last line of words displayed for the bio), I fixed that issue for both monitor sizes.
+    
+Mar-16-2012-18:10
+
+    I finished up the media queries for the iphone for the most part. It looks pretty solid right now, but there are still a few things that
+    I need to figure out. I uploaded it to my website just for testing, since testing on a physical mobile device is always best, and I'll take
+    it down when I'm done testing. I'll take some screen shots to send you guys. There are only 2 issues that I see right now. The button for 
+    user's to click, which makes the google map image appear giving them directions to the conference is the new HTML5 button element, and
+    it is very small, and you can't resize it. Also for the speakers, I need to add some sort of indicator so the users know that by clicking
+    on a speaker's name, they will be able to view the full bio.
