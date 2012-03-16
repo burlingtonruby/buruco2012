@@ -403,3 +403,15 @@ Mar-14-2012-12:17
 Mar-14-2012-12:20
 
     Added topic titles to alex maccaw, corey haines, and harold gimenez.
+    
+Mar-16-2012-16:15
+
+    There were several issues that I hadn't noticed that I have now fixed. Some of the media queries were off
+    for a few areas so I fixed those. I noticed that I wasn't removing the image at the top of the web page soon
+    enough, so it was appearing really squished, fixed that. The bottom gray bar underneath the image was being pushed
+    down, making an awkward gap, fixed that. Previously, in the BTV section, I had the links (Directions, Lodging, Restaurants,
+    and Attractions) pushed off the screen and added a more button to bring them back once the screen was too small. Now that there
+    are only 4 links, I changed this so it just remains as is with the horizontal bar and it doesn't get pushed off the screen, however,
+    I left all the code that was there but just commented it out, in case we do add that Shopping section.  I told Adam the other day that
+    I was testing the site on my small laptop screen and a larger monitor on campus, and that the speaker bio text would be cut off at some
+    points (you would only see the top-half of the last line of words displayed for the bio), I fixed that issue for both monitor sizes.
