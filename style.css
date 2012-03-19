@@ -18,11 +18,23 @@ div.nav-highlight {
 }
 
 div.nav {
+  
+  
+  
+  
+  
+  
+  background: #303131; /* Old browsers */
   background:linear-gradient(bottom, rgb(48,49,49) 21%, rgb(71,72,74) 61%);
-  background:-o-linear-gradient(bottom, rgb(48,49,49) 21%, rgb(71,72,74) 61%);
   background:-moz-linear-gradient(bottom, rgb(48,49,49) 21%, rgb(71,72,74) 61%);
-  background:-webkit-linear-gradient(bottom, rgb(48,49,49) 21%, rgb(71,72,74) 61%);
-  background:-ms-linear-gradient(bottom, rgb(48,49,49) 21%, rgb(71,72,74) 61%);
+  /*background: -webkit-gradient(linear, bottom, left bottom, color-stop(21%,#303131), color-stop(61%,#47484a));  Chrome,Safari4+ */
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, from(rgb(48,49,49) 21%), to(rgb(71,72,74) 61%));
+  background:-webkit-linear-gradient(bottom, rgb(48,49,49) 21%, rgb(71,72,74) 61%); /* Chrome10+,Safari5.1+ */
+  background:-o-linear-gradient(bottom, rgb(48,49,49) 21%, rgb(71,72,74) 61%); /* Opera 11.10+ */
+  background:-ms-linear-gradient(bottom, rgb(48,49,49) 21%, rgb(71,72,74) 61%); /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303131', endColorstr='#47484a',GradientType=0 ); /* IE6-9 */
+
+  
   border-bottom:solid 1px #424040;
   height:70px;
 }

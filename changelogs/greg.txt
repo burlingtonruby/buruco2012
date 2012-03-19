@@ -424,3 +424,8 @@ Mar-16-2012-18:10
     user's to click, which makes the google map image appear giving them directions to the conference is the new HTML5 button element, and
     it is very small, and you can't resize it. Also for the speakers, I need to add some sort of indicator so the users know that by clicking
     on a speaker's name, they will be able to view the full bio.
+    
+Mar-19-2012-14:37
+
+    I noticed that the Safari gradient for the nav bar didn't support the previous version of safari, so I added only style to support that.
+    Also, Alex MacCaw's photo was pretty pixelated, so I found a new image to use that looks much better.
