@@ -188,7 +188,7 @@ div.speaker-info img {
 summary p {
     color:#5E5E5E;
     font-size:14pt;
-    height: 90px;
+    height: 86px;
     overflow:hidden;
     width:250px;
     text-overflow:ellipsis;
@@ -555,6 +555,7 @@ Media Queries
     
     .speaker-info summary p {
         font-size:11pt;
+        height:91px;
         width:230px;
     }
 }
@@ -742,7 +743,7 @@ Media Queries
     }
     .speaker-info summary p {
         font-size: 12pt;
-        height: 100px;
+        height: 99px;
         width: 275px;
     }
     #speaker-list {

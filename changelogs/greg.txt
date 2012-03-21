@@ -454,3 +454,13 @@ Mar-21-2012-11:26
 Mar-21-2012-12:09
 
     There were some medai query style issues with some of the content in the BTV section, so I fixed that up.
+    
+Mar-21-2012-12:09
+
+    There were some style issues in the Speakers section that I fixed. With the new FireFox update; when the partial text
+    of the speakers was displayed, part of the text was cut off, fixed. Also, when the full bio was displayed and the page
+    became smaller, the text would overflow into the Schedule section, so I fixed the media queries for that. I'm stuck on 
+    something thought and can't figure it out: When the screen becomes smaller, I keep getting this style (that I am not adding)
+    that is added to the id: speakers, which is the div element that contains the entire Speakers section. In firebug the style
+    is called element.style, and it adds a 600px padding-bottom style to the Full Speakers Bio, causing there to be a large gap
+    between the Speakers and Schedule sections. And I cannot figure out how to override it.
