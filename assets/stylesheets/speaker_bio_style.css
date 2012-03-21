@@ -1,0 +1,176 @@
+/******************************************************************
+ This CSS file is for the styles for the individual speaker bios
+******************************************************************/
+
+/* 
+* Change speakers section to not visible for testing
+* of individual speaker bio section. Also swap image
+* and title of section, just for initial testing.
+
+#speaker-list {
+    display:none;
+}*/
+
+/* 
+* Adding padding to #speakers element, because with the float
+* style in the .img-container, it causes the speakers section img
+* to overlap into the schedule section. This will be added programatically
+later, this is just for initial testing.
+
+#speakers {
+    padding-bottom:600px;
+}*/
+
+figure {
+    bottom: 335px;
+    float: right;
+    left: 312px;
+    position: relative;
+}
+
+figure .speaker-name {
+    font-size:24pt;
+}
+
+figure .speaker-title {
+    font-size:18pt;
+}
+
+figure summary p {
+    font-size:16pt;
+    height:100%;
+    overflow:visible;
+    text-overflow:clip;
+    width:70%;
+    word-wrap:normal;
+}
+
+#img-container {
+    background-color:#FFF;
+    border:2px solid #EBEBEB;
+    float:left;
+    height:320px;
+    width:320px;
+    /* Generated from: http://css3generator.com/ */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; 
+}
+
+#img-container img {
+    left:10px;
+    position:relative;
+    top:10px;
+}
+
+#speaker-bio {
+    display:none;
+}   
+
+/****************
+Media Queries
+****************/
+
+@media screen and (max-width:1050px) {
+    figure summary p { width:60%; }
+}
+
+@media screen and (max-width:1000px) {
+    figure summary p { width:55%; }
+}
+
+@media screen and (max-width:925px) {
+    figure summary p { 
+        font-size:14pt;
+        width:50%; 
+    }
+}
+
+@media screen and (max-width:850px) {
+    figure {
+        bottom: 285px;
+        left: 250px;
+    }
+    figure summary p { 
+        width:45%; 
+    }
+    #img-container {
+        height:270px; 
+        width:270px; 
+    }
+    #img-container img { 
+        height:250px; 
+        width:250px; 
+    }
+}
+
+@media screen and (max-width:750px) {
+    figure summary p { 
+        font-size:13pt;
+        width:40%; 
+    }
+}
+
+@media screen and (max-width:725px) {
+    figure {
+        bottom: 235px;
+        left: 204px;
+    }
+    #img-container {
+        height:220px; 
+        width:220px; 
+    }
+    #img-container img { 
+        height:200px; 
+        width:200px; 
+    }
+}
+
+@media screen and (max-width:650px) {
+    figure summary p { width:35%; }
+}
+
+@media screen and (max-width:600px) {
+    figure summary p { 
+        font-size:12pt;
+        width:30%; 
+    }
+}
+
+@media screen and (max-width:550px) {
+    figure {
+        bottom: 8px;
+        float: none;
+        left: 0;
+    }
+     figure summary p { width:50%; }
+    #img-container {
+        float: none;
+        height: 170px;
+        left: 38px;
+        position: relative;
+        width: 170px; 
+    }
+    #img-container img { 
+        height:150px; 
+        width:150px; 
+    }
+    #speakers { padding-bottom:100px; }
+}
+
+@media screen and (max-width:525px) {
+    figure summary p { 
+        font-size:12pt; 
+        width:45%;
+    }
+    figure .speaker-name { font-size:20pt; }
+    figure .speaker-title { font-size:16pt; }
+}
+
+@media screen and (max-width:500px) {
+    figure summary p { width:100%; }
+}
+
+@media screen and (max-width:500px) {
+    header h1 { left:0px; }
+}

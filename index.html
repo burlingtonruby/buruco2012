@@ -1,42 +1,578 @@
 <!DOCTYPE html>
   <head>
     <title>Burlington Ruby Conference</title>
-    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="grid.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="assets/stylesheets/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="assets/stylesheets/speaker_bio_style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="assets/stylesheets/grid.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="assets/stylesheets/btv_content_style.css" type="text/css" media="screen">
+    
+    <script src="assets/javascript/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/javascript/jquery.noisy.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/javascript/jquery.smooth-scroll.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script> 
 
-    <script src="jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="jquery.noisy.min.js" type="text/javascript" charset="utf-8"></script>
-
-    <script src="application.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/javascript/application.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="http://guestlistapp.com/javascripts/guestlist-embed.js"></script>
+    <script src="assets/javascript/speaker_bio_script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/javascript/get_directions.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/javascript/btv_content_script.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="http://use.typekit.com/wlp2wwl.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
   <body>
+	<div class="nav-container">
     <div class="nav-highlight"></div>
-    <div class="nav">
-      <div class="row">
-        <div class="twelve columns">
-          <img src="logo.png" width="206" height="30" alt="Burlington Ruby">
-        </div>
-      </div>
-    </div>
+		<div class="nav">
+		  <div class="row">
+			<div class="twelve columns">
+			  <canvas id="link-selected"></canvas>
+			  <img id="buruco-logo" src="assets/images/logo.png" width="206" height="30" alt="Burlington Ruby">
+			  <a id="speakers-link" class="links" href="#speakers">SPEAKERS</a>
+			  <a id="schedule-link" class="links" href="#schedule">SCHEDULE</a>
+			  <a id="btv-link" class="links" href="#btv">BTV</a>
+			  <a id="tickets-link" class="links" href="#tickets">TICKETS</a>
+			  <a id="sponsors-link" class="links" href="#sponsors">SPONSORS</a>
+			</div>
+		  </div>
+		</div>
+	</div>
     <div class="intro-wrapper">
       <div class="row">
         <div class="twelve columns">
           <div class="intro">
             <div class="intro-text">
-              <div class="date">July 27 - 29 2012</div>
+              <div class="date">July 28 - 29 2012</div>
               <div class="location">Burlington</div>
               <div class="language">Ruby</div>
               <div class="what">Conference</div>
-              <form action="http://agilionapps.us2.list-manage2.com/subscribe/post?u=bc988e5165d1f538a21085b04&amp;id=2cda2e079f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                <input type="email" id="mce-EMAIL" class="email" placeholder="Enter your email address" required="true">
-                <input type="submit" value="Send me updates" class="updates" name="subscribe" id="mc-embedded-subscribe">
+              <form action="http://burlingtonruby.us2.list-manage1.com/subscribe/post?u=bc988e5165d1f538a21085b04&amp;id=2cda2e079f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                <input type="email" placeholder="Enter your email address" name="EMAIL" class="required email" id="mce-EMAIL" required="true">
+                <input type="submit" value="Send me updates" name="subscribe" id="mc-embedded-subscribe" class="button">
               </form>
             </div>
           </div>
         </div>
       </div>
     </div>
+	<span id="nav2"><div class="nav"></div></div>
+	<!-- Speakers Section  -->
+	<div id="speakers" name="speakers">
+		<div class="container">
+			<header>
+				<img class="section-header speaker-header" src="assets/images/speakers.png" alt="Speakers" Title="Speakers" />
+                <img class="section-header back-speakers" id="back-img" src="assets/images/arrow.png" alt="Back To Speakers" Title="Back To Speakers" />
+				<h1 class="speaker-header" id="speaker-txt">SPEAKERS</h1> 
+                <h1 class="back-speakers" id="back-txt">BACK TO SPEAKERS</h1>
+			</header>
+			<div id="speakers-top">
+				<a href="#" class="top-btn"><img src="assets/images/top.png" alt="Top" Title="Top" /> Top</a>
+			</div>
+            <!-- This is for the full Speaker Bio -->
+            <div id="speaker-bio"></div> 
+			<div id="speaker-list">
+				<div class="speaker-info" id="joshua-hull">
+					<img src="assets/images/joshua-hull.png" class="speaker-img thumbnail" alt="Joshua Hull" Title="Joshua Hull" />
+					<span class="speaker-name">JOSHUA HULL</span> <br />
+					<span class="speaker-title">Twitter</span>
+					<summary>
+						<p>
+                            <u>Untangling the resourceful web with Renee</u>
+                            <br /><br/>
+
+                            During this talk, Joshua will discuss how the request model differs
+                            between Sinatra and Rails, and how we can use this to create captivating
+                            Web Applications without repeating ourselves.  He will also delve int
+                            internals, and take a look at real-world applications written in Renee.
+                            Lastly, we'll understand how to write extensions to Renee.
+                            <br /><br />
+                            Joshua Hull has been working as a programmer for the past 12 years. He's 
+                            deeply familiar with the world of startups, most recently through his 
+                            involvement with companies such as Bibliocommons, Postrank and Poll Everywhere. 
+                            Joshua is currently employed by Twitter; when he isn't working, he stays busy with 
+                            open source projects such as Padrino, Bundler, and whatever other crazy ideas occur 
+                            to him. 
+                            <br /><br >
+                            <a href="https://twitter.com/#!/joshbuddy" target="_blank">More Info</a>
+						</p>
+					</summary>
+				</div>
+				<div class="speaker-info" id="dan-croak">
+					<img src="assets/images/dan-croak.png" class="speaker-img thumbnail" alt="Dan Croak" Title="Dan Croak" />
+					<span class="speaker-name">DAN CROAK</span> <br />
+					<span class="speaker-title">Thoughtbot</span>
+					<summary>
+						<p>
+                            <u>Volunteers, not employees</u>
+                            <br /><br/>
+                            Good programmers can work from anywhere, pick their projects, and deploy their work globally in an instant. Demand outstrips supply.
+                            <br/><br/>
+                            What if employers considered their employees highly paid volunteers? This talk will examine the questions programmers and programmer-employers ask ourselves when choosing projects and teammates.
+                            <br/><br/>
+                            Dan has been making things on the web for 15 years. He's "a pretty good programmer with great habits."
+                            
+                            <br /><br >
+                            <a href="http://dancroak.com/" target="_blank">More Info</a>
+						</p>
+					</summary>
+				</div>
+				<div class="speaker-info" id="alex-maccaw">
+					<img src="assets/images/alex-maccaw.png" class="speaker-img thumbnail" alt="Alex MacCaw" Title="Alex MacCaw" />
+					<span class="speaker-name">ALEX MACCAW</span> <br />
+					<span class="speaker-title">Twitter</span>
+					<summary>
+						<p>
+                            <u>JavaScript Web Applications and Asynchronous Interfaces</u>
+                            <br /><br/>
+							Alex MacCaw is mainly a Ruby and JavaScript developer, specializing in creating JavaScript RIAs. He is competent in both backend, frontend and design.
+							<br /><br/>
+              
+                            Alex has spoken internationally at various conferences (RailsConf, GoRuCo) as well as closer to his home, in London. Alex just wrote a book on building 
+                            <br /><br/>
+                            
+                            JavaScript Web Applications for O'Reilly. Last year he set up a startup in San Francisco called Taskforce.
+                            <br /><br />
+                            <a href="http://alexmaccaw.com/" target="_blank">More Info</a>                            
+						</p>
+					</summary>
+				</div>
+				<!--<div class="speaker-info">
+					<img src="assets/images/john-smith.jpg" class="speaker-img" alt="John Smith" Title="John Smith" />
+					<span class="speaker-name">JOHN SMITH</span> <br />
+					<span class="speaker-title">Ruby Expert</span>
+					<summary>
+						<p>
+							"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, 
+							egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, 
+							bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum." 
+						</p>
+					</summary>
+				</div>
+				<div class="speaker-info">
+					<img src="assets/images/john-smith.jpg" class="speaker-img" alt="John Smith" Title="John Smith" />
+					<span class="speaker-name">JOHN SMITH</span> <br />
+					<span class="speaker-title">Ruby Expert</span>
+					<summary>
+						<p>
+							"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, 
+							egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, 
+							bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum." 
+						</p>
+					</summary>
+				</div>-->
+				<div class="speaker-info" id="marc-andre-cournoyer">
+					<img src="assets/images/marc-andre-cournoyer.png" class="speaker-img thumbnail" alt="Marc-Andr&eacute; Cournoyer" Title="Marc-Andr&eacute; Cournoyer" />
+					<span class="speaker-name">MARC-ANDR&Eacute;  COURNOYER</span> <br />
+					<span class="speaker-title">Macournoyer.com</span>
+					<summary>
+						<p>
+							<u>The 4 Hour Work Week for Ruby Hackers</u>
+                           <br /><br/>
+                           
+                            Marc-Andr&eacute; Cournoyer (coor &middot; noah &middot; ye), a very friendly code/life hacker from beautiful Montr&eacute;al, QC.
+                            <br /><br/>
+                            
+                            He created Thin, tinyrb, wrote the book <i>Create Your Own Programming Language</i>, created the group chat application Talker. 
+                            And he's now making a living online teaching Rails &amp; programming languages.
+                            <br /><br />
+                            <a href="http://macournoyer.com/" target="_blank">More Info</a> 
+						</p>
+					</summary>
+				</div>
+				<div class="speaker-info" id="corey-haines">
+					<img src="assets/images/corey-haines.png" class="speaker-img thumbnail" alt="Corey Haines" Title="Corey Haines" />
+					<span class="speaker-name">COREY HAINES</span> <br />
+					<span class="speaker-title">Code Retreat</span>
+					<summary>
+						<p>
+                            <u>Keynote</u>
+                            <br /><br/>
+                         
+							Corey Haines started programming at the age of 10, on a computer his father (also a programmer) bought for him. 
+                            He played lots of computer games, and when he couldn't win the games, he learned to read the source code and edit the outcome. 
+                            These "winning games" were his first software programs. He continued to hack, grew up, and began working as a professional 
+                            software developer. 
+                            <br /><br />
+                            <a href="http://coreyhaines.com/" target="_blank">More Info</a> 
+						</p>
+					</summary>
+				</div>
+				<div class="speaker-info" id="harold-gimenez">
+					<img src="assets/images/harold-gimenez.png" class="speaker-img thumbnail" alt="Harold Gim&eacute;nez" Title="Harold Gim&eacute;nez" />
+					<span class="speaker-name">HAROLD GIM&Egrave;NEZ</span> <br />
+					<span class="speaker-title">Heroku</span>
+					<summary>
+						<p>
+                            <u>PostgreSQL</u>
+                            <br /><br/>
+                            
+							Harold Gim&eacute;nez is a maker of clean, well tested, maintainable code that is delivered fast.  He specializes 
+                            in Machine Learning, Ruby/Ruby on Rails, and PostgreSQL. Harold is currently a Software Engineer at Heroku.
+                            <br /><br />
+                            <a href="http://www.linkedin.com/in/haroldgimenez" target="_blank">More Info</a>                            
+						</p>
+					</summary>
+				</div>
+				<!--<div class="speaker-info">
+					<img src="assets/images/john-smith.jpg" class="speaker-img" alt="John Smith" Title="John Smith" />
+					<span class="speaker-name">JOHN SMITH</span> <br />
+					<span class="speaker-title">Ruby Expert</span>
+					<summary>
+						<p>
+							"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, 
+							egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, 
+							bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum." 
+						</p>
+					</summary>
+				</div>
+				<div class="speaker-info">
+					<img src="assets/images/john-smith.jpg" class="speaker-img" alt="John Smith" Title="John Smith" />
+					<span class="speaker-name">JOHN SMITH</span> <br />
+					<span class="speaker-title">Ruby Expert</span>
+					<summary>
+						<p>
+							"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, 
+							egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, 
+							bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum." 
+						</p>
+					</summary>
+				</div>-->
+			</div>
+		</div>
+	</div>
+	<div class="seperator"></div>
+	<!-- Schedule Section -->
+	<div id="schedule">
+		<div class="container">
+			<header>
+				<img class="section-header" src="assets/images/clock.png" alt="Schedule" Title="Schedule" /> 
+				<h1>SCHEDULE</h1>
+			</header>
+			<div id="schedule-top">
+				<a href="#" class="top-btn"><img src="assets/images/top.png" alt="Top" Title="Top" /> Top</a>
+			</div>
+			<table id="schedule-table">
+				<tr class="horizontal_dotted_line">
+					<td class="schedule-header">Date</td>
+					<td class="schedule-header">Time</td>
+					<td class="schedule-header">Event</td>
+					<td class="schedule-header">Location</td>
+					<td class="schedule-header">Details</td>
+				</tr>
+				<tr class="horizontal_dotted_line">
+					<td>
+						<span class="day-of-week">Fri</span> <br /> <span class="date">27</span>
+					</td>
+					<td>7:00 PM</td>
+					<td>Friday Night Meet-up</td>
+					<td>TBA</td>
+					<td>
+						<!-- <a href="#" class="learn-more">Learn <br /> More</a> -->
+					</td>
+				</tr>
+				<tr class="horizontal_dotted_line">
+					<td>
+						<span class="day-of-week">Sat</span> <br /> <span class="date">28</span>
+					</td>
+					<td>TBA</td>
+					<td>
+                       Corey Haines <br/>
+                       Joshua Hull <br /> 
+                       Marc-Andr&eacute; Cournoyer <br />
+                       Dan Croak
+                    </td>
+					<td>Main Street Landing <br />Performing Arts Center</td>
+					<td>
+						<!--<a href="#" class="learn-more">Learn <br /> More</a>-->
+					</td>
+				</tr>
+				<tr class="horizontal_dotted_line">
+					<td>
+						<span class="day-of-week">Sun</span> <br /> <span class="date">29</span>
+					</td>
+					<td>TBA</td>
+					<td>
+                        Alex MacCraw <br />
+                        Harold Gim&eacute;nez
+                    </td>
+					<td>Main Street Landing <br />Performing Arts Center</td>
+					<td>
+						<!--<a href="#" class="learn-more">Learn <br /> More</a>-->
+					</td>
+				</tr>
+				<!--<tr class="horizontal_dotted_line">
+					<td>
+						<span class="day-of-week">Fri</span> <br /> <span class="date">27</span>
+					</td>
+					<td>7:00 PM</td>
+					<td>Friday Night Meet-up</td>
+					<td>Farmhouse</td>
+					<td>
+						<a href="#" class="learn-more">Learn <br /> More</a>
+					</td>
+				</tr>
+				<tr class="horizontal_dotted_line">
+					<td>
+						<span class="day-of-week">Fri</span> <br /> <span class="date">27</span>
+					</td>
+					<td>7:00 PM</td>
+					<td>Friday Night Meet-up</td>
+					<td>Farmhouse</td>
+					<td>
+						<a href="#" class="learn-more">Learn <br /> More</a>
+					</td>
+				</tr>
+				<tr class="horizontal_dotted_line">
+					<td>
+						<span class="day-of-week">Fri</span> <br /> <span class="date">27</span>
+					</td>
+					<td>7:00 PM</td>
+					<td>Friday Night Meet-up</td>
+					<td>Farmhouse</td>
+					<td>
+						<a href="#" class="learn-more">Learn <br /> More</a>
+					</td>
+				</tr>-->
+			</table>
+		</div>
+	</div>
+	<div class="seperator"></div>
+    <!-- BTV Section -->
+	<div id="btv">
+		<div class="container">
+			<header>
+				<img class="section-header" src="assets/images/btv.png" alt="BTV" Title="BTV" /> 
+				<h1 id="btv-header">BTV</h1>
+				<div id="additional-links">  
+					<a href="#conference-directions">DIRECTIONS</a>
+                    <a href="#lodging-list">LODGING</a>
+                    <a href="#restaurants-list" class="bottom-links">RESTAURANTS</a>
+					<a href="#attractions-list">ATTRACTIONS</a>
+                    <!--<a href="#shopping-list" class="bottom-links">SHOPPING</a>-->
+				</div>
+                <div id="btv-top">
+                    <a href="#" class="top-btn"><img src="assets/images/top.png" alt="Top" Title="Top" /> Top</a>
+                </div>
+				<div id="more-btn"><span id="btn-txt">MORE</span></div>
+			</header>
+			
+			<!--<div id="btv-coming-soon">
+				COMING SOON
+			</div>
+            -->
+            <!-- Displays the Directions, Restaurants, Attractions, Shopping, and Lodging Information --> 
+            <div id="additional-content">
+                <!-- Directions Section -->
+                <div id="conference-directions">
+                    <h2>DIRECTIONS</h2>
+                    <div id="conference-address">
+                        Main Street Landing Performing Arts Center<br />
+                        60 Lake Street <br />
+                        Burlington, VT 05401
+                    </div>
+                    <button type="button" id="get-directions">Get Directions</button>
+                    <div id="map-canvas"></div>
+                </div>
+                <!-- Lodging Sectin -->
+                <div id="lodging-list">
+                    <h2>LODGING</h2>
+                    <div id="hilton">
+                        <img class="lodging-img" title="Hilton" alt="Hilton" src="assets/images/hilton.jpg" />
+                        <div class="lodging-content">
+                            <h3>Hilton</h3>
+                            <div id="hilton-address">
+                                60 Battery Street <br />
+                                Burlington, VT 05401
+                            </div>
+                            Phone: (802) 658-6500 <br /><br />
+                            <span id="hilton-move-right">
+                                <a target="_blank" href="http://www1.hilton.com/en_US/hi/hotel/BTTVTHF-Hilton-Burlington-Vermont/index.do">Website</a> | 
+                                <a target="_blank" href="http://maps.google.com/maps?daddr=60+Battery+St%2C+Burlington%2C+VT+05401" id="hilton-directions">Get Directions</a>
+                            </span>
+                        </div>
+                    </div>
+                    <hr id="btv-separator" width="50%" align="center" /> <br />
+                    <div id="marriott">
+                        <img class="lodging-img" title="Marriott" alt="Marriott" src="assets/images/marriot.jpg" />
+                        <div class="lodging-content">
+                            <h3>Marriott</h3>
+                            <div id="marriott-address">
+                                25 Cherry Street <br />
+                                Burlington, VT 05401
+                            </div>
+                            Phone: (802) 864-4700 <br /><br />
+                            <a target="_blank" href="http://www.marriott.com/hotels/travel/btvdt-courtyard-burlington-harbor/">Website</a> | 
+                            <a target="_blank" href="http://maps.google.com/maps?daddr=25+Cherry+St%2C+Burlington%2C+VT+05401" id="marriott-directions">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Restaurants Section -->
+                <div id="restaurants-list">
+                    <h2>RESTAURANTS</h2>
+                    <div id="sweetwaters">
+                        <img class="restaurant-img" src="assets/images/sweetwaters.png" title="Sweetwaters" alt="Sweetwaters" />
+                        <div class="restaurant-content">
+                            <h3>Sweetwaters</h3>
+                            <div id="sweetwaters-address">
+                                120 Church Street <br />
+                                Burlington, VT 05401
+                            </div>
+                            Phone: (802) 864-9800 <br /><br />
+                            <a target="_blank" href="http://www.sweetwatersvt.com/">Website</a> | 
+                            <a target="_blank" href="http://maps.google.com/maps?daddr=120+Church+St%2C+Burlington%2C+VT+05401" id="sweetwaters-directions">Get Directions</a>
+                        </div>
+                    </div>
+                    <hr id="btv-separator" width="50%" align="center" /> <br />
+                    <div id="vpb">
+                        <img class="restaurant-img" title="Vermont Pub & Brewery" alt="Vermont Pub & Brewery" src="assets/images/vpb.jpg" />
+                        <div class="restaurant-content">
+                            <h3>Vermont Pub & Brewery</h3>
+                            <div id="vpb-address">
+                                144 College Street <br />
+                                Burlington, VT 05401
+                            </div>
+                            Phone: (802) 865-0500 <br /><br />
+                            <a target="_blank" href="http://www.vermontbrewery.com/">Website</a> | 
+                            <a target="_blank" href="http://maps.google.com/maps?daddr=144+College+St%2C+Burlington%2C+VT+05401" id="vpb-directions">Get Directions</a>
+                        </div>
+                    </div>
+                    <hr id="btv-separator" width="50%" align="center" /> <br />
+                    <div id="lamante">
+                        <img class="restaurant-img" title="L'Amante" alt="L'Amante" src="assets/images/lamante.png" />
+                        <div class="restaurant-content">
+                            <h3>L'Amante</h3>
+                            <div id="vpb-address">
+                                126 College Street <br />
+                                Burlington, VT 05401
+                            </div>
+                            Phone: (802) 863-5200 <br /><br />
+                            <a target="_blank" href="http://lamante.com/">Website</a> | 
+                            <a target="_blank" href="http://maps.google.com/maps?daddr=126+College+St%2C+Burlington%2C+VT+05401" id="lamante-directions">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Attractions Section -->
+                <div id="attractions-list">
+                    <h2>ATTRACTIONS</h2>
+                    <div id="echo">
+                        <img class="attraction-img" title="ECHO Aquarium" alt="ECHO Aquarium" src="assets/images/echo.jpg" />
+                        <div class="attraction-content">
+                            <h3>ECHO Lake Aquarium</h3>
+                            <div id="echo-address">
+                                1 College Street <br />
+                                Burlington, VT 05401
+                            </div>
+                            Phone: (877) 324-6386<br /><br />
+                            <a target="_blank" href="http://www.echovermont.org/">Website</a> | 
+                            <a target="_blank" href="http://maps.google.com/maps?daddr=1+College+St%2C+Burlington%2C+VT+05401" id="echo-directions">Get Directions</a>
+                        </div>
+                    </div>
+                    <hr id="btv-separator" width="50%" align="center" /> <br />
+                    <div id="bike-path">
+                        <img class="attraction-img" title="Burlington Bike Path" alt="Burlington Bike Path" src="assets/images/bike_path.jpg" />
+                        <div class="attraction-content">
+                            <h3>Burlington Bike Path</h3>
+                            <div id="bike-path-abstract">
+                                The Bike Path is a beautiful trail that <br />
+                                stretches across the waterfront for <br />
+                                7.6 miles.
+                            </div>
+                            Phone: (802) 864-0123<br /><br />
+                            <a target="_blank" href="http://www.enjoyburlington.com/Parks/BikePath1.cfm">Website</a> | 
+                            <a target="_blank" href="http://maps.google.com/maps?hl=en&client=firefox-a&hs=Tt8&rls=org.mozilla:en-US:official&gs_sm=3&gs_upl=25174l29400l1l29606l27l14l0l12l12l1l194l1652l6.8l26l0&bav=on.2,or.r_gc.r_pw.,cf.osb&biw=1366&bih=665&q=burlington+vt+bike+path+map&um=1&ie=UTF-8&hq=&hnear=0x4cca7ab9b6bc6543:0x34c1b5db16f8251e,Bike+Path,+Burlington,+VT+05401&gl=us&ei=B11OT4_VFqLu0gH5gdmzAg&sa=X&oi=geocode_result&ct=image&resnum=1&ved=0CDsQ8gEwAA" id="bike-path-directions">Map</a> |
+                            <a target="_blank" href="http://www.localmotion.org/programs/trailside/">Rent a Bike</a>
+                        </div>
+                    </div>
+                    <hr id="btv-separator" width="50%" align="center" /> <br />
+                    <div id="downtown">
+                    <img class="attraction-img" title="Church Street" alt="Church Street" src="assets/images/downtown.jpg" />
+                        <div class="attraction-content">
+                            <h3>Downtown Burlington</h3>
+                            <div id="downtown-address">
+                                Church Street<br />
+                                Burlington, VT 05401
+                            </div>
+                            <br />
+                            <div id="downtown-abstract">
+                                Downtown Burlington is an amazing<br />
+                                place to explore; it is full of shops,<br />
+                                food, and fun.
+                            </div>
+                            <br />
+                            <span class="move-right">
+                                <a target="_blank" href="http://www.churchstmarketplace.com/">Website</a> | 
+                                <a target="_blank" href="http://maps.google.com/maps?daddr=Church+St%2C+Burlington%2C+VT+05401" id="downtown-directions">Get Directions</a>
+                            </span>
+                        </div>
+                    </div>
+                    <hr id="btv-separator" width="50%" align="center" /> <br />
+                    <div id="north-beach">
+                    <img class="attraction-img" title="North Beach" alt="North Beach" src="assets/images/north-beach.jpg" />
+                        <div class="attraction-content">
+                            <h3>North Beach</h3>
+                            <div id="north-beach-address">
+                                60 Institute Road<br />
+                                Burlington, VT
+                            </div>
+                            Phone: (802) 862-0942
+                            <br /><br />
+                            <a target="_blank" href="http://www.enjoyburlington.com/northbeach.cfm">Website</a> | 
+                            <a target="_blank" href="http://maps.google.com/maps?daddr=60+Institute+Rd%2C+Burlington%2C+VT+05401" id="north-beach-directions">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Shopping Section 
+                <div id="shopping-list">
+                    <h2>SHOPPING</h2>
+                </div>-->
+            </div>
+		</div>
+	</div>
+	<div class="seperator"></div>
+	<!-- Ticketes Section -->
+	<div id="tickets">
+		<div class="container">
+			<header>
+				<img class="section-header" src="assets/images/tickets.png" alt="Tickets" Title="Tickets" /> 
+				<h1 id="tickets-header">TICKETS</h1>
+			</header>
+			<div id="tickets-top">
+				<a href="#" class="top-btn"><img src="assets/images/top.png" alt="Top" Title="Top" /> Top</a>
+			</div>
+			<div id="tickets-coming-soon">
+			  <a class="guestlist-event-96402" href="#"><img width="250" height="60" style="border: 0" src="http://guestlistapp.com/images/embed/register.png" alt="Register for Event" /></a>
+			</div>
+		</div>
+	</div>
+	<div class="seperator"></div>
+	<!-- Sponsors Section -->
+	<div id="sponsors">
+		<div class="container">
+			<header>
+				<img class="section-header" src="assets/images/sponsors.png" alt="Sponsors" Title="Sponsors" /> 
+				<h1 id="sponsors-header">SPONSORS</h1>
+			</header>
+			<div id="sponsors-top">
+				<a href="#" class="top-btn"><img src="assets/images/top.png" alt="Top" Title="Top" /> Top</a>
+			</div>
+			<div id="sponsors-coming-soon">
+			  <p>Contact the Burlington Web Application Group for more information about sponsorship opportunities</p>
+              <a href="mailto:events@agilionapps.com" id="sponsors-btn">More Info</a>
+			</div>
+		</div>
+	</div>
+	<div id="footer"></div>
   </body>
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-21240238-4']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
 </html>
