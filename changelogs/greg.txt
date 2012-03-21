@@ -468,3 +468,8 @@ Mar-21-2012-12:09
 Mar-21-2012-12:53
 
     Fixed the media query style issues with the text inside Sponsors section.
+    
+Mar-21-2012-13:14
+
+    Changed the name of the link to the Speaker's personal sites to More Info.  In the Sponsors section, created a More Info
+    buttton.
