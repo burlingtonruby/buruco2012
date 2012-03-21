@@ -429,3 +429,8 @@ Mar-19-2012-14:37
 
     I noticed that the Safari gradient for the nav bar didn't support the previous version of safari, so I added only style to support that.
     Also, Alex MacCaw's photo was pretty pixelated, so I found a new image to use that looks much better.
+    
+Mar-21-2012-9:40
+
+    Merged speaker_bio branch into development, and deleted the speaker_bio branch. Now preparing development branch for deployment to
+    live site.
