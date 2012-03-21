@@ -1,20 +1,20 @@
 <!DOCTYPE html>
   <head>
     <title>Burlington Ruby Conference</title>
-    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="speaker_bio_style.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="grid.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="btv_content_style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="assets/stylesheets/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="assets/stylesheets/speaker_bio_style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="assets/stylesheets/grid.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="assets/stylesheets/btv_content_style.css" type="text/css" media="screen">
     
-    <script src="jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="jquery.noisy.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="jquery.smooth-scroll.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/javascript/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/javascript/jquery.noisy.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/javascript/jquery.smooth-scroll.js" type="text/javascript" charset="utf-8"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script> 
 
-    <script src="application.js" type="text/javascript" charset="utf-8"></script>
-    <script src="speaker_bio_script.js" type="text/javascript" charset="utf-8"></script>
-    <script src="get_directions.js" type="text/javascript" charset="utf-8"></script>
-    <script src="btv_content_script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/javascript/application.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/javascript/speaker_bio_script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/javascript/get_directions.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/javascript/btv_content_script.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="http://use.typekit.com/wlp2wwl.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
@@ -25,7 +25,7 @@
 		  <div class="row">
 			<div class="twelve columns">
 			  <canvas id="link-selected"></canvas>
-			  <img id="buruco-logo" src="logo.png" width="206" height="30" alt="Burlington Ruby">
+			  <img id="buruco-logo" src="assets/images/logo.png" width="206" height="30" alt="Burlington Ruby">
 			  <a id="speakers-link" class="links" href="#speakers">SPEAKERS</a>
 			  <a id="schedule-link" class="links" href="#schedule">SCHEDULE</a>
 			  <a id="btv-link" class="links" href="#btv">BTV</a>
@@ -58,19 +58,19 @@
 	<div id="speakers" name="speakers">
 		<div class="container">
 			<header>
-				<img class="section-header speaker-header" src="btv-assets/speakers.png" alt="Speakers" Title="Speakers" />
-                <img class="section-header back-speakers" id="back-img" src="btv-assets/arrow.png" alt="Back To Speakers" Title="Back To Speakers" />
+				<img class="section-header speaker-header" src="assets/images/speakers.png" alt="Speakers" Title="Speakers" />
+                <img class="section-header back-speakers" id="back-img" src="assets/images/arrow.png" alt="Back To Speakers" Title="Back To Speakers" />
 				<h1 class="speaker-header" id="speaker-txt">SPEAKERS</h1> 
                 <h1 class="back-speakers" id="back-txt">BACK TO SPEAKERS</h1>
 			</header>
 			<div id="speakers-top">
-				<a href="#" class="top-btn"><img src="btv-assets/top.png" alt="Top" Title="Top" /> Top</a>
+				<a href="#" class="top-btn"><img src="assets/images/top.png" alt="Top" Title="Top" /> Top</a>
 			</div>
             <!-- This is for the full Speaker Bio -->
             <div id="speaker-bio"></div> 
 			<div id="speaker-list">
 				<div class="speaker-info" id="joshua-hull">
-					<img src="btv-assets/joshua-hull.png" class="speaker-img thumbnail" alt="Joshua Hull" Title="Joshua Hull" />
+					<img src="assets/images/joshua-hull.png" class="speaker-img thumbnail" alt="Joshua Hull" Title="Joshua Hull" />
 					<span class="speaker-name">JOSHUA HULL</span> <br />
 					<span class="speaker-title">Twitter</span>
 					<summary>
@@ -93,7 +93,7 @@
 					</summary>
 				</div>
 				<div class="speaker-info" id="dan-croak">
-					<img src="btv-assets/dan-croak.png" class="speaker-img" alt="Dan Croak" Title="Dan Croak" />
+					<img src="assets/images/dan-croak.png" class="speaker-img" alt="Dan Croak" Title="Dan Croak" />
 					<span class="speaker-name">DAN CROAK</span> <br />
 					<span class="speaker-title">Thoughtbot</span>
 					<summary>
@@ -114,7 +114,7 @@
 					</summary>
 				</div>
 				<div class="speaker-info" id="alex-maccaw">
-					<img src="btv-assets/alex-maccaw.png" class="speaker-img" alt="Alex MacCaw" Title="Alex MacCaw" />
+					<img src="assets/images/alex-maccaw.png" class="speaker-img" alt="Alex MacCaw" Title="Alex MacCaw" />
 					<span class="speaker-name">ALEX MACCAW</span> <br />
 					<span class="speaker-title">Twitter</span>
 					<summary>
@@ -128,7 +128,7 @@
 					</summary>
 				</div>
 				<!--<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" class="speaker-img" alt="John Smith" Title="John Smith" />
+					<img src="assets/images/john-smith.jpg" class="speaker-img" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>
@@ -140,7 +140,7 @@
 					</summary>
 				</div>
 				<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" class="speaker-img" alt="John Smith" Title="John Smith" />
+					<img src="assets/images/john-smith.jpg" class="speaker-img" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>
@@ -152,7 +152,7 @@
 					</summary>
 				</div>-->
 				<div class="speaker-info" id="marc-andre-cournoyer">
-					<img src="btv-assets/marc-andre-cournoyer.png" class="speaker-img thumbnail" alt="Marc-Andr&eacute; Cournoyer" Title="Marc-Andr&eacute; Cournoyer" />
+					<img src="assets/images/marc-andre-cournoyer.png" class="speaker-img thumbnail" alt="Marc-Andr&eacute; Cournoyer" Title="Marc-Andr&eacute; Cournoyer" />
 					<span class="speaker-name">MARC-ANDR&Egrave;  COURNOYER</span> <br />
 					<span class="speaker-title">Macournoyer.com</span>
 					<summary>
@@ -166,7 +166,7 @@
 					</summary>
 				</div>
 				<div class="speaker-info" id="corey-haines">
-					<img src="btv-assets/corey-haines.png" class="speaker-img" alt="Corey Haines" Title="Corey Haines" />
+					<img src="assets/images/corey-haines.png" class="speaker-img" alt="Corey Haines" Title="Corey Haines" />
 					<span class="speaker-name">COREY HAINES</span> <br />
 					<span class="speaker-title">Code Retreat</span>
 					<summary>
@@ -181,7 +181,7 @@
 					</summary>
 				</div>
 				<div class="speaker-info" id="harold-gimenez">
-					<img src="btv-assets/harold-gimenez.png" class="speaker-img" alt="Harold Gim&eacute;nez" Title="Harold Gim&eacute;nez" />
+					<img src="assets/images/harold-gimenez.png" class="speaker-img" alt="Harold Gim&eacute;nez" Title="Harold Gim&eacute;nez" />
 					<span class="speaker-name">HAROLD GIM&Egrave;NEZ</span> <br />
 					<span class="speaker-title">Heroku</span>
 					<summary>
@@ -195,7 +195,7 @@
 					</summary>
 				</div>
 				<!--<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" class="speaker-img" alt="John Smith" Title="John Smith" />
+					<img src="assets/images/john-smith.jpg" class="speaker-img" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>
@@ -207,7 +207,7 @@
 					</summary>
 				</div>
 				<div class="speaker-info">
-					<img src="btv-assets/john-smith.jpg" class="speaker-img" alt="John Smith" Title="John Smith" />
+					<img src="assets/images/john-smith.jpg" class="speaker-img" alt="John Smith" Title="John Smith" />
 					<span class="speaker-name">JOHN SMITH</span> <br />
 					<span class="speaker-title">Ruby Expert</span>
 					<summary>
@@ -226,11 +226,11 @@
 	<div id="schedule">
 		<div class="container">
 			<header>
-				<img class="section-header" src="btv-assets/clock.png" alt="Schedule" Title="Schedule" /> 
+				<img class="section-header" src="assets/images/clock.png" alt="Schedule" Title="Schedule" /> 
 				<h1>SCHEDULE</h1>
 			</header>
 			<div id="schedule-top">
-				<a href="#" class="top-btn"><img src="btv-assets/top.png" alt="Top" Title="Top" /> Top</a>
+				<a href="#" class="top-btn"><img src="assets/images/top.png" alt="Top" Title="Top" /> Top</a>
 			</div>
 			<table id="schedule-table">
 				<tr class="horizontal_dotted_line">
@@ -322,7 +322,7 @@
 	<div id="btv">
 		<div class="container">
 			<header>
-				<img class="section-header" src="btv-assets/btv.png" alt="BTV" Title="BTV" /> 
+				<img class="section-header" src="assets/images/btv.png" alt="BTV" Title="BTV" /> 
 				<h1 id="btv-header">BTV</h1>
 				<div id="additional-links">  
 					<a href="#conference-directions">DIRECTIONS</a>
@@ -332,7 +332,7 @@
                     <!--<a href="#shopping-list" class="bottom-links">SHOPPING</a>-->
 				</div>
                 <div id="btv-top">
-                    <a href="#" class="top-btn"><img src="btv-assets/top.png" alt="Top" Title="Top" /> Top</a>
+                    <a href="#" class="top-btn"><img src="assets/images/top.png" alt="Top" Title="Top" /> Top</a>
                 </div>
 				<div id="more-btn"><span id="btn-txt">MORE</span></div>
 			</header>
@@ -358,7 +358,7 @@
                 <div id="lodging-list">
                     <h2>LODGING</h2>
                     <div id="hilton">
-                        <img class="lodging-img" title="Hilton" alt="Hilton" src="btv-assets/hilton.jpg" />
+                        <img class="lodging-img" title="Hilton" alt="Hilton" src="assets/images/hilton.jpg" />
                         <div class="lodging-content">
                             <h3>Hilton</h3>
                             <div id="hilton-address">
@@ -372,7 +372,7 @@
                     </div>
                     <hr id="btv-separator" width="50%" align="center" /> <br />
                     <div id="marriott">
-                        <img class="lodging-img" title="Marriott" alt="Marriott" src="btv-assets/marriot.jpg" />
+                        <img class="lodging-img" title="Marriott" alt="Marriott" src="assets/images/marriot.jpg" />
                         <div class="lodging-content">
                             <h3>Marriott</h3>
                             <div id="marriott-address">
@@ -389,7 +389,7 @@
                 <div id="restaurants-list">
                     <h2>RESTAURANTS</h2>
                     <div id="sweetwaters">
-                        <img class="restaurant-img" src="btv-assets/sweetwaters.png" title="Sweetwaters" alt="Sweetwaters" />
+                        <img class="restaurant-img" src="assets/images/sweetwaters.png" title="Sweetwaters" alt="Sweetwaters" />
                         <div class="restaurant-content">
                             <h3>Sweetwaters</h3>
                             <div id="sweetwaters-address">
@@ -403,7 +403,7 @@
                     </div>
                     <hr id="btv-separator" width="50%" align="center" /> <br />
                     <div id="vpb">
-                        <img class="restaurant-img" title="Vermont Pub & Brewery" alt="Vermont Pub & Brewery" src="btv-assets/vpb.jpg" />
+                        <img class="restaurant-img" title="Vermont Pub & Brewery" alt="Vermont Pub & Brewery" src="assets/images/vpb.jpg" />
                         <div class="restaurant-content">
                             <h3>Vermont Pub & Brewery</h3>
                             <div id="vpb-address">
@@ -417,7 +417,7 @@
                     </div>
                     <hr id="btv-separator" width="50%" align="center" /> <br />
                     <div id="lamante">
-                        <img class="restaurant-img" title="L'Amante" alt="L'Amante" src="btv-assets/lamante.png" />
+                        <img class="restaurant-img" title="L'Amante" alt="L'Amante" src="assets/images/lamante.png" />
                         <div class="restaurant-content">
                             <h3>L'Amante</h3>
                             <div id="vpb-address">
@@ -434,7 +434,7 @@
                 <div id="attractions-list">
                     <h2>ATTRACTIONS</h2>
                     <div id="echo">
-                        <img class="attraction-img" title="ECHO Aquarium" alt="ECHO Aquarium" src="btv-assets/echo.jpg" />
+                        <img class="attraction-img" title="ECHO Aquarium" alt="ECHO Aquarium" src="assets/images/echo.jpg" />
                         <div class="attraction-content">
                             <h3>ECHO Lake Aquarium</h3>
                             <div id="echo-address">
@@ -448,7 +448,7 @@
                     </div>
                     <hr id="btv-separator" width="50%" align="center" /> <br />
                     <div id="bike-path">
-                        <img class="attraction-img" title="Burlington Bike Path" alt="Burlington Bike Path" src="btv-assets/bike_path.jpg" />
+                        <img class="attraction-img" title="Burlington Bike Path" alt="Burlington Bike Path" src="assets/images/bike_path.jpg" />
                         <div class="attraction-content">
                             <h3>Burlington Bike Path</h3>
                             <div id="bike-path-abstract">
@@ -464,7 +464,7 @@
                     </div>
                     <hr id="btv-separator" width="50%" align="center" /> <br />
                     <div id="downtown">
-                    <img class="attraction-img" title="Church Street" alt="Church Street" src="btv-assets/downtown.jpg" />
+                    <img class="attraction-img" title="Church Street" alt="Church Street" src="assets/images/downtown.jpg" />
                         <div class="attraction-content">
                             <h3>Downtown Burlington</h3>
                             <div id="downtown-address">
@@ -484,7 +484,7 @@
                     </div>
                     <hr id="btv-separator" width="50%" align="center" /> <br />
                     <div id="north-beach">
-                    <img class="attraction-img" title="North Beach" alt="North Beach" src="btv-assets/north-beach.jpg" />
+                    <img class="attraction-img" title="North Beach" alt="North Beach" src="assets/images/north-beach.jpg" />
                         <div class="attraction-content">
                             <h3>North Beach</h3>
                             <div id="north-beach-address">
@@ -510,11 +510,11 @@
 	<div id="tickets">
 		<div class="container">
 			<header>
-				<img class="section-header" src="btv-assets/tickets.png" alt="Tickets" Title="Tickets" /> 
+				<img class="section-header" src="assets/images/tickets.png" alt="Tickets" Title="Tickets" /> 
 				<h1 id="tickets-header">TICKETS</h1>
 			</header>
 			<div id="tickets-top">
-				<a href="#" class="top-btn"><img src="btv-assets/top.png" alt="Top" Title="Top" /> Top</a>
+				<a href="#" class="top-btn"><img src="assets/images/top.png" alt="Top" Title="Top" /> Top</a>
 			</div>
 			<div id="tickets-coming-soon">
 				COMING SOON
@@ -526,11 +526,11 @@
 	<div id="sponsors">
 		<div class="container">
 			<header>
-				<img class="section-header" src="btv-assets/sponsors.png" alt="Sponsors" Title="Sponsors" /> 
+				<img class="section-header" src="assets/images/sponsors.png" alt="Sponsors" Title="Sponsors" /> 
 				<h1 id="sponsors-header">SPONSORS</h1>
 			</header>
 			<div id="sponsors-top">
-				<a href="#" class="top-btn"><img src="btv-assets/top.png" alt="Top" Title="Top" /> Top</a>
+				<a href="#" class="top-btn"><img src="assets/images/top.png" alt="Top" Title="Top" /> Top</a>
 			</div>
 			<div id="sponsors-coming-soon">
 				COMING SOON

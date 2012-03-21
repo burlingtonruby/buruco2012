@@ -441,3 +441,7 @@ Mar-21-2012-9:46
     3 subfolders: images, javascript, and stylesheets, each meant to hold the appropriate files. I moved all images from btv-assets into
     images, all js files in the javascript folder, and all css files into the stylesheets folder. I also deleted the btv-assets folder
     because it is no longer needed.
+    
+Mar-21-2012-10:04
+
+    I updated all script, link, src, and url properties to point to the appropriate files with the new file directory.
