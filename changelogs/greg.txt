@@ -315,6 +315,117 @@ Mar-2-2012-12:02
 
     Switched the Lodging and Restaurants section.
     
-Mar-2-12:13
+Mar-2-2012-12:13
 
     Made a small change to the styles for the restaurant images.
+    
+Mar-2-2012-12:41
+
+    Started new branch: speaker_bio where I will add the current speakers
+    
+Mar-2-2012-13:04
+
+    I added the first speaker (Joshua Hull). He sent a link to a previous conference he
+    spoke at; since he is giving a talk on the same topic, I just re-worded the summary
+    that was given on the site (http://confoo.ca/en/2012/session/renee). He said to grab
+    the image from this page as well.  We will probably need to use Adobe Bridge or
+    Fireworks to resize his image.
+    
+Mar-2-2012-13:28
+
+    I added the next 2 speakers. I resized the images (giving them generic class names!),
+    however, this makes marc andre's image look very stretched out, dan croak's image very
+    grainy, and only joshua hull's looks ok (except when it is full size). I don't have any
+    image editing software (photoshop or fireworks would prob work) so I can't do this. I was
+    thinking of having 2 images (one thumbnail and one full size) so the images don't have to be
+    streteched out.  I still need to add more info for marc andre's bio.
+    
+Mar-13-2012-19:28
+
+    Fixed some browser compatability issues in Safari. The position of the red bar that separates each
+    section was getting messed up when clicking on a speaker. Just changed positioning from absolute to
+    relative.
+    
+Mar-13-2012-20:03
+
+    Fixed a few more minor browser issues with webkit. Also updated some of the media queries. I commented
+    out the media queries for mobile devices until all the sections are complete.
+    
+Mar-13-2012-20:37
+
+    Used the Image Preview tool in Fireworks to resize all current speaker images. It didn't really help with
+    making them clearer when enlarged, but it allowed me to adjust the speaker_bio_script.js file so that when
+    we do have the correct full size images, they will be correctly replace when a user clicks on a speaker's name,
+    as opposed to just changing the height and width properties of the image. I also discovered that jpg image quality
+    is reduced every time that it is saved, so I converted all speaker images to pngs.
+    
+Mar-14-2012-10:27
+
+    Worked with Adam to fix image sizing for speakers. Added topic titles and where the speaker works.
+    Also, I changed the dates for the conference to the 28 - 29.
+    
+Mar-14-2012-11:00
+
+    Added 3 more speakers; corey haines, alex maccaw, and harold gimenez. I added in their photos, summaries, and
+    where they work.
+    
+Mar-14-2012-11:08
+
+    Updated the Schedule section. I added 3 days of events, and commented out the rest for now. For Friday the 27th, I left
+    as is. For Saturday the 28th, I added 4 speakers, changed the time to TBA, and changed the location to Main Street Landing Performing Arts Center.
+    I did the same for Sunday the 29th. I also commented out all the "Learn More" hrefs for now.
+    
+Mar-14-2012-11:24
+
+    Removed the height and width properties from the images since we have now manually resized them with photoshop.
+    
+Mar-14-2012-11:31
+
+    Updated application.js so that when you click on the Buruco logo, that also scrolls to the top of the web page and put the red
+    triangle slider above the Buruco logo.
+    
+Mar-14-2012-11:48
+
+    Made some changes to the padding-bottom styles of each section because there were really big gaps in between each section.
+    
+Mar-14-2012-12:04
+
+    I was testing using geolocation for getting directions to the conference in FireFox, Chrome, and Safari. In FireFox and Safari
+    it was working, but in Chrome it was not. I found out that if you are on a local webpage 'file:///', chrome will block it because
+    of some security restrictions, so it should work fine once the site is live. 
+    - http://stackoverflow.com/questions/6181379/w3c-geolocation-api-not-working-in-chrome
+    - http://stackoverflow.com/questions/5423938/html-5-geo-location-prompt-in-chrome
+    
+Mar-14-2012-12:17
+
+    Changed location in Schedule section on Friday the 27th to TBA.
+    
+Mar-14-2012-12:20
+
+    Added topic titles to alex maccaw, corey haines, and harold gimenez.
+    
+Mar-16-2012-16:15
+
+    There were several issues that I hadn't noticed that I have now fixed. Some of the media queries were off
+    for a few areas so I fixed those. I noticed that I wasn't removing the image at the top of the web page soon
+    enough, so it was appearing really squished, fixed that. The bottom gray bar underneath the image was being pushed
+    down, making an awkward gap, fixed that. Previously, in the BTV section, I had the links (Directions, Lodging, Restaurants,
+    and Attractions) pushed off the screen and added a more button to bring them back once the screen was too small. Now that there
+    are only 4 links, I changed this so it just remains as is with the horizontal bar and it doesn't get pushed off the screen, however,
+    I left all the code that was there but just commented it out, in case we do add that Shopping section.  I told Adam the other day that
+    I was testing the site on my small laptop screen and a larger monitor on campus, and that the speaker bio text would be cut off at some
+    points (you would only see the top-half of the last line of words displayed for the bio), I fixed that issue for both monitor sizes.
+    
+Mar-16-2012-18:10
+
+    I finished up the media queries for the iphone for the most part. It looks pretty solid right now, but there are still a few things that
+    I need to figure out. I uploaded it to my website just for testing, since testing on a physical mobile device is always best, and I'll take
+    it down when I'm done testing. I'll take some screen shots to send you guys. There are only 2 issues that I see right now. The button for 
+    user's to click, which makes the google map image appear giving them directions to the conference is the new HTML5 button element, and
+    it is very small, and you can't resize it. Also for the speakers, I need to add some sort of indicator so the users know that by clicking
+    on a speaker's name, they will be able to view the full bio.
+    
+Mar-19-2012-14:37
+
+    I noticed that the Safari gradient for the nav bar didn't support the previous version of safari, so I added only style to support that.
+    Also, Alex MacCaw's photo was pretty pixelated, so I found a new image to use that looks much better.

@@ -64,7 +64,7 @@ $(document).ready(function() {
 				break;
 		}
 	});
-	$('.top-btn').click(function(){
+	$('.top-btn, #buruco-logo').click(function(){
 		currentLink = "Logo";
 	});
 	
@@ -304,7 +304,7 @@ $(document).ready(function() {
 	$('.links').click(function(){
 		updateSliderResize();
 	});
-	$('.top-btn').click(function(){
+	$('.top-btn, #buruco-logo').click(function(){
 		updateSliderResize();
 	});
 	
@@ -338,7 +338,7 @@ $(document).ready(function() {
 	* Smooth scrolling 
 	* https://github.com/kswedberg/jquery-smooth-scroll
 	*/
-	$('.links, .top-btn').click(function() {
+	$('.links, .top-btn, #buruco-logo').click(function() {
 		  $.smoothScroll({
 			//scrollElement: $('div.scrollme'),
 			scrollTarget: $(this).attr("href"),

@@ -29,7 +29,7 @@
 
 #sweetwaters, #vpb, #lamante, #echo,
 #bike-path, #downtown, #north-beach,
-#hilton, #double-tree{
+#hilton, #marriott{
     height:250px;
     width:750px;
 }
@@ -125,6 +125,7 @@ Attractions section
 .attraction-img {
     float:left;
     left:50px;
+    height:235px;
     position:relative;
     width:300px;
 }
