@@ -17,7 +17,7 @@ speaker bios
 
     //Changes cursor to a pointer when the user hovers
     //over the speaker name
-    $(".speaker-name").hover(function() {
+    $(".speaker-name, .thumbnail").hover(function() {
         $(this).css("cursor","pointer");
     });
     
@@ -30,15 +30,37 @@ speaker bios
         //alert('mobile device');
     }
     
-    //Gets speaker's information when their name is clicked
-    $(".speaker-name").click(function() {
-        //Store info in variables
-        speakerImg = $(this).prev().attr("src");
-        //Cut off the end of the src attribute so we can use the full image
-        var speakerImgFull = speakerImg.slice(0,speakerImg.length-4);
-        speakerName = $(this).html();
-        speakerTitle = $(this).next().next().html();
-        speakerBio = $(this).next().next().next().html();
+  
+    /***********************************************************
+    Gets speaker's information when their Name is clicked or
+    their image is clicked
+    ***********************************************************/
+    $(".speaker-name, .thumbnail").click(function() {
+        //This variable stores the class of the element clicked 
+        //(The speaker name, or the speaker (thumbnail) image).
+        //Based on the class, the variables to store the speakers information
+        //will point to the correct elements.
+        var elementClass = $(this).attr("class");
+        //If the user clicks on the name
+        if(elementClass == "speaker-name") {
+            //Store info in variables
+            speakerImg = $(this).prev().attr("src");
+            //Cut off the end of the src attribute so we can use the full image
+            var speakerImgFull = speakerImg.slice(0,speakerImg.length-4);
+            speakerName = $(this).html();
+            speakerTitle = $(this).next().next().html(); //There is an extra .next() because of the <br> element
+            speakerBio = $(this).next().next().next().html();
+        }
+        //Otherwise, the user clicked on the image
+        else {
+            //Store info in variables
+            speakerImg = $(this).attr("src");
+            //Cut off the end of the src attribute so we can use the full image
+            var speakerImgFull = speakerImg.slice(0,speakerImg.length-4);
+            speakerName = $(this).next().html();
+            speakerTitle = $(this).next().next().next().html();
+            speakerBio = $(this).next().next().next().next().html();
+        }
         
         /* 
         * Smooth scrolling so if the user clicks on a speaker further

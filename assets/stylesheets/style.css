@@ -197,6 +197,11 @@ summary p {
     word-wrap:break-word;
 }
 
+summary p a {
+    color:#FF0000;
+    text-decoration:underline;
+}
+
 .thumbnail {
     height:150px;
 }

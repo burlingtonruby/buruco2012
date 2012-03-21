@@ -445,3 +445,8 @@ Mar-21-2012-9:46
 Mar-21-2012-10:04
 
     I updated all script, link, src, and url properties to point to the appropriate files with the new file directory.
+    
+Mar-21-2012-11:26
+
+    Added Personal website links, Twitter link, or LinkedIn link to Speaker Bios. I also made it so when you click on the
+    speaker's image, it will also display their full bio.
