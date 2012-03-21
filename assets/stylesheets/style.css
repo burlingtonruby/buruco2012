@@ -521,7 +521,7 @@ Media Queries
 @media screen and (max-width:1000px) {
     #additional-links { 
         left:133px;
-        width:686px;       
+        width:700px;       
     }
     
     #additional-links a{ font-size:10pt; }
@@ -563,7 +563,7 @@ Media Queries
     #additional-links { 
         left:132px;
         width:625px;
-        word-spacing:78px;
+        word-spacing:75px;
     }
     #btv-coming-soon { left:325px; }
     #btv-top a{ right:160px; }
@@ -614,7 +614,7 @@ Media Queries
 @media screen and (max-width:875px) {
     #additional-links { 
         width: 557px;
-        word-spacing: 56px;
+        word-spacing: 52px;
     }
     #btv-coming-soon { left:300px; }
     #btv-top a{ right:220px; }
@@ -639,7 +639,7 @@ Media Queries
         font-size: 14pt;
         left: 125px;
         width: 535px;
-        word-spacing: 47px;
+        word-spacing: 44px;
     }
     
     #btv-coming-soon { left:275px; }
@@ -690,7 +690,7 @@ Media Queries
         left: 40px;
         top: 42px;
         width: 615px;
-        word-spacing: 73px;
+        word-spacing: 67px;
     }
     #btv-coming-soon{ left:250px; }
     #btv-top a { right:310px; }
@@ -764,7 +764,7 @@ Media Queries
     #additional-links { 
 		left:65px;
 		width:500px;
-		word-spacing:35px;
+		word-spacing:33px;
 	}
 	#additional-links a {
 		right:24px;
@@ -782,6 +782,7 @@ Media Queries
     #additional-links { 
 		left:50px; 
 		width:497px;
+        word-spacing:31px;
 	}
     #btv-top a { right:410px; }
     
@@ -804,7 +805,7 @@ Media Queries
         text-align: left;
         text-indent: 0;
         width: 497px;
-        word-spacing: 18px;
+        word-spacing: 22px;
     }
     #additional-links a { 
         font-size:12pt; 
@@ -950,7 +951,7 @@ Media Queries
     #additional-links {
 		left:0px;
 		width:375px;
-		word-spacing: 8px;
+		word-spacing: 0px;
         /*height: 300px;
         left: -10px;
         line-height: 45px;

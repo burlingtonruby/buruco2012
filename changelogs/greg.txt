@@ -450,3 +450,7 @@ Mar-21-2012-11:26
 
     Added Personal website links, Twitter link, or LinkedIn link to Speaker Bios. I also made it so when you click on the
     speaker's image, it will also display their full bio.
+    
+Mar-21-2012-12:09
+
+    There were some medai query style issues with some of the content in the BTV section, so I fixed that up.

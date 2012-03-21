@@ -148,7 +148,20 @@ Media Queries
 @media screen and (max-width:1000px) {
     #additional-content { 
         left:133px;
-        width:686px;       
+        width:700px;       
+    }
+    #bike-path-abstract {
+        width:525px;
+    }
+    #downtown {
+        padding-bottom:55px;
+    }
+    #downtown-abstract {
+        width:500px;
+    }
+    .move-right{
+        position:relative;
+        left:298px;
     }
     #map-canvas {
         width:650px;
@@ -166,11 +179,25 @@ Media Queries
     .attraction-img {
         width:200px;
     }
+    #bike-path-abstract {
+        width:425px;
+    }
+    #downtown-abstract {
+        width:400px;
+    }
+    #hilton-move-right {
+        position:relative;
+        left:200px;
+    }
     .lodging-img {
         width:200px;
     }
     #map-canvas {
         width:600px;
+    }
+    .move-right{
+        position:relative;
+        left:200px;
     }
     .restaurant-img {
         left:-180px;
@@ -214,8 +241,15 @@ Media Queries
     .attraction-img {
         display:none;
     }
+    #hilton-move-right {
+        position:relative;
+        left:0px;
+    }
     .lodging-img {
         display:none;
+    }
+    .move-right {
+        left:0px;
     }
     #map-canvas {
         width:520px;
