@@ -434,3 +434,10 @@ Mar-21-2012-9:40
 
     Merged speaker_bio branch into development, and deleted the speaker_bio branch. Now preparing development branch for deployment to
     live site.
+    
+Mar-21-2012-9:46
+
+    I created a new file directory, based on the Ruby standards that Adam told me about. Created a new folder called assets, which has
+    3 subfolders: images, javascript, and stylesheets, each meant to hold the appropriate files. I moved all images from btv-assets into
+    images, all js files in the javascript folder, and all css files into the stylesheets folder. I also deleted the btv-assets folder
+    because it is no longer needed.
