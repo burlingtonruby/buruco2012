@@ -1,0 +1,475 @@
+Feb-02-2012-14:06
+
+	Building out html5/css3 from psd file
+	Added the hrefs to the top of the nav bar
+	Added CSS3 styles for links
+	Added red triangle to be used for the selected link
+	
+Feb-02-2012-15:42
+
+	The red triangle now hovers over the selected link in the top nav bar
+	
+Feb-02-2012-17:27
+
+	Worked on the Speakers section
+	Added the header of the section
+	Worked on the 2 column list of speakers
+	Worked on the line that divides each section
+	
+Feb-08-2012-9:36
+
+		Working on getting the red triangle on the nav bar to slide when changing pages
+		
+Feb-08-2012-11:04
+
+		Worked on the Schedule section, having issues with the dotted line seperator,
+		I am using bottom-border to created dotted line, but it's only working in FireFox,
+		in chrome the dotted lines don't stretch all the way.
+		Still need to add the styles for the schedule
+		
+Feb-08-2012-12:27
+
+	Changed the nav bar so it is fixed while the user is scrolling, clicking on the links
+	now makes the page slide down to the section clicked on, only issue is that the nav
+	bar offset needs to be fixed a bit
+	
+Feb-08-2012-13:30
+
+	I added some more styles to the schedule, I'm having some issues with the CSS3 multiple
+	column layout and seperating each column with a dotted line.  In FirFox it works okay,
+	but some of the columns aren't aligned the same; and in Chrome and Safari the columns
+	are really funky looking
+
+Feb-10-2012-9:49
+
+	Updated the folder 'btv assets' to btv-assets
+	Deleted btv assets
+	Updated id reference that was using javascript to jQuery
+	
+Feb-2-10-2012-11:16
+
+	Worked on styles for the Schedule section
+	Scraped the CSS3 multiple columns; wasn't working, and used tables instead
+	I made the fonts as close as I could to the comp, but they will probably have to
+	be adjusted once it is on the site that allows me to use the fonts from TypeKit fonts
+	
+Feb-2-2012-11:45
+
+	I added the Sponsors section, and it is complete except for the fonts
+	Tristan gave me the fonts that will be used, but I forget which fonts
+	are applied to each section, so I'll have to check with him
+	
+Feb-2-2012-12:00
+
+	I added the Tickets section
+	Also I noticed that, for example, if you click on the tickets link, the red
+	triangle is over the Tickets link, but if you click the Top link to go to the
+	top of the page, the red triangle remains over the Tickets link, which to me
+	didn't make sense, so I made the red triangle hover over the buruco logo when
+	the user clicks on any of the Top links
+	
+Feb-2-2012-13:01
+
+	I added the BTV section with all the styles
+	
+Feb-2-2012-13:11
+	
+	Removed a few extra break tags above the Speakers section.
+	Changed the position styles of the additional-links div
+	
+Feb-13-2012-16:18
+
+	Worked on media queries
+	Right now I am focusing on smaller laptop screen sizes / iPad
+	Everything is adjuste between the following dimensions (width): 750 - 1300px
+	The only thing that still needs to be adjusted up to this point it the red
+	triangle, because I changed the position and font-size of the nav bar links,
+	I think I might use javascript to detect the screen size, and based on that
+	change the position of the red triangle (adding on to my switch statement).
+	If anyone can think of a more efficient way of doing this, let me know :)
+	
+Feb-13-2012-17:09
+
+	Did some more work on the media queries
+	Additional screen sizes between 725px and 625px (width) are now supported
+	Some issues that are starting to come up since I am near the size of a mobile
+	device, is the head nav bar, I can't keep lowering the font-size and moving
+	the links to the left, because if they become too small it will become difficult
+	for the user to click on them, I was thinking of moving them down below the buruco
+	logo, but that would mean I would have to get rid of the sliding triangle, because 
+	then it would look really weird.  Let me know what you guys think
+	
+Feb-15-2012-11:06
+
+	Worked more on the media queries
+	The supported screen size now goes down to 500px
+	Some changes I made in order to support this small of a screen size include:
+		- Removing the navigation links at the top
+		- Removed the red sliding triangle
+		- Removed the image at the top
+		- Removed the images for the Speakers
+		- At the bottom, in the BTV section, made links onto 2 lines instead of 1
+		
+Feb-15-2012-13:10
+
+	Media queries now support down to a 450px screen 
+	Updated the BTV section:
+		- The links in this section are now off the screen (location, lodging, ect..)
+		- Added a 'more' button
+		- When the user clicks on the more button the links slide onto the left side of the screen
+		
+Feb-17-2012-10:26
+
+	Updated styles for iPhone sized version of site
+	Adjusted the logo
+	Fixed the schedule table so it doesn't look so squished as before
+	In the BTV section: made a simple More/Less button for the extra links (lodging ect..)
+	
+Feb-17-2012-12:15
+	
+	Began working on the media queries specifically for mobile devices
+	It wasn't as easy as I expected, even though I altered the styles to 
+	support the screen size of the iPhone for a computer browser, these
+	styles looked completely different when on an actual mobile browser.
+	I am almost done adjusting the styles for the iPhone
+	
+Feb-17-2012-12:35
+
+	Finished up the media queries for the iPhone mobile browser.
+	Let me know if anything needs to be changed
+	
+Feb-17-2012-13:43
+
+	Began working on fixing the red sliding triangle for smaller screens.
+	I think Sean's solution is best, I tried changing the position based on
+	when the screen size is changed (also it checks the screen size when the page first loads),
+	this method works, but I feel like Sean's method will reduce the amount of code that is needed.
+	
+Feb-20-2012-15:30
+	
+	Finished working on the sliding red triangle.
+	It's position now is correctly adjusted based on
+	the size of the browser window. Hooray!
+	
+Feb-22-2012-9:57
+
+	There are a few issues with the position of the red sliding triange when the screen
+	size was changed in Safari and Chrome, began fixing those issues.
+    
+Feb-22-2012-10:37
+
+    Changed hard tabs to soft tabs.
+    Deleted test.html
+    
+Feb-22-2012-11:07
+
+    Beginning to work in more depth on the Speakers section;
+    when the user clicks on the speaker, it will display their
+    full bio.
+    Added the 'Back To Speakers' arrow png to btv-assets folder.
+
+Feb-22-2012-12:10
+
+    Built the layout/positioning of elements for the individual
+    speaker bios. 
+    Need to now make it so it appears when a speaker from the
+    list of speakers is clicked.
+    I was thinking the best way to do it was to grab the innerHTML
+    of a speaker based on who is clicked. For example I click on
+    John Smith, so I store his specific info (i.e. $(this).html)
+    and store it into a variable, then append some new elements.
+    I also created a separate css file specifically for the individual
+    speaker bios, I figured this was best, so we don't have just 1
+    giant css file.
+
+Feb-22-2012-13:00
+
+    I decidied to use a fadeToggle() in jQuery to transition between
+    the list of speakers, and the individual speaker bios.
+    I've made it so when you click on a speaker's name, it stores
+    their information. Also the Speaker Section Image and Title
+    fade out, and are replaced by the new image and title for going
+    back to the speakers list. I also created a separate js file 
+    specifically for doing this, just to make it easier to read; as
+    opposed to putting all the js in one file.
+
+Feb-22-2012-13:34
+
+    I got the fadeToggle() working, it now fades out the list and brings
+    in the individual speaker's bio. Then when you click on the BACK
+    TO SPEAKERS text or image, to does the reverse. Some of the styles
+    get messed up, so I still need to fix those.
+
+Feb-24-2012-10:14
+
+    Finished on the getting the individual speaker's bio to appear when clicking
+    on a specific speaker, and then back agaoin when clicking on the 'Back to Speakers'
+    Image or Text.  Now I just need to add the media queries for this section.
+
+Feb-24-2012-11:58
+
+    Finished the media queries for the individual speaker bio section, with the
+    exception of mobile devices
+
+Feb-24-2012-13:33
+
+    I realized that the additional-links div was starting to cause problems when
+    switching between the list of speakers, and the individual speaker bio. It
+    was because the position was absolute. Sean helped me fix it. There are only
+    a few more media queries for the aditional-links div that I need to fix.
+
+Feb-27-2012-14:20
+
+    Switched the BTV and Sponsor sections and adjusted the sliding red triangle
+    so that it is still aligned correctly.
+
+Feb-27-2012-14:39
+
+    Updated the addtional-links div in the BTV section.
+    I removed the Packing and Family links. I also changed 'Dining' to
+    'Restaurants'.  And adding Shopping, to keep the mobile version and
+    web version parallel.
+    
+Feb-27-2012-17:36
+
+    Began adding the sections that will contain the content for the BTV section:
+    Directions, Restaurants, Attractions, Shopping, and Lodging. Added a new
+    js file (btv_content_script.js), that controls the jQuery for that section.
+    Added the scrolling affect; so if you click on Restaurants for example, the 
+    screen will scroll down to the Restaurants section.
+    
+Feb-27-2012-19:41
+
+    Started to work on the 'Directions' section. Created a button, that, when
+    the user clicks it, gives directions based on current location. Has some
+    bugs that I'm working out.
+    
+Feb-29-2012-9:55
+
+    The Directions section now works, when you click the 'Get Directions' button,
+    it gives you the directions from your current location to the address specified.
+    
+Feb-29-2012-10:31
+
+    Started to work on the Restaurants section; just addded 1 restaurant (Sweetwaters).
+    I added a new stylesheet (btv_content_style.css) to control the styles just for the
+    additional content within the BTV section: Directions, Restaurants, Attractions,
+    Shopping, and Lodging.  The font styles might have to be tweeked.
+    
+Feb-29-2012-11:14
+
+    I added to more restaurants: Vermont Pub & Brewery and L'Amante.
+    I also updated the 'Get Directions' button so that there are now 2 links:
+    Website | Get Directions
+    
+Feb-29-2012-11:47
+
+    I began working on adding and styling the Attractions section. So far I have
+    only included 1: Echo.  I am also thinking of insteading of having long list
+    of restaurants, attractions, etc.. have it so when you click on one of the 
+    additional links, it fade toggles that section, similar to how the speakers
+    section works.
+    
+Feb-29-2012-12:42
+
+    I added the Burlington Bike Path, Downtown Burlington, and North Beach to
+    the attractions section.
+    
+Feb-29-2012-12:59
+
+    I am leaving the Shopping section blank for now, Adam had a really good idea; I'll
+    go to a few shops around Burlington and see if they want to sponsor the event, if they
+    do, there shop will be placed on the website and mobile applications. Until I talk to 
+    the shops I skipped ahead to the lodging section. I added 1 hotel (Hilton) and applied
+    styles to it.
+    
+Feb-29-2012-13:22
+
+    Worked on the 'Get Directions' links, now when you click on them, it opens
+    up a new tab to google maps; google maps asks if it can use your current location
+    and then shows you directions to the place you clicked on, i.e. Hilton. Having some
+    trouble though with the Church Street address, I just tried using Church Street as the
+    address and it doesn't work too well.
+    
+Feb-29-2012-13:30
+
+    I added Double Tree into the logding section.
+    
+Mar-2-2012-10:58
+
+    Updated the directions section so it now gives directions to the correct address
+    of the event. Removed the 'Shopping' section for now.  I also began working on
+    the media queries for the BTV additional content section.
+    
+Mar-2-2012-11:29
+
+    I finished up the media queries for the BTV section. I have to remember to add
+    media queries for the speakers section. I also need to adjust the media queries
+    for mobile devices.
+    
+Mar-2-2012-11:39
+
+    I replaced Double Tree with the Marriot.
+    
+Mar-2-2012-12:02
+
+    Switched the Lodging and Restaurants section.
+    
+Mar-2-2012-12:13
+
+    Made a small change to the styles for the restaurant images.
+    
+Mar-2-2012-12:41
+
+    Started new branch: speaker_bio where I will add the current speakers
+    
+Mar-2-2012-13:04
+
+    I added the first speaker (Joshua Hull). He sent a link to a previous conference he
+    spoke at; since he is giving a talk on the same topic, I just re-worded the summary
+    that was given on the site (http://confoo.ca/en/2012/session/renee). He said to grab
+    the image from this page as well.  We will probably need to use Adobe Bridge or
+    Fireworks to resize his image.
+    
+Mar-2-2012-13:28
+
+    I added the next 2 speakers. I resized the images (giving them generic class names!),
+    however, this makes marc andre's image look very stretched out, dan croak's image very
+    grainy, and only joshua hull's looks ok (except when it is full size). I don't have any
+    image editing software (photoshop or fireworks would prob work) so I can't do this. I was
+    thinking of having 2 images (one thumbnail and one full size) so the images don't have to be
+    streteched out.  I still need to add more info for marc andre's bio.
+    
+Mar-13-2012-19:28
+
+    Fixed some browser compatability issues in Safari. The position of the red bar that separates each
+    section was getting messed up when clicking on a speaker. Just changed positioning from absolute to
+    relative.
+    
+Mar-13-2012-20:03
+
+    Fixed a few more minor browser issues with webkit. Also updated some of the media queries. I commented
+    out the media queries for mobile devices until all the sections are complete.
+    
+Mar-13-2012-20:37
+
+    Used the Image Preview tool in Fireworks to resize all current speaker images. It didn't really help with
+    making them clearer when enlarged, but it allowed me to adjust the speaker_bio_script.js file so that when
+    we do have the correct full size images, they will be correctly replace when a user clicks on a speaker's name,
+    as opposed to just changing the height and width properties of the image. I also discovered that jpg image quality
+    is reduced every time that it is saved, so I converted all speaker images to pngs.
+    
+Mar-14-2012-10:27
+
+    Worked with Adam to fix image sizing for speakers. Added topic titles and where the speaker works.
+    Also, I changed the dates for the conference to the 28 - 29.
+    
+Mar-14-2012-11:00
+
+    Added 3 more speakers; corey haines, alex maccaw, and harold gimenez. I added in their photos, summaries, and
+    where they work.
+    
+Mar-14-2012-11:08
+
+    Updated the Schedule section. I added 3 days of events, and commented out the rest for now. For Friday the 27th, I left
+    as is. For Saturday the 28th, I added 4 speakers, changed the time to TBA, and changed the location to Main Street Landing Performing Arts Center.
+    I did the same for Sunday the 29th. I also commented out all the "Learn More" hrefs for now.
+    
+Mar-14-2012-11:24
+
+    Removed the height and width properties from the images since we have now manually resized them with photoshop.
+    
+Mar-14-2012-11:31
+
+    Updated application.js so that when you click on the Buruco logo, that also scrolls to the top of the web page and put the red
+    triangle slider above the Buruco logo.
+    
+Mar-14-2012-11:48
+
+    Made some changes to the padding-bottom styles of each section because there were really big gaps in between each section.
+    
+Mar-14-2012-12:04
+
+    I was testing using geolocation for getting directions to the conference in FireFox, Chrome, and Safari. In FireFox and Safari
+    it was working, but in Chrome it was not. I found out that if you are on a local webpage 'file:///', chrome will block it because
+    of some security restrictions, so it should work fine once the site is live. 
+    - http://stackoverflow.com/questions/6181379/w3c-geolocation-api-not-working-in-chrome
+    - http://stackoverflow.com/questions/5423938/html-5-geo-location-prompt-in-chrome
+    
+Mar-14-2012-12:17
+
+    Changed location in Schedule section on Friday the 27th to TBA.
+    
+Mar-14-2012-12:20
+
+    Added topic titles to alex maccaw, corey haines, and harold gimenez.
+    
+Mar-16-2012-16:15
+
+    There were several issues that I hadn't noticed that I have now fixed. Some of the media queries were off
+    for a few areas so I fixed those. I noticed that I wasn't removing the image at the top of the web page soon
+    enough, so it was appearing really squished, fixed that. The bottom gray bar underneath the image was being pushed
+    down, making an awkward gap, fixed that. Previously, in the BTV section, I had the links (Directions, Lodging, Restaurants,
+    and Attractions) pushed off the screen and added a more button to bring them back once the screen was too small. Now that there
+    are only 4 links, I changed this so it just remains as is with the horizontal bar and it doesn't get pushed off the screen, however,
+    I left all the code that was there but just commented it out, in case we do add that Shopping section.  I told Adam the other day that
+    I was testing the site on my small laptop screen and a larger monitor on campus, and that the speaker bio text would be cut off at some
+    points (you would only see the top-half of the last line of words displayed for the bio), I fixed that issue for both monitor sizes.
+    
+Mar-16-2012-18:10
+
+    I finished up the media queries for the iphone for the most part. It looks pretty solid right now, but there are still a few things that
+    I need to figure out. I uploaded it to my website just for testing, since testing on a physical mobile device is always best, and I'll take
+    it down when I'm done testing. I'll take some screen shots to send you guys. There are only 2 issues that I see right now. The button for 
+    user's to click, which makes the google map image appear giving them directions to the conference is the new HTML5 button element, and
+    it is very small, and you can't resize it. Also for the speakers, I need to add some sort of indicator so the users know that by clicking
+    on a speaker's name, they will be able to view the full bio.
+    
+Mar-19-2012-14:37
+
+    I noticed that the Safari gradient for the nav bar didn't support the previous version of safari, so I added only style to support that.
+    Also, Alex MacCaw's photo was pretty pixelated, so I found a new image to use that looks much better.
+    
+Mar-21-2012-9:40
+
+    Merged speaker_bio branch into development, and deleted the speaker_bio branch. Now preparing development branch for deployment to
+    live site.
+    
+Mar-21-2012-9:46
+
+    I created a new file directory, based on the Ruby standards that Adam told me about. Created a new folder called assets, which has
+    3 subfolders: images, javascript, and stylesheets, each meant to hold the appropriate files. I moved all images from btv-assets into
+    images, all js files in the javascript folder, and all css files into the stylesheets folder. I also deleted the btv-assets folder
+    because it is no longer needed.
+    
+Mar-21-2012-10:04
+
+    I updated all script, link, src, and url properties to point to the appropriate files with the new file directory.
+    
+Mar-21-2012-11:26
+
+    Added Personal website links, Twitter link, or LinkedIn link to Speaker Bios. I also made it so when you click on the
+    speaker's image, it will also display their full bio.
+    
+Mar-21-2012-12:09
+
+    There were some medai query style issues with some of the content in the BTV section, so I fixed that up.
+    
+Mar-21-2012-12:09
+
+    There were some style issues in the Speakers section that I fixed. With the new FireFox update; when the partial text
+    of the speakers was displayed, part of the text was cut off, fixed. Also, when the full bio was displayed and the page
+    became smaller, the text would overflow into the Schedule section, so I fixed the media queries for that. I'm stuck on 
+    something thought and can't figure it out: When the screen becomes smaller, I keep getting this style (that I am not adding)
+    that is added to the id: speakers, which is the div element that contains the entire Speakers section. In firebug the style
+    is called element.style, and it adds a 600px padding-bottom style to the Full Speakers Bio, causing there to be a large gap
+    between the Speakers and Schedule sections. And I cannot figure out how to override it.
+    
+Mar-21-2012-12:53
+
+    Fixed the media query style issues with the text inside Sponsors section.
+    
+Mar-21-2012-13:14
+
+    Changed the name of the link to the Speaker's personal sites to More Info.  In the Sponsors section, created a More Info
+    buttton.
