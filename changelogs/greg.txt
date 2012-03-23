@@ -521,3 +521,7 @@ Mar-23-2012-12:58
 
     I never knew, and just found out through the validator, but if a URL contains an &, you still need to use &amp;, so I fixed
     that where appropriate.
+    
+Mar-23-2012-13:12
+
+    Swapped more & with &amp;
