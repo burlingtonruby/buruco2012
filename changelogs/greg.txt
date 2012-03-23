@@ -512,3 +512,7 @@ Mar-23-2012-12:40
 
     There was another case of a duplicate id that I fixed. Forgot to add the meta charset encoding type, it didn't cause any
     problems, but was just a warning given by the validator.
+    
+Mar-23-2012-12:52
+
+    I didn't add the closing " to the charset encoding, so I fixed that.
