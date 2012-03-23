@@ -483,3 +483,12 @@ Mar-23-2012-10:18
 
     There was a positioning error with the link to the website and directions for 'Downtown Burlington' in the BTV section,
     fixed that. Also I aligned the section headers in the BTV section to the center.
+    
+Mar-23-2012-10:30
+
+    There was a 'name' attribute in the <div> element containing all speaker information. The w3c validator detected this as an error
+    so I removed the attribute, I tested it before commiting to the live site to make sure it didn't break anything. I also received
+    an error from the w3c validator saying that a div can't be nested inside a span tag, so I changed the #nav2 span element to a div
+    element, tested it, didn't break anything. I also changed the 'Get Directions' button in the BTV section to a custom button as opposed
+    to using an HTML5 button element, because you cant increase the size, so it was appearing very small can you couldn't read it on mobile
+    devices.

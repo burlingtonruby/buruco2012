@@ -392,6 +392,35 @@ tr.horizontal_dotted_line  td{
     text-shadow:0px 1px 1px rgba(207,207,207,0.7);
 }
 
+#get-directions {
+    background: #DB5B02; /* Old browsers */
+    background:linear-gradient(bottom, #DB5B02, #FE9A54);
+    background:-moz-linear-gradient(bottom, #DB5B02, #FE9A54);
+    background: -webkit-gradient(linear, bottom, left bottom, color-stop(#DB5B02), color-stop(#FE9A54)); /* Chrome,Safari4+ */
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#DB5B02), to(#FE9A54));
+    background:-webkit-linear-gradient(bottom, #DB5B02, #FE9A54); /* Chrome10+,Safari5.1+ */
+    background:-o-linear-gradient(bottom, #DB5B02, #FE9A54); /* Opera 11.10+ */
+    background:-ms-linear-gradient(bottom, #DB5B02, #FE9A54); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DB5B02', endColorstr='#FE9A54',GradientType=0 ); /* IE6-9 */
+    color:#FFF;
+    font-size:24pt;
+    font-weight:bold;
+    height:60px;
+    margin-bottom:10px;
+    position:relative;
+    text-align:center;
+    top:10px;
+    width:250px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}
+
+#get-directions #directions-txt {
+    position:relative;
+    top:7px;
+}
+
 #btv-header {
     color:#FFF;
     display:inline;
@@ -1071,15 +1100,12 @@ Media Queries
         width:850px;
         top:80px;
     }
-    #btv #get-directions {
-        height:200px;
-    }
     #btv .attraction-img { display:none; }
     #btv .btv-separator { width:50% }
     #btv .lodging-img { display:none; }
     #btv .restaurant-img { display:none; }
     
-    #conference-address h2, #conference-directions h2, #restaurants-list h2, 
+    #conference-address, #conference-directions h2, #restaurants-list h2, 
     #attractions-list h2, #shopping-list h2, #lodging-list h2 {
         text-align:center;
     }
