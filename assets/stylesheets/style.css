@@ -1164,7 +1164,7 @@ Media Queries
     .day-of-week { font-size:24pt; }
     div.intro-wrapper { display:none; }
     #footer { height:10px; }
-    #get-directions { left:75px; }
+    #get-directions { position:relative; left:100px; }
     header{
         font-size:36pt;
         left:0px;
@@ -1178,7 +1178,7 @@ Media Queries
     #link-selected { display:none; }
     .links { display:none; }
     #more-btn { display:none; }
-    .move-right { left:0px; }
+    .move-right { left:0px; right:100px; }
     #nav2 .nav { display:none; }
     #schedule { 
         padding-top:2px; 

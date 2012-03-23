@@ -507,3 +507,8 @@ Mar-23-2012-12:12
 
     I made it so when you click on the Speaker's topic, i.e. the 4 hour week for ruby developers, it will also display
     the full bio of the Speaker.
+    
+Mar-23-2012-12:40
+
+    There was another case of a duplicate id that I fixed. Forgot to add the meta charset encoding type, it didn't cause any
+    problems, but was just a warning given by the validator.
