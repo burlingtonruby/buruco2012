@@ -68,9 +68,9 @@ speaker bios
         * https://github.com/kswedberg/jquery-smooth-scroll
         */
         $.smoothScroll({
-            scrollTarget: $("#speaker-list"),
-            offset: -140;
-        });
+			scrollTarget: $("#speaker-list"),
+			offset: -140
+		});
         
         /*********************************
         For mobile devices

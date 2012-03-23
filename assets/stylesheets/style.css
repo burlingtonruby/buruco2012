@@ -382,6 +382,11 @@ tr.horizontal_dotted_line  td{
     padding-top:10px;
 }
 
+#btv .btv-separator { 
+    width:50%; 
+    text-align:center; 
+}
+
 #btv-coming-soon {
     color:#FFF;
     font-size:25pt;
@@ -1101,7 +1106,6 @@ Media Queries
         top:80px;
     }
     #btv .attraction-img { display:none; }
-    #btv .btv-separator { width:50% }
     #btv .lodging-img { display:none; }
     #btv .restaurant-img { display:none; }
     
@@ -1160,6 +1164,7 @@ Media Queries
     .day-of-week { font-size:24pt; }
     div.intro-wrapper { display:none; }
     #footer { height:10px; }
+    #get-directions { left:75px; }
     header{
         font-size:36pt;
         left:0px;

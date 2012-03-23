@@ -27,8 +27,8 @@ $(document).ready(function() {
 	triangle.fill();
 	triangle.stroke();
     
-    /* Makes it so when you hover over the 'Get Dircections' button
-    in the BTV section, the mouse changes to a pointer. */
+    /* Makes it so when the user hovers over the 'Get Direction' button
+    the cursor changes to a pointer. */
     $("#get-directions").hover(function() {
         $(this).css("cursor","pointer");
     });

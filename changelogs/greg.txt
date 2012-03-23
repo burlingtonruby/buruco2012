@@ -492,3 +492,13 @@ Mar-23-2012-10:30
     element, tested it, didn't break anything. I also changed the 'Get Directions' button in the BTV section to a custom button as opposed
     to using an HTML5 button element, because you cant increase the size, so it was appearing very small can you couldn't read it on mobile
     devices.
+    
+Mar-23-2012-10:50
+
+    I removed some obsolete hr attributes, and instead manipulated its styles with css.
+    
+Mar-23-11:21
+
+    I ran into an error, which was making it so when you clicked on the speaker name or picture, it would
+    not display their full bio, but there was just an extra random semi-colon (must of hit the button by accident)
+    so I removed it and it now works.
