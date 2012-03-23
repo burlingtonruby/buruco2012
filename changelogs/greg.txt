@@ -478,3 +478,8 @@ Mar-23-2012-10:12
 
     I forgot to include the ending span tag for the 2nd black gradient bar, so I added it. I also had a trailing </div> tag
     so I removed that. I also (can't believe I did this), had multiple elements with the same id, so I changed them to classes.
+    
+Mar-23-2012-10:18
+
+    There was a positioning error with the link to the website and directions for 'Downtown Burlington' in the BTV section,
+    fixed that. Also I aligned the section headers in the BTV section to the center.

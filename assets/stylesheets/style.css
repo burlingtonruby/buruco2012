@@ -1079,6 +1079,11 @@ Media Queries
     #btv .lodging-img { display:none; }
     #btv .restaurant-img { display:none; }
     
+    #conference-address h2, #conference-directions h2, #restaurants-list h2, 
+    #attractions-list h2, #shopping-list h2, #lodging-list h2 {
+        text-align:center;
+    }
+    
     #btv #echo, #btv #bike-path, #btv #downtown, #btv #north-beach,
     #btv #hilton, #btv #marriott {
         height:450px;
@@ -1142,6 +1147,7 @@ Media Queries
     #link-selected { display:none; }
     .links { display:none; }
     #more-btn { display:none; }
+    .move-right { left:0px; }
     #nav2 .nav { display:none; }
     #schedule { 
         padding-top:2px; 
