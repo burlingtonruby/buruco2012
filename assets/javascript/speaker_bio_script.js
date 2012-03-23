@@ -17,7 +17,7 @@ speaker bios
 
     //Changes cursor to a pointer when the user hovers
     //over the speaker name
-    $(".speaker-name, .thumbnail").hover(function() {
+    $(".speaker-name, .thumbnail, .topic").hover(function() {
         $(this).css("cursor","pointer");
     });
     
@@ -35,7 +35,7 @@ speaker bios
     Gets speaker's information when their Name is clicked or
     their image is clicked
     ***********************************************************/
-    $(".speaker-name, .thumbnail").click(function() {
+    $(".speaker-name, .thumbnail, .topic").click(function() {
         //This variable stores the class of the element clicked 
         //(The speaker name, or the speaker (thumbnail) image).
         //Based on the class, the variables to store the speakers information
@@ -51,6 +51,18 @@ speaker bios
             speakerTitle = $(this).next().next().html(); //There is an extra .next() because of the <br> element
             speakerBio = $(this).next().next().next().html();
         }
+        //If the user clicks on the talk topic, i.e. 4 hour work week for ruby developers
+        else if(elementClass == "topic")
+        {
+            //alert($(this).parent().parent().prev().prev().prev().prev().attr('src'));
+            //Store info in variables
+            speakerImg = $(this).parent().parent().prev().prev().prev().prev().attr('src');
+            //Cut off the end of the src attribute so we can use the full image
+            var speakerImgFull = speakerImg.slice(0,speakerImg.length-4);
+            speakerName = $(this).parent().parent().prev().prev().prev().html();
+            speakerTitle = $(this).parent().parent().prev().prev().html();
+            speakerBio = $(this).parent().parent().html();
+        }
         //Otherwise, the user clicked on the image
         else {
             //Store info in variables
@@ -61,6 +73,12 @@ speaker bios
             speakerTitle = $(this).next().next().next().html();
             speakerBio = $(this).next().next().next().next().html();
         }
+        
+        /* Changes the pointer back to default when it is hovering over
+        the topic title */
+        $(".topic").hover(function() {
+            $(this).css("cursor","default");
+        });
         
         /* 
         * Smooth scrolling so if the user clicks on a speaker further
@@ -147,6 +165,12 @@ speaker bios
     $(".back-speakers").click(function() {          
         //Fade out individual bio, and bring back list
         $("#speaker-bio").fadeToggle("fast","linear",function() {
+        
+            /* Changes the cursor back to a pointer when it is hovering over
+            the topic title */
+            $(".topic").hover(function() {
+                $(this).css("cursor","pointer");
+            });
              
             $("#speaker-bio").html("");
             
