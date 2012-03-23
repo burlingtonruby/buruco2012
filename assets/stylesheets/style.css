@@ -1075,7 +1075,7 @@ Media Queries
         height:200px;
     }
     #btv .attraction-img { display:none; }
-    #btv #btv-separator { width:100% }
+    #btv .btv-separator { width:50% }
     #btv .lodging-img { display:none; }
     #btv .restaurant-img { display:none; }
     
