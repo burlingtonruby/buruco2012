@@ -328,13 +328,20 @@ tr.horizontal_dotted_line  td{
 
 #tickets-coming-soon {
     color:#FFF;
-    font-size:25pt;
+    font-size:18px;
     font-weight:bold;
-    left:400px;
-    top:200px;
+    left:200px;
+    top:100px;
     position:relative;
     text-shadow:0px 1px 1px rgba(217,217,217,0.7);
 }
+
+#tickets-coming-soon a {
+	color: #fff;
+	text-decoration:none;
+	border-bottom: 1px solid #fff;
+}
+
 
 #tickets-header {
     color:#FFF;
@@ -1204,3 +1211,32 @@ Media Queries
     }
 }
 
+#register {
+  font-family:"museo-slab", serif;
+  font-size:18px;
+  font-weight:700;
+  text-shadow:1px 1px 1px #000;
+  text-transform:uppercase;
+  color:#fff;
+  padding:12px;
+  background:#ff0000;
+  border:solid 1px #a00000;
+  cursor:pointer;
+  border-radius:5px;
+  box-shadow:2px 2px 1px 0px #ff4f4f inset;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  margin-left:10px;
+  text-decoration:none;
+  float:right;
+}
+
+#register:hover {
+  background:#ca0101;
+  box-shadow:2px 2px 1px 0px #ca0101 inset;
+}
+
+#register:active {
+  background:#ca0101;
+  box-shadow:2px 2px 1px 0px #880101 inset;
+}
