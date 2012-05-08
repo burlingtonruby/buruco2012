@@ -89,6 +89,7 @@ speaker bios
 			scrollTarget: $("#speaker-list"),
 			offset: -140
 		});
+
         
         /*********************************
         For mobile devices
