@@ -479,3 +479,8 @@ May-08-2012-11:48
     Added new speaker; Mark Bates.  I ran into an issue with using multi-columns in Chrome and Safari, which was causing
     the columns to be really off. It was because there was an odd number of div elements in the container, so I just
     put an empty div in and it fixed the problem.
+    
+May-08-2012-12:38
+
+    For some reason when I pulled from master it didn't give me Peter Jackson's image and bio, but luckily I realized that
+    you guys added it before it was updated, so I added his bio back in.
