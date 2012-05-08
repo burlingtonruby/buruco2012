@@ -69,7 +69,7 @@ speaker bios
         */
         $.smoothScroll({
             scrollTarget: $("#speaker-list"),
-            offset: -140;
+            offset: -140
         });
         
         /*********************************

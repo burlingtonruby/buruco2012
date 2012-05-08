@@ -473,3 +473,9 @@ Mar-21-2012-13:14
 
     Changed the name of the link to the Speaker's personal sites to More Info.  In the Sponsors section, created a More Info
     buttton.
+    
+May-08-2012-11:48
+
+    Added new speaker; Mark Bates.  I ran into an issue with using multi-columns in Chrome and Safari, which was causing
+    the columns to be really off. It was because there was an odd number of div elements in the container, so I just
+    put an empty div in and it fixed the problem.
