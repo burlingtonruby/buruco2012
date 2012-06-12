@@ -182,7 +182,7 @@ div.speaker-info img {
 summary p {
     color:#5E5E5E;
     font-size:14pt;
-    height: 86px;
+    height: 92px;
     overflow:hidden;
     width:250px;
     text-overflow:ellipsis;
@@ -306,6 +306,30 @@ tr.horizontal_dotted_line  td{
 #sponsors-header {
     color:#FFF;
     padding-left:60px;
+}
+
+#sponsors-logos {
+    background-color: #FFFFFF;
+    height: 15%;
+    margin-right: 25%;
+    position: relative;
+    text-align: center;
+    top: 500px;
+    width: 90%;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#sponsors-logos a {
+    display: inline;
+}
+
+#engineyard, #intridea {
+    bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: relative;
 }
 
 #sponsors-top a {
@@ -607,6 +631,7 @@ Media Queries
     #schedule-table { width:850px; }
     #speakers-top a{ right:140px; }
     #schedule-top a{ right:140px; }
+    #sponsors-logos { width: 85%; }
     #sponsors-top a{ right:140px; }
     #tickets-top a{ right:140px; }
     
@@ -630,6 +655,7 @@ Media Queries
     #schedule-table { width:850px; }
     #speakers-top a{ right:160px; }
     #schedule-top a{ right:160px; }
+    #sponsors-logos { width: 80%; }
     #sponsors-top a{ right:160px; }
     #tickets-coming-soon { left:325px; }
     #tickets-top a{ right:160px; }
@@ -663,6 +689,7 @@ Media Queries
     #speakers-top a{ right:190px; }
     #schedule-table { width:800px; }
     #schedule-top a{ right:190px; }
+    #sponsors-logos { width: 75%; }
     #sponsors-top a{ right:190px; }
     #tickets-top a{ right:190px; }
     
@@ -705,6 +732,7 @@ Media Queries
     #speakers-top a{ right:240px; }
     #speaker-list { width:850px; }
     #schedule-table { width: 750px; }
+    #sponsors-logos { width: 70%; }
     #schedule-top a{ right:240px; }
     #sponsors-top a{ right:240px; }
     #tickets-coming-soon { left:275px; }
@@ -723,12 +751,15 @@ Media Queries
     #btv-top a { right:270px; }
     #speakers-top a{ right:270px; }
     #schedule-top a{ right:270px; }
+    #sponsors-logos { width: 65%; }
     #sponsors-top a{ right:270px; }
     #tickets-top a{ right:270px; }
 }
 
 @media screen and (max-width:800px) {
     #btv-top a { right:275px; }
+    #engineyard { top: 25px; }
+    #intridea, #engineyard { bottom: 0px; }
     #schedule-table { width: 700px; }
     #speaker-list { width:800px; }
     #speakers-top a{ right:275px; }
@@ -737,6 +768,7 @@ Media Queries
         text-align:left; 
         right:100px; 
     }
+    #sponsors-logos { width: 60%; }
     #sponsors-top a{ right:275px; }
     #tickets-top a{ right:275px; }
 	div.intro-wrapper { display:none; }
@@ -762,6 +794,7 @@ Media Queries
     
     #speaker-list { width:750px; }
     #speakers-top a{ right:310px; }
+    #sponsors-logos { width: 55%; }
     #schedule-top a{ right:310px; }
     #sponsors-top a{ right:310px; }
     #tickets-coming-soon{ left:250px; }
@@ -959,6 +992,8 @@ Media Queries
         right:250px; 
     }
     #sponsors header h1 { padding-left:0px; }
+    #sponsors-logos { width: 45%; }
+    #sponsors-logos #intridea img { height: 40%; width: 40%; }
     #sponsors-top a{ display:none; }
     #tickets-coming-soon { left:120px; }
     #tickets header h1 { padding-left:0px; }
@@ -991,6 +1026,7 @@ Media Queries
         right:0px; 
         width:425px; 
     }
+    #sponsors-logos { width: 90%; }
     #tickets-coming-soon { font-size:20pt; }
 }
 

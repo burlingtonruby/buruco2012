@@ -540,3 +540,7 @@ May-08-2012-12:38
 
     For some reason when I pulled from master it didn't give me Peter Jackson's image and bio, but luckily I realized that
     you guys added it before it was updated, so I added his bio back in.
+
+June-12-2012-11:49
+
+	I added the logos for Engine Yard, Intridea, and Main Street Landing to the 		Sponsors section. I also fixed the bio text in the Speakers section so it is no 	longer cut off.  I also added media queries for the sponsor logos.
