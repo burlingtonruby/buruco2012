@@ -1229,6 +1229,7 @@ Media Queries
     div.intro-text .location, div.intro-text .language,
     div.intro-text .what { font-size: 80px; line-height: 80px; }
     div.intro-text p { font-size: 20px; width: 90%; }
+    div.intro-text #register { padding: 30px; }
     #footer { height:10px; }
     #get-directions { position:relative; left:100px; }
     header{
