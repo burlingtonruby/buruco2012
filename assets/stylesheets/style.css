@@ -1225,7 +1225,7 @@ Media Queries
     .day-of-week { font-size:24pt; }
     div.intro-wrapper { background-image:none; }
     div.intro-text { padding: 14px; top: 0px; width: 105%; }
-    div.intro-text .date { color: #999; font-size: 50px; }
+    div.intro-text .date { color: ##FF0000; font-size: 50px; }
     div.intro-text .location, div.intro-text .language,
     div.intro-text .what { font-size: 80px; line-height: 80px; }
     div.intro-text p { font-size: 20px; width: 90%; }
