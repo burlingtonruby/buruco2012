@@ -1289,9 +1289,12 @@ Media Queries
         width:105%; 
     }
     #sponsors-coming-soon {
+        bottom: 0px;
         font-size: 36pt;
         left:0px;
+        position: relative;
         text-align:center;
+        top: 50px;
     }
     #sponsors header h1 { padding-left: 0; }
     #sponsors-logos { bottom: 110px; position: relative; }
