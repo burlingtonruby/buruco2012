@@ -1294,7 +1294,7 @@ Media Queries
         text-align:center;
     }
     #sponsors header h1 { padding-left: 0; }
-    #sponsors-logos { bottom: 110px; }
+    #sponsors-logos { bottom: 110px; position: relative; }
     #tickets { 
         padding-bottom:480px; 
         padding-top:2px; 
