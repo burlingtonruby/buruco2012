@@ -1294,10 +1294,10 @@ Media Queries
         left:0px;
         position: relative;
         text-align:center;
-        top: 50px;
+        top: 200px;
     }
     #sponsors header h1 { padding-left: 0; }
-    #sponsors-logos { bottom: 110px; position: relative; }
+    #sponsors-logos { bottom: 150px; position: relative; }
     #tickets { 
         padding-bottom:480px; 
         padding-top:2px; 
