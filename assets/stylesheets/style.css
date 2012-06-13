@@ -773,7 +773,8 @@ Media Queries
     #sponsors-logos { width: 60%; }
     #sponsors-top a{ right:275px; }
     #tickets-top a{ right:275px; }
-	div.intro-wrapper { display:none; }
+	div.intro-wrapper { background-image:none; }
+    div.intro-text { width: 97%; }
 	#nav2 .nav{ display:none; }
 	#speakers header img { display:none; }
 }
@@ -788,7 +789,7 @@ Media Queries
     #btv-coming-soon{ left:250px; }
     #btv-top a { right:310px; }
     #buruco-logo {width:175px; }
-    
+    div.intro-text { width: 95%; }
     #schedule-table { 
         padding-left:10px;
         width: 650px; 
@@ -805,6 +806,7 @@ Media Queries
 @media screen and (max-width:725px) {
     #additional-links { left:30px; }
     #btv-top a { right:340px; }
+    div.intro-text { width: 92%; }
     #speaker-list { width:700px; }
     #speakers-top a{ right:340px; }
     #schedule-top a{ right:340px; }
@@ -820,6 +822,7 @@ Media Queries
     #btv-coming-soon { left:200px; }
     #btv-top a { right:360px; }
     #buruco-logo { width:150px; }
+    div.intro-text { width: 90%; }
     #engineyard { bottom: 0px; top: 25px; }
     #speakers-top a{ right:360px; }
     #schedule-top a{ right:360px; }
@@ -865,6 +868,7 @@ Media Queries
 	}
     #btv-top a { right:390px; }
     #buruco-logo { width:125px; }
+    div.intro-text { width: 87%; }
     #schedule-table { width:600px; }
     #speakers-top a{ right:390px; }
     #schedule-top a{ right:390px; }
@@ -884,7 +888,7 @@ Media Queries
         padding-left:10px; 
         padding-right:10px;
     }
-    
+    div.intro-text { width: 82%; }
     #schedule-table { width:575px; }
     #speakers-top a{ right:410px; }
     #schedule-top a{ right:410px; }
@@ -911,6 +915,7 @@ Media Queries
         bottom:80px;
         right:430px;
     }
+    div.intro-text { width: 80%; }
     #speakers-top a{ right:430px; }
     #schedule-top a{ right:430px; }
     #sponsors-top a{ right:430px; }
@@ -922,6 +927,11 @@ Media Queries
     #additional-links { left:30px; }
     #btv-top a { right:450px; }
     div.nav .links { padding-right:5px; }
+    div.intro-text { width: 75%; }
+    div.intro-text .date { font-size: 30px; }
+    div.intro-text .location, div.intro-text .language,
+    div.intro-text .what { font-size: 50px; line-height: 50px; }
+    div.intro-text p { width: 80%; }
     #schedule-table { width:550px; }
     #speakers-top a{ right:450px; }
     #schedule-top a{ right:450px; }
@@ -937,7 +947,7 @@ Media Queries
         padding-left:5px;
         padding-right:2px; 
     }
-    
+    div.intro-text { width: 70%; }
     #schedule-table { width:500px; }
     #speakers-top a{ right:470px; }
     #schedule-top a{ right:470px; }
@@ -969,6 +979,7 @@ Media Queries
     
     .date { font-size: 16pt; }
     .day-of-week { font-size:12pt; }
+    div.intro-text { width: 65%; }
     header img { display:none; }
     .learn-more { font-size:14pt; }
     #link-selected { display:none; }
@@ -1001,7 +1012,7 @@ Media Queries
     #tickets-coming-soon { left:120px; }
     #tickets header h1 { padding-left:0px; }
     #tickets-top a{ display:none; }
-    .twelve a{ display:none; }
+    .nav .twelve a{ display:none; }
 }
 
 @media screen and (max-width:525px) {
@@ -1011,6 +1022,7 @@ Media Queries
         word-spacing:25px;
     }
     #additional-links a { font-size: 10pt; }
+    div.intro-text { width: 60%; }
     .learn-more { font-size:12pt; }
     #schedule-table { width:425px; }
     #speaker-list { right:120px; }
@@ -1021,6 +1033,7 @@ Media Queries
     #btv-coming-soon { font-size:20pt; }
     #buruco-logo { left:120px; }
     .container { width:100%; }
+    div.intro-text { width: 57%; }
     header h1 { text-align:center; }
     .speaker-info img { display:none; }
     #speaker-list { right:0px; }
@@ -1047,6 +1060,7 @@ Media Queries
         top:12px;
     }
     #buruco-logo { left:110px; }
+    div.intro-text { width: 55%; }
     #schedule-table { width:400px; }
 }
 
@@ -1209,7 +1223,12 @@ Media Queries
     #buruco-logo { position:relative; left:350px; }
     .date { font-size:30pt; }
     .day-of-week { font-size:24pt; }
-    div.intro-wrapper { display:none; }
+    div.intro-wrapper { background-image:none; }
+    div.intro-text { width: 55%; }
+    div.intro-text .date { font-size: 30px; }
+    div.intro-text .location, div.intro-text .language,
+    div.intro-text .what { font-size: 50px; line-height: 50px; }
+    div.intro-text p { width: 80%; }
     #footer { height:10px; }
     #get-directions { position:relative; left:100px; }
     header{
