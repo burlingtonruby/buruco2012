@@ -1174,7 +1174,7 @@ Media Queries
 */
 
 @media screen and (max-device-width:320px) {
-    #agilion { bottom: 150px; position: relative; }
+    #agilion { position: relative; top: -30px; }
 
     #btv #additional-content {
         left:50px;
