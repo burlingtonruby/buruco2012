@@ -1174,6 +1174,8 @@ Media Queries
 */
 
 @media screen and (max-device-width:320px) {
+    #agilion { bottom: 50px; position: relative; }
+
     #btv #additional-content {
         left:50px;
         font-size:26pt;
@@ -1258,6 +1260,10 @@ Media Queries
     .learn-more { font-size:24pt; }
     #link-selected { display:none; }
     .links { display:none; }
+    #mainstreet {
+        position: relative;
+        right: 10px;
+    }
     #more-btn { display:none; }
     .move-right { 
         position:relative;
@@ -1311,7 +1317,7 @@ Media Queries
         top: 200px;
     }
     #sponsors header h1 { padding-left: 0; }
-    #sponsors-logos { bottom: 400px; position: relative; }
+    #sponsors-logos { bottom: 420px; position: relative; }
     #tickets { 
         padding-bottom:480px; 
         padding-top:2px; 
